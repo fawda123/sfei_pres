@@ -69,28 +69,6 @@ refs <- rawToChar(refs$content)
 writeLines(refs, con = file('refs.bib'))
 @
 
-% my custom ggplot theme
-<<my_ggplot, echo = F, results = 'hide' , message = F>>=
-theme_mine <- function (base_size = 12, base_family = "") {
-  theme_bw(base_size = base_size, base_family = base_family) %+replace% 
-  theme(
-    plot.background = element_rect(fill='transparent', 
-      colour = NA),
-    panel.background = element_rect(fill='transparent', 
-      colour = NA),
-    legend.background = element_rect(fill='transparent', 
-      colour = NA),
-    strip.background = element_rect(fill = 
-        alpha(pal(5)[5],0.5)),
-    legend.key = element_rect(fill = 'transparent', 
-      colour = NA)
-    )   
-}
-
-# set as default
-theme_set(theme_mine())
-@
-
 % figure used on title page
 <<title_fig, echo = F, results = 'hide', message = F, eval = T>>=
 # pdf('fig/title_plo.pdf', width = 12, height =3.5, family = 'serif')
@@ -109,8 +87,8 @@ theme_set(theme_mine())
 
 \begin{document}
 
-\title[Evaluating water quality]{\textbf{Quantitative approaches to evaluate surface water quality: Examples from Minnesota Lakes to Florida Estuaries}}
-\author[M. Beck]{Marcus W. Beck}
+\title[Evaluating water quality]{\textbf{Quantitative approaches to understand nutrient pollution in estuaries: An example for the upper San Francisco Estuary}}
+\author[M. Beck]{Marcus W. Beck, PhD}
 
 \institute[USEPA]{USEPA National Health and Environmental Effects Research Laboratory, Gulf Ecology Division, \href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov}, Phone: 8509342480}
 
@@ -125,6 +103,109 @@ theme_set(theme_mine())
 
 \section{Background}
 
+%%%%%%
+\begin{frame}{\textbf{Evaluating estuarine condition}}{\textbf{How do we collect and use data?}}
+\onslide<+->
+The foundation of environmental management is a strong monitoring network \scriptsize \cite{NRC90}\\~\\
+\normalsize
+Monitoring provides information for decision-making based on apparent trends...
+\vspace{0.2in}
+\begin{center}
+\emtxt{What are the changes in environmental condition over time?}\\~\\
+\emtxt{Are these changes `good' or `bad' based on our management objectives?}\\~\\
+\emtxt{What may have caused these changes?}
+\end{center}
+\end{frame}
+
+<<echo = F, cache = TRUE>>=
+data("mods_nolag")
+
+# model subset and plot subsets
+row <- 7
+mod <- mods_nolag$mod[[row]]
+ylab <-  expression(paste("DIN (mg ", L^-1, ")"))
+xlims <- as.Date(c('1976-01-01', '2013-12-31'))
+ylims <- c(0, 6)
+
+annuals <- prdnrmplot(mod, annuals = TRUE, plot = F) %>%
+  .$nrms %>% 
+  filter(taus == 0.5)
+seasnls <- prdnrmplot(mod, annuals = FALSE, plot = F) %>%
+  .$nrms %>% 
+  filter(taus == 0.5)
+residus <- select(mod, date, res, fit0.5) %>% 
+  mutate(resfit = exp(res) - exp(fit0.5)) %>% 
+  na.omit()
+
+# default theme
+mytheme <- theme_minimal() + 
+  theme(
+    plot.background = element_rect(fill='transparent', 
+      colour = NA),
+    panel.background = element_rect(fill='transparent', 
+      colour = NA),
+    legend.background = element_rect(fill='transparent', 
+      colour = NA),
+    strip.background = element_rect(fill = 
+        alpha(pal(5)[5],0.5)),
+    legend.key = element_rect(fill = 'transparent', 
+      colour = NA),
+    axis.line.x = element_line(), 
+    axis.line.y = element_line(), 
+    axis.ticks.x = element_line(),
+    axis.ticks.y = element_line(),
+    axis.ticks.length = unit(.1, "cm")
+    )   
+
+# plots
+p1 <- ggplot(na.omit(mod), aes(x = date, y = exp(res))) + 
+  geom_line() +
+  mytheme +
+  scale_y_continuous(ylab, limits = c(0, 4)) + 
+  scale_x_date('Time', limits = xlims)
+
+p2 <- ggplot(annuals, aes(x = date, y = exp(nrms_value))) + 
+  geom_line() + 
+  mytheme +
+  scale_y_continuous(limits = c(0, 4)) + 
+  scale_x_date('Time', limits = xlims)
+
+p3 <- ggplot(seasnls, aes(x = date, y = exp(nrms_value))) + 
+  geom_line() + 
+  mytheme +
+  scale_x_date('Time', limits = xlims)
+
+p4 <- ggplot(residus, aes(x = date, y = resfit)) + 
+  geom_point() + 
+  geom_hline(aes(yintercept = 0)) + 
+  mytheme +
+  scale_x_date('Time', limits = xlims)
+
+p5 <- dynaplot(mod, mo = 1, logspace = F, years = c(1976, 2000, 2013), col_vec = 'black') + 
+  mytheme +
+  theme(legend.position = 'none', strip.text.x = element_blank()) + 
+  scale_x_continuous('Flow')
+
+ht <- 1.75
+wd <- 4
+tiff('figs/schematic1.tif', height = ht, width = wd, units = 'in', compression = 'lzw', res = 400, family = 'serif')
+p1
+dev.off()
+tiff('figs/schematic2.tif', height = ht, width = wd, units = 'in', compression = 'lzw', res = 400, family = 'serif')
+p2
+dev.off()
+tiff('figs/schematic3.tif', height = ht, width = wd, units = 'in', compression = 'lzw', res = 400, family = 'serif')
+p3
+dev.off()
+tiff('figs/schematic4.tif', height = ht, width = wd, units = 'in', compression = 'lzw', res = 400, family = 'serif')
+p4
+dev.off()
+tiff('figs/schematic5.tif', height = ht, width = wd, units = 'in', compression = 'lzw', res = 400, family = 'serif')
+p5
+dev.off()
+
+
+@
 
 %%%%%%
 \begin{frame}
@@ -155,7 +236,7 @@ Phone: 8509342480
 
 %%%%%%
 \section{References}
-\begin{frame}[allowframebreaks,t]{\textbf{References}}
+\begin{frame}[t]{\textbf{References}}
 \tiny
 \setbeamertemplate{bibliography item}{}
 \bibliographystyle{apalike_mine}

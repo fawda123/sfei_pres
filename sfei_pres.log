@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.8.29)  13 AUG 2016 14:22
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.8.29)  13 AUG 2016 14:37
 entering extended mode
 **sfei_pres.tex
 (M:\presentations\sfei_pres\sfei_pres.tex
@@ -1466,46 +1466,54 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4> not available
 
 {C:/Users/mbeck/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <M:/presenta
 tions/sfei_pres/fig/back_tmp.pdf>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 143.
+File: fig/back_tmp.pdf Graphic file (type pdf)
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 129.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [2
+
+]
+LaTeX Font Info:    Try loading font information for U+msa on input line 156.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 143.
+LaTeX Font Info:    Try loading font information for U+msb on input line 156.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<fig/epa_logo.png, id=62, 195.6108pt x 196.0926pt>
+<fig/epa_logo.png, id=72, 195.6108pt x 196.0926pt>
 File: fig/epa_logo.png Graphic file (type png)
  <use fig/epa_logo.png>
-Package pdftex.def Info: fig/epa_logo.png used on input line 143.
+Package pdftex.def Info: fig/epa_logo.png used on input line 156.
 (pdftex.def)             Requested size: 68.45801pt x 68.62445pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
 
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 143.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 156.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [2
+ [3
 
  <M:/presentations/sfei_pres/fig/epa_logo.png>]
-No file sfei_pres.bbl.
+(M:\presentations\sfei_pres\sfei_pres.bbl)
 File: fig/back_tmp.pdf Graphic file (type pdf)
-<use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 152.
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 165.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
-Package atenddvi Info: Last page = 3.
- [3
+Package atenddvi Info: Last page = 4.
+ [4
 
 ]
 \tf@nav=\write6
 \tf@toc=\write7
 \tf@snm=\write8
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 154.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 154.
- (M:\presentations\sfei_pres\sfei_pres.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 154.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 154.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 167.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 167.
+
+(M:\presentations\sfei_pres\sfei_pres.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 167.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 167.
 Package rerunfilecheck Info: File `sfei_pres.out' has not changed.
 (rerunfilecheck)             Checksum: 5276EC5092E9C422876015BE063573A5;92.
 
@@ -1513,25 +1521,26 @@ Package rerunfilecheck Info: File `sfei_pres.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 154.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 167.
  ) 
 Here is how much of TeX's memory you used:
- 31688 strings out of 493921
- 653837 string characters out of 3147282
- 717319 words of memory out of 3000000
- 34387 multiletter control sequences out of 15000+200000
- 9192 words of font info for 35 fonts, out of 3000000 for 9000
+ 31745 strings out of 493921
+ 655472 string characters out of 3147282
+ 718319 words of memory out of 3000000
+ 34436 multiletter control sequences out of 15000+200000
+ 10167 words of font info for 38 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  48i,16n,82p,10379b,485s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr9.pfb>
-Output written on sfei_pres.pdf (3 pages, 169444 bytes).
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmr9.pfb>
+Output written on sfei_pres.pdf (4 pages, 191901 bytes).
 PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
+ 115 PDF objects out of 1000 (max. 8388607)
+ 12 named destinations out of 1000 (max. 500000)
  165 words of extra memory for PDF output out of 10000 (max. 10000000)
 
