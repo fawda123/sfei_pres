@@ -81,9 +81,6 @@
 % get online bib file
 
 
-% my custom ggplot theme
-
-
 % figure used on title page
 
 
@@ -115,7 +112,7 @@
 \section{Background}
 
 %%%%%%
-\begin{frame}{\textbf{Assessing estuarine condition}}{\textbf{How do we collect and use data?}}
+\begin{frame}{\textbf{Evaluating estuarine condition}}{\textbf{How do we collect and use data?}}
 \onslide<+->
 The foundation of environmental management is a strong monitoring network \scriptsize \cite{NRC90}\\~\\
 \normalsize
@@ -126,6 +123,166 @@ Monitoring provides information for decision-making based on apparent trends...
 \emtxt{Are these changes `good' or `bad' based on our management objectives?}\\~\\
 \emtxt{What may have caused these changes?}
 \end{center}
+\end{frame}
+
+%%%%%%
+\begin{frame}{\textbf{Evaluating estuarine condition}}{\textbf{How do we collect and use data?}}
+\onslide<+->
+\emtxt{The good news}: We are getting better at monitoring - standardized, automated, increased coverage, real-time/continuous \\~\\
+\emtxt{The bad news}: Our ability to use these data for decision-making has not kept pace with availability! \\~\\
+\onslide<+->
+
+
+{\centering \includegraphics[width=0.55\textwidth]{fig/theo-1} 
+
+}
+
+
+
+\end{frame}
+
+%%%%%%
+\begin{frame}{\textbf{Evaluating estuarine condition}}{\textbf{How do we collect and use data?}}
+Most of my research career has focused on using monitoring data to understand effects of eutrophication in one form or another \\~\\
+\onslide<+->
+\begin{quote}
+Eutrophication (noun) - an \emtxt{increase} in the rate of supply of \emtxt{organic matter} to an ecosystem\\
+\hfill -- \cite{Nixon95}
+\end{quote}
+\begin{center}
+\scalebox{1}{
+\begin{tikzpicture}[node distance = 4cm, auto, >=stealth]
+  \onslide<+->{
+  \node[block] (a) {Nutrient Loading};}
+  \onslide<+->{
+	\node[decision] (b)  [right of=a] {Responses};
+ 	\draw[->] (a) -- (b);}
+  \onslide<+->{
+  \draw[decorate,decoration={brace,amplitude=10pt}] [right of=b] (2,-1.5) -- (2,1.5);
+  \node[draw,align=left,draw=none] [right of=b] {\textbf{Changes in:}\\ Chlorophyll\\ Primary Production\\ System Metabolism\\ Dissolved Oxygen};}
+\end{tikzpicture}}
+\end{center}
+\vspace{-0.5cm}\hspace*{15pt}\scalebox{0.7}{\hbox{\tiny Adapted from \cite{Cloern01}}}\\~\\
+\end{frame}
+
+%%%%%%
+\begin{frame}{\textbf{Evaluating estuarine condition}}{\textbf{How do we collect and use data?}}
+\onslide<+->
+\emtxt{Today's talk}: My experience evaluating monitoring data to inform our understanding of the eutrophication paradigm\\~\\
+Water quality trends in the Delta: \\~\\
+\begin{itemize}
+\item \emtxt{Example 1}: Model theory and application \\~\\
+\item \emtxt{Example 2}: Trends over time \\~\\
+\item \emtxt{Example 3}: Selected case studies 
+\end{itemize}
+\end{frame}
+
+\section{Model theory and background}
+
+
+
+%%%%%%
+\begin{frame}{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
+Increasing availability of records describing \emtxt{long-term changes} \\~\\
+Observed data can provide a means to an end, potentially \emtxt{high power} with large sample size \\~\\
+Can we \emtxt{develop} and \emtxt{apply} tools that leverage the descriptive capabilities of these large datasets? \\~\\
+Can we \emtxt{link descriptions} to \emtxt{causal events} to inform management or understanding? \\~\\
+\begin{figure}
+\centerline{\includegraphics[width = \textwidth]{fig/ts_ex.pdf}}
+\end{figure}
+\end{frame}
+
+%%%%%%
+\begin{frame}[t]{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
+{\bf \centerline{Observed data represents effects of many processes}}
+\vspace{0.2in}
+\centerline{\includegraphics[width = \textwidth]{fig/ts_ex.pdf}}
+\vspace{0.2in}
+\begin{columns}[t]
+\begin{column}{0.3\textwidth}
+{\bf \underline{\emtxt{Climate}}}\\
+precipitation\\
+temperature\\
+wind events\\
+ENSO effects
+\end{column}
+\begin{column}{0.3\textwidth}
+{\bf \underline{\emtxt{Local}}}\\
+light/turbidity\\
+residence time\\
+invasive species\\
+trophic effects
+\end{column}
+\begin{column}{0.3\textwidth}
+{\bf \underline{\emtxt{Regional/historical}}}\\
+watershed inputs\\
+point sources\\
+management actions
+flow changes
+\end{column}
+\end{columns}
+\end{frame}
+
+%%%%%%
+\begin{frame}[t]{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
+\onslide<+->
+{\bf \centerline{Observed data represents effects of many processes}}
+\vspace{0.2in}
+\centerline{\includegraphics[width = \textwidth]{fig/ts_ex.pdf}}
+\centerline{Models should describe components to evaluate effects}
+\vspace{-0.1in}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\onslide<+->{
+\centerline{\includegraphics[width = 0.8\textwidth]{fig/schematic2.pdf}}
+\centerline{\includegraphics[width = 0.8\textwidth]{fig/schematic3.pdf}}
+}
+\end{column}
+\begin{column}{0.5\textwidth}
+\onslide<+->{
+\centerline{\includegraphics[width = 0.8\textwidth]{fig/schematic4.pdf}}
+\centerline{\includegraphics[width = 0.8\textwidth]{fig/schematic5.pdf}}
+}
+\end{column}
+\end{columns}
+\end{frame}
+
+%%%%%%
+\begin{frame}[t]{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
+\emtxt{Problem:} Response endpoints of eutrophication vary naturally over time and with discharge or tidal patterns\\~\\
+\emtxt{Solution:} Develop a model that accounts for changes in relationships between drivers of pollution over time\\~\\
+The \emtxt{weighted regression (WRTDS)} model is being developed by USGS for pollutant modelling in rivers \cite{Hirsch10}\\~\\
+Models pollution concentration as a function of \emtxt{time}, \emtxt{discharge}, and \emtxt{season}\\~\\
+\emtxt{Adaptation:} Applied to Tampa Bay \cite{Beck15}, further validated/compared in Patuxent Estuary [Beck and Murphy, In review]
+\end{frame}
+
+
+
+%%%%%%
+\begin{frame}{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
+How does weighted regression work?
+\begin{center}
+\animategraphics[controls,width=\linewidth]{10}{fig/wtex}{}{} %frame rate is 12 per/sec
+\end{center}
+\end{frame}
+ 
+
+ 
+%%%%%%
+\begin{frame}{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}} 
+Application to Delta:\\~\\
+\begin{columns}
+\begin{column}{0.4\textwidth}
+\begin{itemize}
+\item Nine stations (three Suisun, three middle, three delta) \\~\\
+\item Three analytes (DIN, ammonium, nitrite/nitrate), two flow records \\~\\
+\item Four decades of data
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\centerline{\includegraphics[width = \textwidth]{fig/stations.pdf}}
+\end{column}
+\end{columns}
 \end{frame}
 
 %%%%%%

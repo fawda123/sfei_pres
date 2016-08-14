@@ -1,8 +1,37 @@
 \begin{thebibliography}{}
 
+\bibitem[Beck and {Hagy III}, 2015]{Beck15}
+Beck MW, {Hagy III} JD. 2015.
+\newblock Adaptation of a weighted regression approach to evaluate water
+  quality trends in an estuary.
+\newblock Environmental Modelling and Assessment, 20(6):637--655.
+
+\bibitem[Beck and Murphy, view]{BeckIR}
+Beck MW, Murphy RR. {In review}.
+\newblock Numerical and qualitative contrasts of two statistical models for
+  water quality change in tidal waters.
+\newblock Journal of the American Water Resources Assocation.
+
+\bibitem[Cloern, 2001]{Cloern01}
+Cloern JE. 2001.
+\newblock Our evolving conceptual model of the coastal eutrophication problem.
+\newblock Marine Ecology Progress Series, 210:223--253.
+
+\bibitem[Hirsch et~al., 2010]{Hirsch10}
+Hirsch RM, Moyer DL, Archfield SA. 2010.
+\newblock Weighted regressions on time, discharge, and season ({WRTDS}), with
+  an application to {C}hesapeake {B}ay river inputs.
+\newblock Journal of the American Water Resources Association, 46(5):857--880.
+
 \bibitem[{National Research Council}, 1990]{NRC90}
 {National Research Council}. 1990.
 \newblock Managing Troubled Waters: The Role of Environmental Monitoring.
 \newblock National Academy Press, Washington, DC.
+
+\bibitem[Nixon, 1995]{Nixon95}
+Nixon SW. 1995.
+\newblock Coastal marine eutrophication: A definition, social causes, and
+  future concerns.
+\newblock Ophelia, 41:199--219.
 
 \end{thebibliography}

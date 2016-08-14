@@ -45,7 +45,7 @@ invisible(dev.off())
 # set global chunk options
 library(knitr)
 opts_chunk$set(fig.path='fig/', fig.align='center', fig.show='hold',message=F,echo=F,results='asis',dev='pdf',dev.args=list(family='serif'),fig.pos='!ht',warning=F)
-options(replace.assign=T,width=90,digits=1)
+options(replace.assign=T,width=90)
 @
 
 % dependent data
@@ -117,8 +117,68 @@ Monitoring provides information for decision-making based on apparent trends...
 \end{center}
 \end{frame}
 
-<<echo = F, cache = TRUE>>=
+%%%%%%
+\begin{frame}{\textbf{Evaluating estuarine condition}}{\textbf{How do we collect and use data?}}
+\onslide<+->
+\emtxt{The good news}: We are getting better at monitoring - standardized, automated, increased coverage, real-time/continuous \\~\\
+\emtxt{The bad news}: Our ability to use these data for decision-making has not kept pace with availability! \\~\\
+\onslide<+->
+<<theo, fig.height = 3.25, fig.width = 5, out.width = '0.55\\textwidth'>>=
+par(mar = c(4, 4, 0.5, 0.5), family = 'serif')
+x <- seq(1,100)
+y1 <- x^2
+y2 <- 4000 + 10*x
+plot(x, y1, type = 'l', xlab = 'Time', ylab = 'Relative quantities', axes = F, col = pal(5)[4], lty = 2, lwd = 2)
+lines(x, y2, col = pal(5)[4], lty = 1, lwd = 2)
+axis(side = 1, c(1, 100), labels = F)
+axis(side = 2, c(1, 100^2), labels = F)
+legend('topleft', lty = c(2,1), lwd = c(2,2), legend= c('Data', 'Analysis tools'), col = c(pal(5)[4], pal(5)[4]), bty = 'n')
+@
+\end{frame}
+
+%%%%%%
+\begin{frame}{\textbf{Evaluating estuarine condition}}{\textbf{How do we collect and use data?}}
+Most of my research career has focused on using monitoring data to understand effects of eutrophication in one form or another \\~\\
+\onslide<+->
+\begin{quote}
+Eutrophication (noun) - an \emtxt{increase} in the rate of supply of \emtxt{organic matter} to an ecosystem\\
+\hfill -- \cite{Nixon95}
+\end{quote}
+\begin{center}
+\scalebox{1}{
+\begin{tikzpicture}[node distance = 4cm, auto, >=stealth]
+  \onslide<+->{
+  \node[block] (a) {Nutrient Loading};}
+  \onslide<+->{
+	\node[decision] (b)  [right of=a] {Responses};
+ 	\draw[->] (a) -- (b);}
+  \onslide<+->{
+  \draw[decorate,decoration={brace,amplitude=10pt}] [right of=b] (2,-1.5) -- (2,1.5);
+  \node[draw,align=left,draw=none] [right of=b] {\textbf{Changes in:}\\ Chlorophyll\\ Primary Production\\ System Metabolism\\ Dissolved Oxygen};}
+\end{tikzpicture}}
+\end{center}
+\vspace{-0.5cm}\hspace*{15pt}\scalebox{0.7}{\hbox{\tiny Adapted from \cite{Cloern01}}}\\~\\
+\end{frame}
+
+%%%%%%
+\begin{frame}{\textbf{Evaluating estuarine condition}}{\textbf{How do we collect and use data?}}
+\onslide<+->
+\emtxt{Today's talk}: My experience evaluating monitoring data to inform our understanding of the eutrophication paradigm\\~\\
+Water quality trends in the Delta: \\~\\
+\begin{itemize}
+\item \emtxt{Example 1}: Model theory and application \\~\\
+\item \emtxt{Example 2}: Trends over time \\~\\
+\item \emtxt{Example 3}: Selected case studies 
+\end{itemize}
+\end{frame}
+
+\section{Model theory and background}
+
+<<echo = F, cache = TRUE, eval = T, message = F, results = 'hide'>>=
 data("mods_nolag")
+
+pal <- function(x) RColorBrewer::brewer.pal(x, 'GnBu')
+num_col <- 5
 
 # model subset and plot subsets
 row <- 7
@@ -146,15 +206,15 @@ mytheme <- theme_minimal() +
       colour = NA),
     legend.background = element_rect(fill='transparent', 
       colour = NA),
-    strip.background = element_rect(fill = 
-        alpha(pal(5)[5],0.5)),
     legend.key = element_rect(fill = 'transparent', 
       colour = NA),
     axis.line.x = element_line(), 
     axis.line.y = element_line(), 
     axis.ticks.x = element_line(),
     axis.ticks.y = element_line(),
-    axis.ticks.length = unit(.1, "cm")
+    axis.ticks.length = unit(.1, "cm"), 
+    panel.grid.major = element_line(colour = pal(num_col)[3]),
+    panel.grid.minor = element_line(colour = pal(num_col)[2])
     )   
 
 # plots
@@ -167,45 +227,373 @@ p1 <- ggplot(na.omit(mod), aes(x = date, y = exp(res))) +
 p2 <- ggplot(annuals, aes(x = date, y = exp(nrms_value))) + 
   geom_line() + 
   mytheme +
-  scale_y_continuous(limits = c(0, 4)) + 
-  scale_x_date('Time', limits = xlims)
+  scale_y_continuous(ylab, limits = c(0, 4)) + 
+  theme(
+    axis.title.x = element_text(size = 8),
+    axis.title.y = element_text(size = 8)
+    ) + 
+  scale_x_date('Time', limits = xlims) + 
+  ggtitle('Annual')
 
 p3 <- ggplot(seasnls, aes(x = date, y = exp(nrms_value))) + 
   geom_line() + 
   mytheme +
-  scale_x_date('Time', limits = xlims)
+  scale_y_continuous(ylab) + 
+  scale_x_date('Time', limits = xlims) + 
+  theme(
+    axis.title.x = element_text(size = 8),
+    axis.title.y = element_text(size = 8)
+    ) + 
+  ggtitle('Seasonal')
 
 p4 <- ggplot(residus, aes(x = date, y = resfit)) + 
   geom_point() + 
   geom_hline(aes(yintercept = 0)) + 
   mytheme +
-  scale_x_date('Time', limits = xlims)
+  scale_y_continuous(ylab) + 
+  theme(
+    axis.title.x = element_text(size = 8),
+    axis.title.y = element_text(size = 8)
+    ) + 
+  scale_x_date('Time', limits = xlims) + 
+  ggtitle('Residual')
 
 p5 <- dynaplot(mod, mo = 1, logspace = F, years = c(1976, 2000, 2013), col_vec = 'black') + 
   mytheme +
-  theme(legend.position = 'none', strip.text.x = element_blank()) + 
-  scale_x_continuous('Flow')
+  theme(
+    legend.position = 'none', 
+    strip.text.x = element_blank(),
+    axis.title.x = element_text(size = 8),
+    axis.title.y = element_text(size = 8)
+    ) + 
+  scale_y_continuous(ylab) + 
+  scale_x_continuous('Flow') + 
+  ggtitle('Flow effects')
 
-ht <- 1.75
-wd <- 4
-tiff('figs/schematic1.tif', height = ht, width = wd, units = 'in', compression = 'lzw', res = 400, family = 'serif')
+pdf('fig/ts_ex.pdf', height = 2, width = 12, family = 'serif')
 p1
 dev.off()
-tiff('figs/schematic2.tif', height = ht, width = wd, units = 'in', compression = 'lzw', res = 400, family = 'serif')
+
+ht <- 1.75
+wd <- 4.5
+
+pdf('fig/schematic2.pdf', height = ht, width = wd, family = 'serif')
 p2
 dev.off()
-tiff('figs/schematic3.tif', height = ht, width = wd, units = 'in', compression = 'lzw', res = 400, family = 'serif')
+pdf('fig/schematic3.pdf', height = ht, width = wd, family = 'serif')
 p3
 dev.off()
-tiff('figs/schematic4.tif', height = ht, width = wd, units = 'in', compression = 'lzw', res = 400, family = 'serif')
+pdf('fig/schematic4.pdf', height = ht, width = wd, family = 'serif')
 p4
 dev.off()
-tiff('figs/schematic5.tif', height = ht, width = wd, units = 'in', compression = 'lzw', res = 400, family = 'serif')
+pdf('fig/schematic5.pdf', height = ht, width = wd, family = 'serif')
 p5
 dev.off()
-
-
 @
+
+%%%%%%
+\begin{frame}{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
+Increasing availability of records describing \emtxt{long-term changes} \\~\\
+Observed data can provide a means to an end, potentially \emtxt{high power} with large sample size \\~\\
+Can we \emtxt{develop} and \emtxt{apply} tools that leverage the descriptive capabilities of these large datasets? \\~\\
+Can we \emtxt{link descriptions} to \emtxt{causal events} to inform management or understanding? \\~\\
+\begin{figure}
+\centerline{\includegraphics[width = \textwidth]{fig/ts_ex.pdf}}
+\end{figure}
+\end{frame}
+
+%%%%%%
+\begin{frame}[t]{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
+{\bf \centerline{Observed data represents effects of many processes}}
+\vspace{0.2in}
+\centerline{\includegraphics[width = \textwidth]{fig/ts_ex.pdf}}
+\vspace{0.2in}
+\begin{columns}[t]
+\begin{column}{0.3\textwidth}
+{\bf \underline{\emtxt{Climate}}}\\
+precipitation\\
+temperature\\
+wind events\\
+ENSO effects
+\end{column}
+\begin{column}{0.3\textwidth}
+{\bf \underline{\emtxt{Local}}}\\
+light/turbidity\\
+residence time\\
+invasive species\\
+trophic effects
+\end{column}
+\begin{column}{0.3\textwidth}
+{\bf \underline{\emtxt{Regional/historical}}}\\
+watershed inputs\\
+point sources\\
+management actions
+flow changes
+\end{column}
+\end{columns}
+\end{frame}
+
+%%%%%%
+\begin{frame}[t]{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
+\onslide<+->
+{\bf \centerline{Observed data represents effects of many processes}}
+\vspace{0.2in}
+\centerline{\includegraphics[width = \textwidth]{fig/ts_ex.pdf}}
+\centerline{Models should describe components to evaluate effects}
+\vspace{-0.1in}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\onslide<+->{
+\centerline{\includegraphics[width = 0.8\textwidth]{fig/schematic2.pdf}}
+\centerline{\includegraphics[width = 0.8\textwidth]{fig/schematic3.pdf}}
+}
+\end{column}
+\begin{column}{0.5\textwidth}
+\onslide<+->{
+\centerline{\includegraphics[width = 0.8\textwidth]{fig/schematic4.pdf}}
+\centerline{\includegraphics[width = 0.8\textwidth]{fig/schematic5.pdf}}
+}
+\end{column}
+\end{columns}
+\end{frame}
+
+%%%%%%
+\begin{frame}[t]{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
+\emtxt{Problem:} Response endpoints of eutrophication vary naturally over time and with discharge or tidal patterns\\~\\
+\emtxt{Solution:} Develop a model that accounts for changes in relationships between drivers of pollution over time\\~\\
+The \emtxt{weighted regression (WRTDS)} model is being developed by USGS for pollutant modelling in rivers \cite{Hirsch10}\\~\\
+Models pollution concentration as a function of \emtxt{time}, \emtxt{discharge}, and \emtxt{season}\\~\\
+\emtxt{Adaptation:} Applied to Tampa Bay \cite{Beck15}, further validated/compared in Patuxent Estuary [Beck and Murphy, In review]
+\end{frame}
+
+<<wtex, echo = F, results = 'hide', message = F, eval = F>>=
+load('data/epc_tb_dat.RData')
+load('data/epc_est_act.RData')
+
+pal <- function(x) RColorBrewer::brewer.pal(x, 'GnBu')
+num_col <- 5
+
+# default theme
+mytheme <- theme_minimal() + 
+  theme(
+    plot.background = element_rect(fill='transparent', 
+      colour = NA),
+    panel.background = element_rect(fill='transparent', 
+      colour = NA),
+    legend.background = element_rect(fill='transparent', 
+      colour = NA),
+    legend.key = element_rect(fill = 'transparent', 
+      colour = NA),
+    axis.line.x = element_line(), 
+    axis.line.y = element_line(), 
+    axis.ticks.x = element_line(),
+    axis.ticks.y = element_line(),
+    axis.ticks.length = unit(.1, "cm"), 
+    panel.grid.major = element_line(colour = pal(num_col)[3]),
+    panel.grid.minor = element_line(colour = pal(num_col)[2])
+    )   
+
+dat.in <- data.frame(tb.dat, pred = epc.est.act$fit.md)
+dat.in <- dat.in[dat.in$year>=2000 & dat.in$year <=2010,]
+dat.in <- dat.in[dat.in$seg=='Hillsborough Bay',]
+
+row_exs <- 1:nrow(dat.in)
+
+pdf('fig/wtex.pdf', height = 3.75, width = 8, family = 'serif')
+for(row_ex in row_exs){
+  
+  cat(row_ex, '\t')
+  
+  ref.in<-dat.in[row_ex,]
+
+  ##
+  #random year, month, load, one year, wts separated
+  ref.wt<-wt.fun(ref.in,dat.in,all=T)
+  yr.sub<-format(dat.in$date.f,'%Y')==ref.in$year
+  titles<-with(
+    ref.in,
+    c(as.character(month.name),year,substitute(italic(Sal[ff])~sal,list(sal=as.character(round(ref.in$sal.ref,2)))),
+    'All'),
+  )
+  
+  p1.dat<-data.frame(Month=dat.in$date.f[yr.sub],Wt=ref.wt[yr.sub,1])
+  p1<-ggplot(p1.dat,aes(x=Month,y=Wt)) + 
+    geom_line() + 
+    ggtitle(titles[[1]]) +
+    scale_y_continuous(name=element_blank(),limits=c(0,1)) +
+    scale_x_date(date_labels="%b", name=element_blank()) +
+    mytheme
+  
+  p2.dat<-data.frame(Date=dat.in$date.f,Wt=ref.wt[,2])
+  p2<-ggplot(p2.dat,aes(x=Date,y=Wt)) + 
+    geom_line() + 
+    scale_x_date(name=element_blank(),breaks = as.Date(range(dat.in$date.f)), date_labels = "%Y") +
+    scale_y_continuous(name=element_blank(),limits=c(0,1)) +
+    ggtitle(titles[[2]]) +
+    mytheme
+  
+  #p3 xlims
+  p3x0 <- paste0(as.numeric(ref.in$year)-2,'-01-01')
+  p3x1 <- paste0(as.numeric(ref.in$year)+2,'-01-01')
+  p3.dat<-data.frame(Date=dat.in$date.f,Wt=ref.wt[,3],
+    sal.ref=dat.in$sal.ref)
+  yint<-which(dat.in$sal.ref==ref.in$sal.ref)
+  p3<-ggplot(p3.dat,aes(x=Date,y=Wt)) + 
+    geom_line() + 
+    #geom_line(aes(y=sal.ref),col='red') + 
+    geom_hline(yintercept=p3.dat[yint,'sal.ref'],col='black',lwd=1.4,lty=2) +
+    scale_y_continuous(name=element_blank(),limits=c(0,1)) +
+    scale_x_date(name=element_blank(),limits=as.Date(c(p3x0,p3x1)), breaks = as.Date(c(p3x0,p3x1)), date_labels = "%Y") +
+    ggtitle(titles[[3]]) +
+    mytheme
+  
+  p4.dat<-data.frame(Date=dat.in$date.f,Wt=ref.wt[,1]*ref.wt[,2]*ref.wt[,3])
+  p4<-ggplot(p4.dat,aes(x=Date,y=Wt)) + 
+    geom_line() + 
+    scale_x_date(name=element_blank(),breaks = as.Date(range(dat.in$date.f)), date_labels = "%Y") +
+    scale_y_continuous(name=element_blank(),limits=c(0,1)) +
+    ggtitle(titles[[4]]) + 
+    mytheme
+  
+  ##
+  #ggplot showing point size and color in relation to total weight
+  p.dat<-data.frame(
+    Date=dat.in$date.f,
+    Chla_ugl=dat.in$Chla_ugl,
+    pred = dat.in$pred,
+    sal.ref=dat.in$sal.ref,
+    month.wt=ref.wt[,1],
+    year.wt=ref.wt[,2],
+    sal.wt=ref.wt[,3],
+    all.wt=ref.wt[,1]*ref.wt[,2]*ref.wt[,3]
+  )
+  
+  title.val<-substitute(
+    mo~yr~italic(Sal[ff])~sal,
+    list(mo=as.character(ref.in$month.name),yr=paste0(ref.in$year,', '),sal=as.character(round(ref.in$sal.ref,2)))
+    )
+   
+  # predicted values to plot
+  preds <- p.dat[1:row_ex, ]
+  
+  ylabs<-expression(paste('Chlorophyll-',italic(a),' (',italic('\u03bc'),'g ',L^-1,')'))
+  p.dat.plo<-ggplot(p.dat,aes(x=Date,y=Chla_ugl)) +
+    geom_point(aes(size=all.wt,colour=all.wt)) +
+    scale_y_continuous(limit=c(0,4.5),name=ylabs) +
+    scale_x_date(name=element_blank()) +
+    scale_size(range=c(2,12)) +
+    geom_line(data = preds, aes(x = Date, y = pred), size = 1.3, alpha = 0.6) +
+    ggtitle(title.val) + 
+    mytheme +
+    scale_colour_gradientn(colours = pal(5)[2:5]) +
+    theme(legend.position = 'none')
+  
+  grid.arrange(
+      p.dat.plo,
+      arrangeGrob(p1,p2,p3,p4,nrow=2,left=textGrob('Weights',rot=90)), ncol = 2
+    )
+}
+
+dev.off()
+@
+
+%%%%%%
+\begin{frame}{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
+How does weighted regression work?
+\begin{center}
+\animategraphics[controls,width=\linewidth]{10}{fig/wtex}{}{} %frame rate is 12 per/sec
+\end{center}
+\end{frame}
+ 
+<<map, echo = F, include = F, results = 'hide'>>=
+# load required data
+data(delt_dat)
+data(delt_map)
+
+pal <- function(x) RColorBrewer::brewer.pal(x, 'GnBu')
+num_col <- 5
+cols <- c('#D53E4F', '#4DAF4A', '#377EB8') # red, green, blue
+
+# default theme
+mytheme <- theme_minimal() + 
+  theme(
+    plot.background = element_rect(fill='transparent', 
+      colour = NA),
+    panel.background = element_rect(fill='transparent', 
+      colour = NA),
+    legend.background = element_rect(fill='transparent', 
+      colour = NA),
+    legend.key = element_rect(fill = 'transparent', 
+      colour = NA),
+    axis.line.x = element_line(), 
+    axis.line.y = element_line(), 
+    axis.ticks.x = element_line(),
+    axis.ticks.y = element_line(),
+    axis.ticks.length = unit(.1, "cm"), 
+    panel.grid.major = element_line(colour = alpha(pal(num_col)[3], 0.6)),
+    panel.grid.minor = element_line(colour = alpha(pal(num_col)[2], 0.6)), 
+    axis.title.x = element_blank(), 
+    axis.title.y = element_blank()
+    )   
+
+##
+# get a bounding box for the stations
+statmeta <- select(delt_dat, Site_Code, Latitude, Longitude) %>% 
+  unique
+
+# flo variable locations
+sacsjr <- data.frame(
+  flovar = c('Sacramento R.', 'San Joaquin R.'), 
+  Latitude = c(38.45602, 37.67604), 
+  Longitude = c(-121.5013, -121.2663)
+  )
+
+# bounding box
+buffx <- 0
+buffy <- 0
+lims<- select(statmeta, -Site_Code) %>% 
+  rbind(sacsjr[, !names(sacsjr) %in% 'flovar']) %>% 
+  apply(., 2, function(x) range(x, na.rm = TRUE))
+lims <- c(
+  (1 + buffx) * lims[1, 2], 
+  (1 - buffy) * lims[1, 1], 
+  (0.9995 - buffx) * lims[2, 2], 
+  (1 + buffy) * lims[2, 1]
+  )    
+names(lims) <- c('left', 'bottom', 'right', 'top')
+
+# base delta map
+pdelta <- ggplot(delt_map, aes(x = long, y = lat)) + 
+  geom_polygon(aes(group = group, fill = hole), colour = 'cornflowerblue') +
+  mytheme + 
+  coord_fixed(ratio = 1, xlim = lims[c(1, 3)], ylim = lims[c(2, 4)]) +
+  scale_fill_manual(values = c("cornflowerblue", pal(num_col)[1]), guide = "none") +
+  geom_label(data = sacsjr[1, ], aes(x = Longitude, y = Latitude, label = flovar), fill = cols[1]) +
+  geom_label_repel(data = sacsjr[2, ], aes(x = Longitude, y = Latitude, label = flovar), fill = cols[1],
+    point.padding = unit(2, "lines"), force = 2.5) +
+  geom_label(data = statmeta, aes(x = Longitude, y = Latitude, label = Site_Code), fill = cols[2])
+
+pdf('fig/stations.pdf', height = 4, width = 5, family = 'serif')
+pdelta
+dev.off()
+@	     
+ 
+%%%%%%
+\begin{frame}{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}} 
+Application to Delta:\\~\\
+\begin{columns}
+\begin{column}{0.4\textwidth}
+\begin{itemize}
+\item Nine stations (three Suisun, three middle, three delta) \\~\\
+\item Three analytes (DIN, ammonium, nitrite/nitrate), two flow records \\~\\
+\item Four decades of data
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\centerline{\includegraphics[width = \textwidth]{fig/stations.pdf}}
+\end{column}
+\end{columns}
+\end{frame}
 
 %%%%%%
 \begin{frame}
