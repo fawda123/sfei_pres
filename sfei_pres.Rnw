@@ -305,9 +305,9 @@ Can we \emtxt{link descriptions} to \emtxt{causal events} to inform management o
 %%%%%%
 \begin{frame}[t]{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
 {\bf \centerline{Observed data represents effects of many processes}}
-\vspace{0.2in}
+\vspace{0.15in}
 \centerline{\includegraphics[width = \textwidth]{fig/ts_ex.pdf}}
-\vspace{0.2in}
+\vspace{0.15in}
 \begin{columns}[t]
 \begin{column}{0.3\textwidth}
 {\bf \underline{\emtxt{Climate}}}\\
@@ -337,7 +337,7 @@ flow changes
 \begin{frame}[t]{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
 \onslide<+->
 {\bf \centerline{Observed data represents effects of many processes}}
-\vspace{0.2in}
+\vspace{0.15in}
 \centerline{\includegraphics[width = \textwidth]{fig/ts_ex.pdf}}
 \centerline{Models should describe components to evaluate effects}
 \vspace{-0.1in}
@@ -580,19 +580,159 @@ dev.off()
  
 %%%%%%
 \begin{frame}{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}} 
-Application to Delta:\\~\\
+{\bf \centerline{Application to Delta}}
 \begin{columns}
-\begin{column}{0.4\textwidth}
+\begin{column}{0.45\textwidth}
 \begin{itemize}
 \item Nine stations (three Suisun, three middle, three delta) \\~\\
 \item Three analytes (DIN, ammonium, nitrite/nitrate), two flow records \\~\\
-\item Four decades of data
+\item Four decades of data, 1976-2013
 \end{itemize}
 \end{column}
-\begin{column}{0.5\textwidth}
-\centerline{\includegraphics[width = \textwidth]{fig/stations.pdf}}
+\begin{column}{0.45\textwidth}
+\begin{figure}
+\begin{center}
+\includegraphics[width = \textwidth]{fig/stations.pdf}
+\caption{Stations (green) and flow estimates (red) modelled with WRTDS}
+\end{center}
+\end{figure}
 \end{column}
 \end{columns}
+\end{frame}
+
+<<eval = F, echo = F, results = 'hide', message = F>>=
+data(delt_dat)
+data(mods_nolag)
+data(delt_map)
+
+pal <- RColorBrewer::brewer.pal(5, 'GnBu')
+
+colfun <- function(vals, pal = 'Spectral', ncol = 10){
+
+  pal <- rev(RColorBrewer::brewer.pal(ncol, pal))
+  palfun <- colorRamp(pal)
+  
+  valscl <- (vals - min(vals, na.rm = T)) / diff(range(vals, na.rm = T))
+  valna <- is.na(valscl)
+  cols <- palfun(valscl)
+  out <- rep(NA, length = length(valscl))
+  out[!valna] <- rgb(cols[!valna, ], maxColorValue=256)
+  
+  return(out)
+  
+}
+
+##
+# get a bounding box for the stations
+statmeta <- select(delt_dat, Site_Code, Latitude, Longitude) %>% 
+  unique
+
+# aggregate all model fits by month, long format, add locations
+modagg <- mods_nolag %>% 
+  filter(resvar %in% 'din') %>% 
+  mutate(mod = 
+    map(mod, function(x){
+      out <- group_by(x, year, month) %>% 
+      summarise(
+        fit = median(fit0.5, na.rm = T)
+        )
+      out
+    })
+  ) %>% 
+  select(Site_Code, resvar, mod) %>% 
+  unnest %>% 
+  unite(date, year:month, sep = '-', remove = F) %>% 
+  filter(year %in% c(1980:1989)) %>% 
+  mutate(
+    valsz = scales::rescale(fit, c(2, 17)),
+    valcl = colfun(fit),
+    date = as.Date(paste0(date, '-1'), format = '%Y-%m-%d'),
+    month = factor(month, levels = c(1:12), labels = c('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'))
+    ) %>% 
+  unite(datetxt, month:year, sep = ' ') %>% 
+  left_join(., statmeta, by = 'Site_Code') 
+
+# default theme
+mytheme <- theme_minimal() + 
+  theme(
+    plot.background = element_rect(fill='transparent', 
+      colour = NA),
+    panel.background = element_rect(fill='transparent', 
+      colour = NA),
+    legend.background = element_rect(fill='transparent', 
+      colour = NA),
+    legend.key = element_rect(fill = 'transparent', 
+      colour = NA),
+    axis.line.x = element_line(), 
+    axis.line.y = element_line(), 
+    axis.ticks.x = element_line(),
+    axis.ticks.y = element_line(),
+    axis.ticks.length = unit(.1, "cm"), 
+    panel.grid.major = element_line(colour = alpha(pal[3], 0.6)),
+    panel.grid.minor = element_line(colour = alpha(pal[2], 0.6)), 
+    axis.title.x = element_blank(), 
+    axis.title.y = element_blank()
+    )   
+
+# bounding box
+buffx <- 0
+buffy <- 0
+lims<- select(statmeta, -Site_Code) %>% 
+  apply(., 2, function(x) range(x, na.rm = TRUE))
+lims <- c(
+  (1 + buffx) * lims[1, 2], 
+  (1 - buffy) * lims[1, 1], 
+  (0.9995 - buffx) * lims[2, 2], 
+  (1 + buffy) * lims[2, 1]
+  )    
+names(lims) <- c('left', 'bottom', 'right', 'top')
+
+moyrs <- unique(modagg$date)
+
+pdf('fig/trnds.pdf', height = 4.5, width = 9, family = 'serif')
+for(moyr in moyrs){
+
+  cat(moyr, '\t')
+  toplo <- filter(modagg, date %in% moyr)
+  
+  p1 <- ggplot(delt_map, aes(x = long, y = lat)) + 
+    geom_polygon(aes(group = group, fill = hole), colour = 'cornflowerblue') +
+    mytheme + 
+    coord_fixed(ratio = 1, xlim = lims[c(1, 3)], ylim = lims[c(2, 4)]) +
+    scale_fill_manual(values = c("cornflowerblue", pal[1]), guide = "none") +
+    geom_text(data = toplo, aes(x = Longitude + 0.07, y = Latitude, label = Site_Code)) + 
+    geom_point(data = toplo, aes(x = Longitude, y = Latitude), 
+      colour = toplo$valcl, 
+      size = toplo$valsz,
+      alpha = 0.85
+      ) + 
+    ggtitle(unique(toplo$datetxt))
+  p2 <- ggplot(modagg, aes(x = date, y = fit)) + 
+    geom_line() +
+    mytheme + 
+    theme(
+      panel.grid.minor = element_blank(),
+      axis.title.y = element_text(angle = 90),
+      axis.text.y = element_text(size = 8)
+    ) +
+    scale_x_date(expand = c(0, 0)) + 
+    geom_vline(xintercept = as.numeric(moyr)) + 
+    facet_grid(Site_Code ~ .) + 
+    scale_y_continuous('ln-DIN')
+
+  grid.arrange(p2, p1, ncol = 2, widths = c(0.5, 1))
+  
+}
+dev.off()
+@
+
+%%%%%%
+\begin{frame}{\textbf{Trends over time}}{\textbf{Nitrogen dynamics in the Delta}} 
+{\bf \centerline{Predicted DIN trends, 1980-1990}}
+\vspace{0.05in}
+\centerline{
+\animategraphics[controls,width=\linewidth]{7}{fig/trnds}{}{} %frame rate is 10 per/sec
+}
 \end{frame}
 
 %%%%%%

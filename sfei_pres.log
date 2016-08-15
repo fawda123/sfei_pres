@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.8.29)  14 AUG 2016 15:59
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.8.29)  15 AUG 2016 12:59
 entering extended mode
 **sfei_pres.tex
 (M:\presentations\sfei_pres\sfei_pres.tex
@@ -1605,7 +1605,7 @@ File: fig/schematic5.pdf Graphic file (type pdf)
 Package pdftex.def Info: fig/schematic5.pdf used on input line 248.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 
-Overfull \vbox (18.0489pt too high) detected at line 248
+Overfull \vbox (14.4352pt too high) detected at line 248
  []
 
 File: fig/back_tmp.pdf Graphic file (type pdf)
@@ -1640,7 +1640,7 @@ File: fig/schematic5.pdf Graphic file (type pdf)
 Package pdftex.def Info: fig/schematic5.pdf used on input line 248.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 
-Overfull \vbox (18.0489pt too high) detected at line 248
+Overfull \vbox (14.4352pt too high) detected at line 248
  []
 
 File: fig/back_tmp.pdf Graphic file (type pdf)
@@ -1672,7 +1672,7 @@ File: fig/schematic5.pdf Graphic file (type pdf)
 Package pdftex.def Info: fig/schematic5.pdf used on input line 248.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 
-Overfull \vbox (18.0489pt too high) detected at line 248
+Overfull \vbox (14.4352pt too high) detected at line 248
  []
 
 File: fig/back_tmp.pdf Graphic file (type pdf)
@@ -1779,46 +1779,127 @@ Package pdftex.def Info: fig/back_tmp.pdf used on input line 267.
 File: fig/stations.pdf Graphic file (type pdf)
 
 <use fig/stations.pdf>
-Package pdftex.def Info: fig/stations.pdf used on input line 286.
-(pdftex.def)             Requested size: 171.14764pt x 136.91742pt.
+Package pdftex.def Info: fig/stations.pdf used on input line 291.
+(pdftex.def)             Requested size: 154.03183pt x 123.22568pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 286.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 291.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [17
 
- <M:/presentations/sfei_pres/fig/stations.pdf>] <fig/epa_logo.png, id=940, 195.
-6108pt x 196.0926pt>
-File: fig/epa_logo.png Graphic file (type png)
-
-<use fig/epa_logo.png>
-Package pdftex.def Info: fig/epa_logo.png used on input line 313.
-(pdftex.def)             Requested size: 68.45801pt x 68.62445pt.
+ <M:/presentations/sfei_pres/fig/stations.pdf>] <M:/presentations/sfei_pres/fig
+/trnds.pdf> <1> <M:/presentations/sfei_pres/fig/trnds.pdf> <2> <M:/presentation
+s/sfei_pres/fig/trnds.pdf>
+<3> <M:/presentations/sfei_pres/fig/trnds.pdf> <4> <M:/presentations/sfei_pres/
+fig/trnds.pdf> <5> <M:/presentations/sfei_pres/fig/trnds.pdf> <6> <M:/presentat
+ions/sfei_pres/fig/trnds.pdf> <7> <M:/presentations/sfei_pres/fig/trnds.pdf>
+<8> <M:/presentations/sfei_pres/fig/trnds.pdf> <9> <M:/presentations/sfei_pres/
+fig/trnds.pdf> <10> <M:/presentations/sfei_pres/fig/trnds.pdf> <11> <M:/present
+ations/sfei_pres/fig/trnds.pdf> <12> <M:/presentations/sfei_pres/fig/trnds.pdf>
+<13> <M:/presentations/sfei_pres/fig/trnds.pdf> <14> <M:/presentations/sfei_pre
+s/fig/trnds.pdf> <15> <M:/presentations/sfei_pres/fig/trnds.pdf> <16> <M:/prese
+ntations/sfei_pres/fig/trnds.pdf> <17> <M:/presentations/sfei_pres/fig/trnds.pd
+f> <18> <M:/presentations/sfei_pres/fig/trnds.pdf> <19> <M:/presentations/sfei_
+pres/fig/trnds.pdf> <20> <M:/presentations/sfei_pres/fig/trnds.pdf> <21> <M:/pr
+esentations/sfei_pres/fig/trnds.pdf> <22> <M:/presentations/sfei_pres/fig/trnds
+.pdf> <23> <M:/presentations/sfei_pres/fig/trnds.pdf> <24> <M:/presentations/sf
+ei_pres/fig/trnds.pdf> <25> <M:/presentations/sfei_pres/fig/trnds.pdf> <26> <M:
+/presentations/sfei_pres/fig/trnds.pdf> <27> <M:/presentations/sfei_pres/fig/tr
+nds.pdf> <28> <M:/presentations/sfei_pres/fig/trnds.pdf> <29> <M:/presentations
+/sfei_pres/fig/trnds.pdf> <30> <M:/presentations/sfei_pres/fig/trnds.pdf> <31> 
+<M:/presentations/sfei_pres/fig/trnds.pdf> <32> <M:/presentations/sfei_pres/fig
+/trnds.pdf> <33> <M:/presentations/sfei_pres/fig/trnds.pdf> <34> <M:/presentati
+ons/sfei_pres/fig/trnds.pdf> <35> <M:/presentations/sfei_pres/fig/trnds.pdf>
+<36> <M:/presentations/sfei_pres/fig/trnds.pdf> <37> <M:/presentations/sfei_pre
+s/fig/trnds.pdf> <38> <M:/presentations/sfei_pres/fig/trnds.pdf> <39> <M:/prese
+ntations/sfei_pres/fig/trnds.pdf> <40> <M:/presentations/sfei_pres/fig/trnds.pd
+f> <41> <M:/presentations/sfei_pres/fig/trnds.pdf> <42> <M:/presentations/sfei_
+pres/fig/trnds.pdf> <43> <M:/presentations/sfei_pres/fig/trnds.pdf> <44> <M:/pr
+esentations/sfei_pres/fig/trnds.pdf> <45> <M:/presentations/sfei_pres/fig/trnds
+.pdf> <46> <M:/presentations/sfei_pres/fig/trnds.pdf> <47> <M:/presentations/sf
+ei_pres/fig/trnds.pdf> <48> <M:/presentations/sfei_pres/fig/trnds.pdf> <49> <M:
+/presentations/sfei_pres/fig/trnds.pdf> <50> <M:/presentations/sfei_pres/fig/tr
+nds.pdf> <51> <M:/presentations/sfei_pres/fig/trnds.pdf> <52> <M:/presentations
+/sfei_pres/fig/trnds.pdf> <53> <M:/presentations/sfei_pres/fig/trnds.pdf> <54> 
+<M:/presentations/sfei_pres/fig/trnds.pdf> <55> <M:/presentations/sfei_pres/fig
+/trnds.pdf> <56> <M:/presentations/sfei_pres/fig/trnds.pdf> <57> <M:/presentati
+ons/sfei_pres/fig/trnds.pdf> <58> <M:/presentations/sfei_pres/fig/trnds.pdf>
+<59> <M:/presentations/sfei_pres/fig/trnds.pdf> <60> <M:/presentations/sfei_pre
+s/fig/trnds.pdf> <61> <M:/presentations/sfei_pres/fig/trnds.pdf> <62> <M:/prese
+ntations/sfei_pres/fig/trnds.pdf> <63> <M:/presentations/sfei_pres/fig/trnds.pd
+f> <64> <M:/presentations/sfei_pres/fig/trnds.pdf> <65> <M:/presentations/sfei_
+pres/fig/trnds.pdf> <66> <M:/presentations/sfei_pres/fig/trnds.pdf> <67> <M:/pr
+esentations/sfei_pres/fig/trnds.pdf> <68> <M:/presentations/sfei_pres/fig/trnds
+.pdf> <69> <M:/presentations/sfei_pres/fig/trnds.pdf> <70> <M:/presentations/sf
+ei_pres/fig/trnds.pdf> <71> <M:/presentations/sfei_pres/fig/trnds.pdf> <72> <M:
+/presentations/sfei_pres/fig/trnds.pdf> <73> <M:/presentations/sfei_pres/fig/tr
+nds.pdf> <74> <M:/presentations/sfei_pres/fig/trnds.pdf> <75> <M:/presentations
+/sfei_pres/fig/trnds.pdf> <76> <M:/presentations/sfei_pres/fig/trnds.pdf> <77> 
+<M:/presentations/sfei_pres/fig/trnds.pdf> <78> <M:/presentations/sfei_pres/fig
+/trnds.pdf> <79> <M:/presentations/sfei_pres/fig/trnds.pdf> <80> <M:/presentati
+ons/sfei_pres/fig/trnds.pdf> <81> <M:/presentations/sfei_pres/fig/trnds.pdf>
+<82> <M:/presentations/sfei_pres/fig/trnds.pdf> <83> <M:/presentations/sfei_pre
+s/fig/trnds.pdf> <84> <M:/presentations/sfei_pres/fig/trnds.pdf> <85> <M:/prese
+ntations/sfei_pres/fig/trnds.pdf> <86> <M:/presentations/sfei_pres/fig/trnds.pd
+f> <87> <M:/presentations/sfei_pres/fig/trnds.pdf> <88> <M:/presentations/sfei_
+pres/fig/trnds.pdf> <89> <M:/presentations/sfei_pres/fig/trnds.pdf> <90> <M:/pr
+esentations/sfei_pres/fig/trnds.pdf> <91> <M:/presentations/sfei_pres/fig/trnds
+.pdf> <92> <M:/presentations/sfei_pres/fig/trnds.pdf> <93> <M:/presentations/sf
+ei_pres/fig/trnds.pdf> <94> <M:/presentations/sfei_pres/fig/trnds.pdf> <95> <M:
+/presentations/sfei_pres/fig/trnds.pdf> <96> <M:/presentations/sfei_pres/fig/tr
+nds.pdf> <97> <M:/presentations/sfei_pres/fig/trnds.pdf> <98> <M:/presentations
+/sfei_pres/fig/trnds.pdf> <99> <M:/presentations/sfei_pres/fig/trnds.pdf>
+<100> <M:/presentations/sfei_pres/fig/trnds.pdf> <101> <M:/presentations/sfei_p
+res/fig/trnds.pdf> <102> <M:/presentations/sfei_pres/fig/trnds.pdf> <103> <M:/p
+resentations/sfei_pres/fig/trnds.pdf> <104> <M:/presentations/sfei_pres/fig/trn
+ds.pdf> <105> <M:/presentations/sfei_pres/fig/trnds.pdf> <106> <M:/presentation
+s/sfei_pres/fig/trnds.pdf> <107> <M:/presentations/sfei_pres/fig/trnds.pdf>
+<108> <M:/presentations/sfei_pres/fig/trnds.pdf> <109> <M:/presentations/sfei_p
+res/fig/trnds.pdf> <110> <M:/presentations/sfei_pres/fig/trnds.pdf> <111> <M:/p
+resentations/sfei_pres/fig/trnds.pdf> <112> <M:/presentations/sfei_pres/fig/trn
+ds.pdf> <113> <M:/presentations/sfei_pres/fig/trnds.pdf> <114> <M:/presentation
+s/sfei_pres/fig/trnds.pdf> <115> <M:/presentations/sfei_pres/fig/trnds.pdf>
+<116> <M:/presentations/sfei_pres/fig/trnds.pdf> <117> <M:/presentations/sfei_p
+res/fig/trnds.pdf> <118> <M:/presentations/sfei_pres/fig/trnds.pdf> <119> <M:/p
+resentations/sfei_pres/fig/trnds.pdf> <120>
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 313.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 302.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [18
 
- <M:/presentations/sfei_pres/fig/epa_logo.png>] (M:\presentations\sfei_pres\sfe
-i_pres.bbl)
+]
+<fig/epa_logo.png, id=1572, 195.6108pt x 196.0926pt>
+File: fig/epa_logo.png Graphic file (type png)
+ <use fig/epa_logo.png>
+Package pdftex.def Info: fig/epa_logo.png used on input line 329.
+(pdftex.def)             Requested size: 68.45801pt x 68.62445pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
 
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 322.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 329.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
-Package atenddvi Info: Last page = 19.
  [19
+
+ <M:/presentations/sfei_pres/fig/epa_logo.png>]
+(M:\presentations\sfei_pres\sfei_pres.bbl)
+File: fig/back_tmp.pdf Graphic file (type pdf)
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 338.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+Package atenddvi Info: Last page = 20.
+ [20
 
 ]
 \tf@nav=\write6
 \tf@toc=\write7
 \tf@snm=\write8
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 324.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 324.
- (M:\presentations\sfei_pres\sfei_pres.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 324.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 324.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 340.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 340.
+
+(M:\presentations\sfei_pres\sfei_pres.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 340.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 340.
 Package rerunfilecheck Info: File `sfei_pres.out' has not changed.
 (rerunfilecheck)             Checksum: AA07146E2A6092644E0B2612B35CCEA3;155.
 
@@ -1826,13 +1907,13 @@ Package rerunfilecheck Info: File `sfei_pres.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 324.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 340.
  ) 
 Here is how much of TeX's memory you used:
- 32780 strings out of 493921
- 672948 string characters out of 3147282
- 722319 words of memory out of 3000000
- 35426 multiletter control sequences out of 15000+200000
+ 33288 strings out of 493921
+ 683095 string characters out of 3147282
+ 723534 words of memory out of 3000000
+ 35931 multiletter control sequences out of 15000+200000
  10513 words of font info for 39 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  48i,16n,82p,10379b,909s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1845,9 +1926,9 @@ e1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.p
 fb>
-Output written on sfei_pres.pdf (19 pages, 2161051 bytes).
+Output written on sfei_pres.pdf (20 pages, 5463182 bytes).
 PDF statistics:
- 1002 PDF objects out of 1200 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
- 2537 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1635 PDF objects out of 1728 (max. 8388607)
+ 50 named destinations out of 1000 (max. 500000)
+ 4586 words of extra memory for PDF output out of 10000 (max. 10000000)
 
