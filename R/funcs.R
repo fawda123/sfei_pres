@@ -30,7 +30,7 @@ trnd_map <- function(res,
   yrlabs = c('1976-1988', '1989-2000', '2001-2012'),
   buffx = 0.00025,
   buffy = 0.001,
-  cols =  c('#E41A1C', '#4DAF4A'),
+  cols =  c('#D53E4F', '#4DAF4A'),
   sz_rng = c(2, 11),
   shps = c(24, 25),
   ndivs = 6,
@@ -83,14 +83,25 @@ trnd_map <- function(res,
   # base delta map
   pbase <- ggplot(delt_map, aes(x = long, y = lat)) + 
     geom_polygon(aes(group = group, fill = hole), colour = "cornflowerblue") +
-    theme_bw() +
+    theme_bw() + 
     theme(
-      axis.title.x=element_blank(),
-      axis.title.y=element_blank(),
-      panel.background=element_blank(),panel.grid.major=element_blank(),
-      panel.grid.minor=element_blank(),plot.background=element_blank(), 
+      plot.background = element_rect(fill='transparent', 
+        colour = NA),
+      panel.background = element_rect(fill='transparent', 
+        colour = NA),
+      legend.background = element_rect(fill='transparent', 
+        colour = NA),
+      legend.key = element_rect(fill = 'transparent', 
+        colour = NA),
+      axis.ticks.x = element_line(),
+      axis.ticks.y = element_line(),
+      axis.ticks.length = unit(.1, "cm"), 
+      panel.grid.major = element_line(colour = alpha('#7BCCC4', 0.6)),
+      panel.grid.minor = element_blank(), 
+      axis.title.x = element_blank(), 
+      axis.title.y = element_blank(), 
       legend.position = 'none'
-      ) +  
+    ) +
     coord_fixed(ratio = 1, xlim = lims[c(1, 3)], ylim = lims[c(2, 4)])
 
   # some formatting for the variable to plot
@@ -131,8 +142,8 @@ trnd_map <- function(res,
     scale_size(range = sz_rng) + 
     scale_fill_manual(values=c(cols, "cornflowerblue", "aliceblue"), guide="none") +
     facet_wrap( ~ cat, ncol = 3) +
-    theme(strip.background=element_rect(fill = strp_fl),
-      panel.background=element_rect(fill = alpha("cornflowerblue", 0.1))
+    theme(strip.background=element_rect(fill = strp_fl)#,
+      # panel.background=element_rect(fill = alpha("cornflowerblue", 0.1))
       )
   
   # add station labels in first panel if T

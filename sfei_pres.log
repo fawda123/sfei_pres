@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.8.29)  15 AUG 2016 12:59
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.8.29)  15 AUG 2016 18:19
 entering extended mode
 **sfei_pres.tex
 (M:\presentations\sfei_pres\sfei_pres.tex
@@ -1347,20 +1347,20 @@ Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
 (M:\presentations\sfei_pres\sfei_pres.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1398,7 +1398,7 @@ LaTeX Font Info:    ... okay on input line 96.
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box104
-Package hyperref Info: Link coloring OFF on input line 96.
+Package hyperref Info: Link coloring OFF on input line 99.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1408,9 +1408,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count319
 )
-LaTeX Info: Redefining \ref on input line 96.
-LaTeX Info: Redefining \pageref on input line 96.
-LaTeX Info: Redefining \nameref on input line 96.
+LaTeX Info: Redefining \ref on input line 99.
+LaTeX Info: Redefining \pageref on input line 99.
+LaTeX Info: Redefining \nameref on input line 99.
 
 (M:\presentations\sfei_pres\sfei_pres.out)
 (M:\presentations\sfei_pres\sfei_pres.out)
@@ -1442,7 +1442,7 @@ Dictionary: translator-numbers-dictionary, Language: English
 ts\translator-theorem-dictionary\translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 96.
+LaTeX Info: Redefining \includegraphics on input line 99.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -1450,17 +1450,17 @@ Package caption Info: End \AtBeginDocument code.
 (M:\presentations\sfei_pres\sfei_pres.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 99.
+(hyperref)                setting the option has no effect on input line 102.
 
-<fig/back_tmp.pdf, id=50, 505.89pt x 505.89pt>
+<fig/back_tmp.pdf, id=62, 505.89pt x 505.89pt>
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 110.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 113.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 110.
+(Font)              size <5> substituted on input line 113.
 
 [1
 
@@ -1468,20 +1468,20 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4> not available
 tions/sfei_pres/fig/back_tmp.pdf>]
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 126.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 129.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [2
 
 ]
-<fig/theo-1.pdf, id=76, 361.35pt x 234.8775pt>
+<fig/theo-1.pdf, id=88, 361.35pt x 234.8775pt>
 File: fig/theo-1.pdf Graphic file (type pdf)
  <use fig/theo-1.pdf>
-Package pdftex.def Info: fig/theo-1.pdf used on input line 142.
+Package pdftex.def Info: fig/theo-1.pdf used on input line 145.
 (pdftex.def)             Requested size: 188.26346pt x 122.36995pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
 
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 142.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 145.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [3
 
@@ -1489,18 +1489,18 @@ Package pdftex.def Info: fig/back_tmp.pdf used on input line 142.
 File: fig/theo-1.pdf Graphic file (type pdf)
 
 <use fig/theo-1.pdf>
-Package pdftex.def Info: fig/theo-1.pdf used on input line 142.
+Package pdftex.def Info: fig/theo-1.pdf used on input line 145.
 (pdftex.def)             Requested size: 188.26346pt x 122.36995pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 142.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 145.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [4
 
 ]
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 166.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 169.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [5
 
@@ -1508,21 +1508,21 @@ Package pdftex.def Info: fig/back_tmp.pdf used on input line 166.
 File: fig/back_tmp.pdf Graphic file (type pdf)
 
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 166.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 169.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [6
 
 ]
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 166.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 169.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [7
 
 ]
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 166.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 169.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
 
 [8
@@ -1530,23 +1530,23 @@ Package pdftex.def Info: fig/back_tmp.pdf used on input line 166.
 ]
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 178.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 181.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [9
 
-] <fig/ts_ex.pdf, id=143, 867.24pt x 144.54pt>
+] <fig/ts_ex.pdf, id=155, 867.24pt x 144.54pt>
 File: fig/ts_ex.pdf Graphic file (type pdf)
 
 <use fig/ts_ex.pdf>
-Package pdftex.def Info: fig/ts_ex.pdf used on input line 193.
+Package pdftex.def Info: fig/ts_ex.pdf used on input line 196.
 (pdftex.def)             Requested size: 342.2953pt x 57.04965pt.
 
-Overfull \vbox (15.30824pt too high) detected at line 193
+Overfull \vbox (15.30824pt too high) detected at line 196
  []
 
 File: fig/back_tmp.pdf Graphic file (type pdf)
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 193.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 196.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [10
 
@@ -1554,63 +1554,63 @@ Package pdftex.def Info: fig/back_tmp.pdf used on input line 193.
 File: fig/ts_ex.pdf Graphic file (type pdf)
 
 <use fig/ts_ex.pdf>
-Package pdftex.def Info: fig/ts_ex.pdf used on input line 224.
+Package pdftex.def Info: fig/ts_ex.pdf used on input line 227.
 (pdftex.def)             Requested size: 342.2953pt x 57.04965pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 224.
+LaTeX Font Info:    Try loading font information for U+msa on input line 227.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 224.
+LaTeX Font Info:    Try loading font information for U+msb on input line 227.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (2.63007pt too wide) in paragraph at lines 224--224
+Overfull \hbox (2.63007pt too wide) in paragraph at lines 227--227
 []$[]$  
  []
 
 File: fig/back_tmp.pdf Graphic file (type pdf)
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 224.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 227.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [11
 
 ]
 File: fig/ts_ex.pdf Graphic file (type pdf)
  <use fig/ts_ex.pdf>
-Package pdftex.def Info: fig/ts_ex.pdf used on input line 248.
+Package pdftex.def Info: fig/ts_ex.pdf used on input line 251.
 (pdftex.def)             Requested size: 342.2953pt x 57.04965pt.
 
-<fig/schematic2.pdf, id=162, 325.215pt x 126.4725pt>
+<fig/schematic2.pdf, id=174, 325.215pt x 126.4725pt>
 File: fig/schematic2.pdf Graphic file (type pdf)
  <use fig/schematic2.pdf>
-Package pdftex.def Info: fig/schematic2.pdf used on input line 248.
+Package pdftex.def Info: fig/schematic2.pdf used on input line 251.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 
-<fig/schematic3.pdf, id=163, 325.215pt x 126.4725pt>
+<fig/schematic3.pdf, id=175, 325.215pt x 126.4725pt>
 File: fig/schematic3.pdf Graphic file (type pdf)
  <use fig/schematic3.pdf>
-Package pdftex.def Info: fig/schematic3.pdf used on input line 248.
+Package pdftex.def Info: fig/schematic3.pdf used on input line 251.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 
-<fig/schematic4.pdf, id=164, 325.215pt x 126.4725pt>
+<fig/schematic4.pdf, id=176, 325.215pt x 126.4725pt>
 File: fig/schematic4.pdf Graphic file (type pdf)
  <use fig/schematic4.pdf>
-Package pdftex.def Info: fig/schematic4.pdf used on input line 248.
+Package pdftex.def Info: fig/schematic4.pdf used on input line 251.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 
-<fig/schematic5.pdf, id=165, 325.215pt x 126.4725pt>
+<fig/schematic5.pdf, id=177, 325.215pt x 126.4725pt>
 File: fig/schematic5.pdf Graphic file (type pdf)
  <use fig/schematic5.pdf>
-Package pdftex.def Info: fig/schematic5.pdf used on input line 248.
+Package pdftex.def Info: fig/schematic5.pdf used on input line 251.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 
-Overfull \vbox (14.4352pt too high) detected at line 248
+Overfull \vbox (14.4352pt too high) detected at line 251
  []
 
 File: fig/back_tmp.pdf Graphic file (type pdf)
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 248.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 251.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [12
 
@@ -1620,71 +1620,71 @@ ions/sfei_pres/fig/schematic5.pdf>]
 File: fig/ts_ex.pdf Graphic file (type pdf)
 
 <use fig/ts_ex.pdf>
-Package pdftex.def Info: fig/ts_ex.pdf used on input line 248.
+Package pdftex.def Info: fig/ts_ex.pdf used on input line 251.
 (pdftex.def)             Requested size: 342.2953pt x 57.04965pt.
 File: fig/schematic2.pdf Graphic file (type pdf)
  <use fig/schematic2.pdf>
-Package pdftex.def Info: fig/schematic2.pdf used on input line 248.
+Package pdftex.def Info: fig/schematic2.pdf used on input line 251.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 File: fig/schematic3.pdf Graphic file (type pdf)
  <use fig/schematic3.pdf>
-Package pdftex.def Info: fig/schematic3.pdf used on input line 248.
+Package pdftex.def Info: fig/schematic3.pdf used on input line 251.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 File: fig/schematic4.pdf Graphic file (type pdf)
 
 <use fig/schematic4.pdf>
-Package pdftex.def Info: fig/schematic4.pdf used on input line 248.
+Package pdftex.def Info: fig/schematic4.pdf used on input line 251.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 File: fig/schematic5.pdf Graphic file (type pdf)
  <use fig/schematic5.pdf>
-Package pdftex.def Info: fig/schematic5.pdf used on input line 248.
+Package pdftex.def Info: fig/schematic5.pdf used on input line 251.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 
-Overfull \vbox (14.4352pt too high) detected at line 248
+Overfull \vbox (14.4352pt too high) detected at line 251
  []
 
 File: fig/back_tmp.pdf Graphic file (type pdf)
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 248.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 251.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [13
 
 ]
 File: fig/ts_ex.pdf Graphic file (type pdf)
  <use fig/ts_ex.pdf>
-Package pdftex.def Info: fig/ts_ex.pdf used on input line 248.
+Package pdftex.def Info: fig/ts_ex.pdf used on input line 251.
 (pdftex.def)             Requested size: 342.2953pt x 57.04965pt.
 File: fig/schematic2.pdf Graphic file (type pdf)
  <use fig/schematic2.pdf>
-Package pdftex.def Info: fig/schematic2.pdf used on input line 248.
+Package pdftex.def Info: fig/schematic2.pdf used on input line 251.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 File: fig/schematic3.pdf Graphic file (type pdf)
 
 <use fig/schematic3.pdf>
-Package pdftex.def Info: fig/schematic3.pdf used on input line 248.
+Package pdftex.def Info: fig/schematic3.pdf used on input line 251.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 File: fig/schematic4.pdf Graphic file (type pdf)
  <use fig/schematic4.pdf>
-Package pdftex.def Info: fig/schematic4.pdf used on input line 248.
+Package pdftex.def Info: fig/schematic4.pdf used on input line 251.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 File: fig/schematic5.pdf Graphic file (type pdf)
  <use fig/schematic5.pdf>
-Package pdftex.def Info: fig/schematic5.pdf used on input line 248.
+Package pdftex.def Info: fig/schematic5.pdf used on input line 251.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 
-Overfull \vbox (14.4352pt too high) detected at line 248
+Overfull \vbox (14.4352pt too high) detected at line 251
  []
 
 File: fig/back_tmp.pdf Graphic file (type pdf)
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 248.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 251.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [14
 
 ]
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 257.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 260.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [15
 
@@ -1771,19 +1771,19 @@ fei_pres/fig/wtex.pdf> <131> <M:/presentations/sfei_pres/fig/wtex.pdf> <132>
 File: fig/back_tmp.pdf Graphic file (type pdf)
 
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 267.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 270.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [16
 
-] <fig/stations.pdf, id=925, 361.35pt x 289.08pt>
+] <fig/stations.pdf, id=937, 325.215pt x 252.945pt>
 File: fig/stations.pdf Graphic file (type pdf)
 
 <use fig/stations.pdf>
-Package pdftex.def Info: fig/stations.pdf used on input line 291.
-(pdftex.def)             Requested size: 154.03183pt x 123.22568pt.
+Package pdftex.def Info: fig/stations.pdf used on input line 294.
+(pdftex.def)             Requested size: 154.03183pt x 119.80275pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 291.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 294.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [17
 
@@ -1864,57 +1864,548 @@ res/fig/trnds.pdf> <118> <M:/presentations/sfei_pres/fig/trnds.pdf> <119> <M:/p
 resentations/sfei_pres/fig/trnds.pdf> <120>
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 302.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 307.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [18
 
 ]
-<fig/epa_logo.png, id=1572, 195.6108pt x 196.0926pt>
+<fig/trndsperdin.pdf, id=1584, page=2, 650.43pt x 433.62pt>
+File: fig/trndsperdin.pdf Graphic file (type pdf)
+
+<use fig/trndsperdin.pdf, page 2>
+Package pdftex.def Info: fig/trndsperdin.pdf, page2 used on input line 314.
+(pdftex.def)             Requested size: 318.33212pt x 212.22423pt.
+File: fig/back_tmp.pdf Graphic file (type pdf)
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 314.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [19
+
+ <M:/presentations/sfei_pres/fig/trndsperdin.pdf>]
+<fig/trndspernh.pdf, id=1603, page=2, 650.43pt x 433.62pt>
+File: fig/trndspernh.pdf Graphic file (type pdf)
+
+<use fig/trndspernh.pdf, page 2>
+Package pdftex.def Info: fig/trndspernh.pdf, page2 used on input line 319.
+(pdftex.def)             Requested size: 318.33212pt x 212.22423pt.
+File: fig/back_tmp.pdf Graphic file (type pdf)
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 319.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [20
+
+ <M:/presentations/sfei_pres/fig/trndspernh.pdf>]
+<fig/trndsperno23.pdf, id=1621, page=2, 650.43pt x 433.62pt>
+File: fig/trndsperno23.pdf Graphic file (type pdf)
+
+<use fig/trndsperno23.pdf, page 2>
+Package pdftex.def Info: fig/trndsperno23.pdf, page2 used on input line 324.
+(pdftex.def)             Requested size: 318.33212pt x 212.22423pt.
+File: fig/back_tmp.pdf Graphic file (type pdf)
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 324.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [21
+
+ <M:/presentations/sfei_pres/fig/trndsperno23.pdf>]
+<fig/ts_ex2.pdf, id=1639, 867.24pt x 252.945pt>
+File: fig/ts_ex2.pdf Graphic file (type pdf)
+ <use fig/ts_ex2.pdf>
+Package pdftex.def Info: fig/ts_ex2.pdf used on input line 333.
+(pdftex.def)             Requested size: 342.2953pt x 99.83691pt.
+File: fig/back_tmp.pdf Graphic file (type pdf)
+
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 333.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [22
+
+ <M:/presentations/sfei_pres/fig/ts_ex2.pdf>]
+File: fig/back_tmp.pdf Graphic file (type pdf)
+
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 346.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [23
+
+]
+File: fig/back_tmp.pdf Graphic file (type pdf)
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 357.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [24
+
+]
+<fig/c10obspred.pdf, id=1663, page=1, 867.24pt x 180.675pt>
+File: fig/c10obspred.pdf Graphic file (type pdf)
+
+<use fig/c10obspred.pdf, page 1>
+Package pdftex.def Info: fig/c10obspred.pdf, page1 used on input line 374.
+(pdftex.def)             Requested size: 342.2953pt x 71.31207pt.
+
+<fig/c10obspred.pdf, id=1664, page=2, 867.24pt x 180.675pt>
+File: fig/c10obspred.pdf Graphic file (type pdf)
+
+<use fig/c10obspred.pdf, page 2>
+Package pdftex.def Info: fig/c10obspred.pdf, page2 used on input line 374.
+(pdftex.def)             Requested size: 342.2953pt x 71.31207pt.
+
+Overfull \vbox (10.4193pt too high) detected at line 374
+ []
+
+File: fig/back_tmp.pdf Graphic file (type pdf)
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 374.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [25
+
+ <M:/presentations/sfei_pres/fig/c10obspred.pdf> <M:/presentations/sfei_pres/fi
+g/c10obspred.pdf>]
+File: fig/c10obspred.pdf Graphic file (type pdf)
+ <use fig/c10obspred.pdf, page 1>
+Package pdftex.def Info: fig/c10obspred.pdf, page1 used on input line 374.
+(pdftex.def)             Requested size: 342.2953pt x 71.31207pt.
+File: fig/c10obspred.pdf Graphic file (type pdf)
+
+<use fig/c10obspred.pdf, page 2>
+Package pdftex.def Info: fig/c10obspred.pdf, page2 used on input line 374.
+(pdftex.def)             Requested size: 342.2953pt x 71.31207pt.
+
+Overfull \vbox (10.4193pt too high) detected at line 374
+ []
+
+File: fig/back_tmp.pdf Graphic file (type pdf)
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 374.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [26
+
+]
+File: fig/c10obspred.pdf Graphic file (type pdf)
+ <use fig/c10obspred.pdf, page 1>
+Package pdftex.def Info: fig/c10obspred.pdf, page1 used on input line 387.
+(pdftex.def)             Requested size: 342.2953pt x 71.31207pt.
+
+<fig/c10prdnrm.pdf, id=1684, 867.24pt x 216.81pt>
+File: fig/c10prdnrm.pdf Graphic file (type pdf)
+ <use fig/c10prdnrm.pdf>
+Package pdftex.def Info: fig/c10prdnrm.pdf used on input line 387.
+(pdftex.def)             Requested size: 342.2953pt x 85.5745pt.
+
+Overfull \vbox (16.11421pt too high) detected at line 387
+ []
+
+File: fig/back_tmp.pdf Graphic file (type pdf)
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 387.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [27
+
+ <M:/presentations/sfei_pres/fig/c10prdnrm.pdf>]
+<fig/c10flow.pdf, id=1699, page=1, 867.24pt x 180.675pt>
+File: fig/c10flow.pdf Graphic file (type pdf)
+
+<use fig/c10flow.pdf, page 1>
+Package pdftex.def Info: fig/c10flow.pdf, page1 used on input line 402.
+(pdftex.def)             Requested size: 342.2953pt x 71.31207pt.
+
+<fig/c10flow.pdf, id=1700, page=2, 867.24pt x 180.675pt>
+File: fig/c10flow.pdf Graphic file (type pdf)
+
+<use fig/c10flow.pdf, page 2>
+Package pdftex.def Info: fig/c10flow.pdf, page2 used on input line 402.
+(pdftex.def)             Requested size: 342.2953pt x 71.31207pt.
+
+Overfull \vbox (10.75934pt too high) detected at line 402
+ []
+
+File: fig/back_tmp.pdf Graphic file (type pdf)
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 402.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [28
+
+ <M:/presentations/sfei_pres/fig/c10flow.pdf> <M:/presentations/sfei_pres/fig/c
+10flow.pdf>]
+File: fig/c10flow.pdf Graphic file (type pdf)
+ <use fig/c10flow.pdf, page 1>
+Package pdftex.def Info: fig/c10flow.pdf, page1 used on input line 402.
+(pdftex.def)             Requested size: 342.2953pt x 71.31207pt.
+File: fig/c10flow.pdf Graphic file (type pdf)
+
+<use fig/c10flow.pdf, page 2>
+Package pdftex.def Info: fig/c10flow.pdf, page2 used on input line 402.
+(pdftex.def)             Requested size: 342.2953pt x 71.31207pt.
+
+Overfull \vbox (10.75934pt too high) detected at line 402
+ []
+
+File: fig/back_tmp.pdf Graphic file (type pdf)
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 402.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [29
+
+] <fig/c10grd1.pdf, id=1719, 650.43pt x 172.645pt>
+File: fig/c10grd1.pdf Graphic file (type pdf)
+
+<use fig/c10grd1.pdf>
+Package pdftex.def Info: fig/c10grd1.pdf used on input line 420.
+(pdftex.def)             Requested size: 342.2953pt x 90.85861pt.
+ <fig/c10grd2.pdf, id=1720, 650.43pt x 144.54pt>
+File: fig/c10grd2.pdf Graphic file (type pdf)
+
+<use fig/c10grd2.pdf>
+Package pdftex.def Info: fig/c10grd2.pdf used on input line 420.
+(pdftex.def)             Requested size: 342.2953pt x 76.06767pt.
+
+Overfull \vbox (20.26656pt too high) detected at line 420
+ []
+
+File: fig/back_tmp.pdf Graphic file (type pdf)
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 420.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [30
+
+ <M:/presentations/sfei_pres/fig/c10grd1.pdf> <M:/presentations/sfei_pres/fig/c
+10grd2.pdf>]
+File: fig/c10grd1.pdf Graphic file (type pdf)
+ <use fig/c10grd1.pdf>
+Package pdftex.def Info: fig/c10grd1.pdf used on input line 420.
+(pdftex.def)             Requested size: 342.2953pt x 90.85861pt.
+File: fig/c10grd2.pdf Graphic file (type pdf)
+
+<use fig/c10grd2.pdf>
+Package pdftex.def Info: fig/c10grd2.pdf used on input line 420.
+(pdftex.def)             Requested size: 342.2953pt x 76.06767pt.
+
+Overfull \vbox (20.26656pt too high) detected at line 420
+ []
+
+File: fig/back_tmp.pdf Graphic file (type pdf)
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 420.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [31
+
+]
+File: fig/c10obspred.pdf Graphic file (type pdf)
+ <use fig/c10obspred.pdf, page 2>
+Package pdftex.def Info: fig/c10obspred.pdf, page2 used on input line 442.
+(pdftex.def)             Requested size: 119.80544pt x 24.95798pt.
+File: fig/c10prdnrm.pdf Graphic file (type pdf)
+
+<use fig/c10prdnrm.pdf>
+Package pdftex.def Info: fig/c10prdnrm.pdf used on input line 442.
+(pdftex.def)             Requested size: 119.80544pt x 29.94958pt.
+File: fig/c10flow.pdf Graphic file (type pdf)
+ <use fig/c10flow.pdf, page 1>
+Package pdftex.def Info: fig/c10flow.pdf, page1 used on input line 442.
+(pdftex.def)             Requested size: 119.80544pt x 24.95798pt.
+File: fig/c10flow.pdf Graphic file (type pdf)
+
+<use fig/c10flow.pdf, page 2>
+Package pdftex.def Info: fig/c10flow.pdf, page2 used on input line 442.
+(pdftex.def)             Requested size: 119.80544pt x 24.95798pt.
+File: fig/c10grd1.pdf Graphic file (type pdf)
+ <use fig/c10grd1.pdf>
+Package pdftex.def Info: fig/c10grd1.pdf used on input line 442.
+(pdftex.def)             Requested size: 119.80544pt x 31.7992pt.
+File: fig/c10grd2.pdf Graphic file (type pdf)
+ <use fig/c10grd2.pdf>
+Package pdftex.def Info: fig/c10grd2.pdf used on input line 442.
+(pdftex.def)             Requested size: 119.80544pt x 26.62257pt.
+File: fig/back_tmp.pdf Graphic file (type pdf)
+
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 442.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [32
+
+] <fig/tracy.pdf, id=1753, 578.16pt x 361.35pt>
+File: fig/tracy.pdf Graphic file (type pdf)
+
+<use fig/tracy.pdf>
+Package pdftex.def Info: fig/tracy.pdf used on input line 454.
+(pdftex.def)             Requested size: 256.72147pt x 160.45012pt.
+
+Overfull \vbox (20.12607pt too high) detected at line 454
+ []
+
+File: fig/back_tmp.pdf Graphic file (type pdf)
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 454.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [33
+
+ <M:/presentations/sfei_pres/fig/tracy.pdf>]
+File: fig/back_tmp.pdf Graphic file (type pdf)
+
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 464.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [34
+
+] <fig/p8obs.pdf, id=1773, 650.43pt x 144.54pt>
+File: fig/p8obs.pdf Graphic file (type pdf)
+
+<use fig/p8obs.pdf>
+Package pdftex.def Info: fig/p8obs.pdf used on input line 481.
+(pdftex.def)             Requested size: 342.2953pt x 76.06767pt.
+ <fig/p8prdnrm.pdf, id=1774, 650.43pt x 172.645pt>
+File: fig/p8prdnrm.pdf Graphic file (type pdf)
+
+<use fig/p8prdnrm.pdf>
+Package pdftex.def Info: fig/p8prdnrm.pdf used on input line 481.
+(pdftex.def)             Requested size: 342.2953pt x 90.85861pt.
+
+Overfull \vbox (18.1898pt too high) detected at line 481
+ []
+
+File: fig/back_tmp.pdf Graphic file (type pdf)
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 481.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [35
+
+ <M:/presentations/sfei_pres/fig/p8obs.pdf> <M:/presentations/sfei_pres/fig/p8p
+rdnrm.pdf>]
+File: fig/p8obs.pdf Graphic file (type pdf)
+ <use fig/p8obs.pdf>
+Package pdftex.def Info: fig/p8obs.pdf used on input line 481.
+(pdftex.def)             Requested size: 342.2953pt x 76.06767pt.
+File: fig/p8prdnrm.pdf Graphic file (type pdf)
+
+<use fig/p8prdnrm.pdf>
+Package pdftex.def Info: fig/p8prdnrm.pdf used on input line 481.
+(pdftex.def)             Requested size: 342.2953pt x 90.85861pt.
+
+Overfull \vbox (18.1898pt too high) detected at line 481
+ []
+
+File: fig/back_tmp.pdf Graphic file (type pdf)
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 481.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [36
+
+] <fig/p8dyna.pdf, id=1800, 650.43pt x 325.215pt>
+File: fig/p8dyna.pdf Graphic file (type pdf)
+
+<use fig/p8dyna.pdf>
+Package pdftex.def Info: fig/p8dyna.pdf used on input line 490.
+(pdftex.def)             Requested size: 342.2953pt x 171.1523pt.
+
+Overfull \vbox (7.68822pt too high) detected at line 490
+ []
+
+File: fig/back_tmp.pdf Graphic file (type pdf)
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 490.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [37
+
+ <M:/presentations/sfei_pres/fig/p8dyna.pdf>]
+<fig/p8dyna_thumb.pdf, id=1815, 325.215pt x 325.215pt>
+File: fig/p8dyna_thumb.pdf Graphic file (type pdf)
+
+<use fig/p8dyna_thumb.pdf>
+Package pdftex.def Info: fig/p8dyna_thumb.pdf used on input line 508.
+(pdftex.def)             Requested size: 136.91603pt x 136.91689pt.
+File: fig/back_tmp.pdf Graphic file (type pdf)
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 508.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [38
+
+ <M:/presentations/sfei_pres/fig/p8dyna_thumb.pdf>]
+File: fig/back_tmp.pdf Graphic file (type pdf)
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 518.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [39
+
+]
+<fig/d7clam.pdf, id=1835, 614.295pt x 180.675pt>
+File: fig/d7clam.pdf Graphic file (type pdf)
+ <use fig/d7clam.pdf>
+Package pdftex.def Info: fig/d7clam.pdf used on input line 553.
+(pdftex.def)             Requested size: 342.2953pt x 100.67555pt.
+
+<fig/d7prdnrm.pdf, id=1836, page=1, 289.08pt x 144.54pt>
+File: fig/d7prdnrm.pdf Graphic file (type pdf)
+
+<use fig/d7prdnrm.pdf, page 1>
+Package pdftex.def Info: fig/d7prdnrm.pdf, page1 used on input line 553.
+(pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
+
+<fig/d7prdnrm.pdf, id=1837, page=2, 289.08pt x 144.54pt>
+File: fig/d7prdnrm.pdf Graphic file (type pdf)
+
+<use fig/d7prdnrm.pdf, page 2>
+Package pdftex.def Info: fig/d7prdnrm.pdf, page2 used on input line 553.
+(pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
+
+<fig/d7prdnrm.pdf, id=1838, page=3, 289.08pt x 144.54pt>
+File: fig/d7prdnrm.pdf Graphic file (type pdf)
+
+<use fig/d7prdnrm.pdf, page 3>
+Package pdftex.def Info: fig/d7prdnrm.pdf, page3 used on input line 553.
+(pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
+
+Overfull \vbox (20.0668pt too high) detected at line 553
+ []
+
+File: fig/back_tmp.pdf Graphic file (type pdf)
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 553.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [40
+
+ <M:/presentations/sfei_pres/fig/d7clam.pdf> <M:/presentations/sfei_pres/fig/d7
+prdnrm.pdf> <M:/presentations/sfei_pres/fig/d7prdnrm.pdf> <M:/presentations/sfe
+i_pres/fig/d7prdnrm.pdf>]
+File: fig/d7clam.pdf Graphic file (type pdf)
+ <use fig/d7clam.pdf>
+Package pdftex.def Info: fig/d7clam.pdf used on input line 553.
+(pdftex.def)             Requested size: 342.2953pt x 100.67555pt.
+File: fig/d7prdnrm.pdf Graphic file (type pdf)
+
+<use fig/d7prdnrm.pdf, page 1>
+Package pdftex.def Info: fig/d7prdnrm.pdf, page1 used on input line 553.
+(pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
+File: fig/d7prdnrm.pdf Graphic file (type pdf)
+ <use fig/d7prdnrm.pdf, page 2>
+Package pdftex.def Info: fig/d7prdnrm.pdf, page2 used on input line 553.
+(pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
+File: fig/d7prdnrm.pdf Graphic file (type pdf)
+
+<use fig/d7prdnrm.pdf, page 3>
+Package pdftex.def Info: fig/d7prdnrm.pdf, page3 used on input line 553.
+(pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
+
+Overfull \vbox (20.0668pt too high) detected at line 553
+ []
+
+File: fig/back_tmp.pdf Graphic file (type pdf)
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 553.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [41
+
+]
+File: fig/d7clam.pdf Graphic file (type pdf)
+ <use fig/d7clam.pdf>
+Package pdftex.def Info: fig/d7clam.pdf used on input line 553.
+(pdftex.def)             Requested size: 342.2953pt x 100.67555pt.
+File: fig/d7prdnrm.pdf Graphic file (type pdf)
+
+<use fig/d7prdnrm.pdf, page 1>
+Package pdftex.def Info: fig/d7prdnrm.pdf, page1 used on input line 553.
+(pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
+File: fig/d7prdnrm.pdf Graphic file (type pdf)
+ <use fig/d7prdnrm.pdf, page 2>
+Package pdftex.def Info: fig/d7prdnrm.pdf, page2 used on input line 553.
+(pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
+File: fig/d7prdnrm.pdf Graphic file (type pdf)
+
+<use fig/d7prdnrm.pdf, page 3>
+Package pdftex.def Info: fig/d7prdnrm.pdf, page3 used on input line 553.
+(pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
+
+Overfull \vbox (20.0668pt too high) detected at line 553
+ []
+
+File: fig/back_tmp.pdf Graphic file (type pdf)
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 553.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [42
+
+]
+File: fig/d7clam.pdf Graphic file (type pdf)
+ <use fig/d7clam.pdf>
+Package pdftex.def Info: fig/d7clam.pdf used on input line 553.
+(pdftex.def)             Requested size: 342.2953pt x 100.67555pt.
+File: fig/d7prdnrm.pdf Graphic file (type pdf)
+
+<use fig/d7prdnrm.pdf, page 1>
+Package pdftex.def Info: fig/d7prdnrm.pdf, page1 used on input line 553.
+(pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
+File: fig/d7prdnrm.pdf Graphic file (type pdf)
+ <use fig/d7prdnrm.pdf, page 2>
+Package pdftex.def Info: fig/d7prdnrm.pdf, page2 used on input line 553.
+(pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
+File: fig/d7prdnrm.pdf Graphic file (type pdf)
+
+<use fig/d7prdnrm.pdf, page 3>
+Package pdftex.def Info: fig/d7prdnrm.pdf, page3 used on input line 553.
+(pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
+
+Overfull \vbox (20.0668pt too high) detected at line 553
+ []
+
+File: fig/back_tmp.pdf Graphic file (type pdf)
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 553.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [43
+
+]
+File: fig/back_tmp.pdf Graphic file (type pdf)
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 564.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [44
+
+]
+<fig/epa_logo.png, id=1884, 195.6108pt x 196.0926pt>
 File: fig/epa_logo.png Graphic file (type png)
  <use fig/epa_logo.png>
-Package pdftex.def Info: fig/epa_logo.png used on input line 329.
+Package pdftex.def Info: fig/epa_logo.png used on input line 591.
 (pdftex.def)             Requested size: 68.45801pt x 68.62445pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
 
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 329.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 591.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [19
+ [45
 
  <M:/presentations/sfei_pres/fig/epa_logo.png>]
 (M:\presentations\sfei_pres\sfei_pres.bbl)
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 338.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 600.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
-Package atenddvi Info: Last page = 20.
- [20
+Package atenddvi Info: Last page = 46.
+ [46
 
 ]
 \tf@nav=\write6
 \tf@toc=\write7
 \tf@snm=\write8
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 340.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 340.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 602.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 602.
 
 (M:\presentations\sfei_pres\sfei_pres.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 340.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 340.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 602.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 602.
 Package rerunfilecheck Info: File `sfei_pres.out' has not changed.
-(rerunfilecheck)             Checksum: AA07146E2A6092644E0B2612B35CCEA3;155.
+(rerunfilecheck)             Checksum: 5B3CFB5746F0D669DBB9ED8BA3C25EB8;317.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 340.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 602.
  ) 
 Here is how much of TeX's memory you used:
- 33288 strings out of 493921
- 683095 string characters out of 3147282
- 723534 words of memory out of 3000000
- 35931 multiletter control sequences out of 15000+200000
- 10513 words of font info for 39 fonts, out of 3000000 for 9000
+ 33496 strings out of 493921
+ 686167 string characters out of 3147282
+ 727580 words of memory out of 3000000
+ 36067 multiletter control sequences out of 15000+200000
+ 11158 words of font info for 42 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  48i,16n,82p,10379b,909s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
@@ -1924,11 +2415,11 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.p
-fb>
-Output written on sfei_pres.pdf (20 pages, 5463182 bytes).
+m/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on sfei_pres.pdf (46 pages, 7136647 bytes).
 PDF statistics:
- 1635 PDF objects out of 1728 (max. 8388607)
- 50 named destinations out of 1000 (max. 500000)
- 4586 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1960 PDF objects out of 2073 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
+ 4710 words of extra memory for PDF output out of 10000 (max. 10000000)
 

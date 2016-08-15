@@ -59,11 +59,14 @@
 \usetikzlibrary{shapes,arrows,positioning,shadows}
 \usepackage{subfig}
 \usepackage{pgf}
+\usepackage{caption}
 
 % change format of enumerated lists
 \setbeamertemplate{enumerate items}[default]
-
 \setbeamertemplate{navigation symbols}{}
+
+% change font size for figure captions
+\setbeamerfont{caption}{size=\scriptsize}
 
 % custom colors
 \definecolor{mypal1}{HTML}{F0F9E8}\definecolor{mypal2}{HTML}{BAE4BC}\definecolor{mypal3}{HTML}{7BCCC4}\definecolor{mypal4}{HTML}{43A2CA}\definecolor{mypal5}{HTML}{0868AC}
@@ -290,6 +293,8 @@ How does weighted regression work?
 \end{columns}
 \end{frame}
 
+\section{Trends}
+
 
 
 %%%%%%
@@ -299,6 +304,263 @@ How does weighted regression work?
 \centerline{
 \animategraphics[controls,width=\linewidth]{7}{fig/trnds}{}{} %frame rate is 10 per/sec
 }
+\end{frame}
+
+
+
+%%%%%%
+\begin{frame}{\textbf{Trends over time}}{\textbf{Nitrogen dynamics in the Delta - DIN}} 
+\centerline{\includegraphics[width = 0.93\textwidth, page = 2]{fig/trndsperdin.pdf}}
+\end{frame}
+
+%%%%%%
+\begin{frame}{\textbf{Trends over time}}{\textbf{Nitrogen dynamics in the Delta - ammonium}} 
+\centerline{\includegraphics[width = 0.93\textwidth, page = 2]{fig/trndspernh.pdf}}
+\end{frame}
+
+%%%%%%
+\begin{frame}{\textbf{Trends over time}}{\textbf{Nitrogen dynamics in the Delta - nitrite/nitate}} 
+\centerline{\includegraphics[width = 0.93\textwidth, page = 2]{fig/trndsperno23.pdf}}
+\end{frame}
+
+
+
+%%%%%%
+\begin{frame}{\textbf{Trends over time}}{\textbf{Nitrogen dynamics in the Delta - nitrite/nitate}} 
+The \emtxt{WRTDS} approach lets us model historical trends in relation to \emtxt{time}, \emtxt{discharge}, and \emtxt{season}\\~\\
+Predicted trends follow observed... how can we leverage the results to better understand important processes? \\~\\
+\centerline{\includegraphics[width = \textwidth]{fig/ts_ex2.pdf}}
+\end{frame}
+
+\section{Selected case studies}
+
+%%%%%%
+\begin{frame}{\textbf{Selected case studies}}{\textbf{}}
+Three examples were chosen to demonstrate the utility of WRTDS \\~\\
+\begin{itemize}
+\item Disaggregating observed nitrogen time series \\~\\
+\item Effects of wastewater treatment \\~\\
+\item Effects of biological invasion \\~\\
+\end{itemize}
+\centerline{\textit{Each example shows how {\bf model components} describe {\bf processes}}}
+\end{frame}
+
+%%%%%%
+\begin{frame}{\textbf{Selected case studies}}{\textbf{DIN trends at C10}}
+\emtxt{Hypothesis}: Because multiple factors influence nutrients at different times, WRTDS should describe non-linear complex relationships between nutrients, time, and flow \\~\\
+We should be able to \emtxt{predict}: \\~\\
+\begin{itemize}
+\item Annual trend independent of seasonal trend \\~\\
+\item Changes in seasonal amplitudes and quantile trends over time \\~\\
+\item Varying flow contributions 
+\end{itemize}
+\end{frame}
+
+
+
+%%%%%%
+\begin{frame}[t]{\textbf{Selected case studies}}{\textbf{DIN trends at C10}}
+\onslide<+->
+\begin{figure}
+\centerline{\includegraphics[width = \textwidth, page = 1]{fig/c10obspred.pdf}}
+\caption{Observed DIN at C10, monthly samples.}
+\end{figure}
+\vspace{-0.2in}
+\onslide<+->
+\begin{figure}
+\centerline{\includegraphics[width = \textwidth, page = 2]{fig/c10obspred.pdf}}
+\caption{Predicted DIN at C10 using WRTDS and daily flow estimates.}
+\end{figure}
+\end{frame}
+
+%%%%%%
+\begin{frame}[t]{\textbf{Selected case studies}}{\textbf{DIN trends at C10}}
+\begin{figure}
+\centerline{\includegraphics[width = \textwidth, page = 1]{fig/c10obspred.pdf}}
+\caption{Observed DIN at C10, monthly samples.}
+\end{figure}
+\vspace{-0.45in}
+\begin{figure}
+\centerline{\includegraphics[width = \textwidth]{fig/c10prdnrm.pdf}}
+\caption{Annual trends by quantiles. Predicted and flow-normalized results are shown as points and lines.}
+\end{figure}
+\end{frame}
+
+%%%%%%
+\begin{frame}[t]{\textbf{Selected case studies}}{\textbf{DIN trends at C10}}
+\onslide<+->
+\begin{figure}
+\centerline{\includegraphics[width = \textwidth, page = 1]{fig/c10flow.pdf}}
+\caption{Difference between annual predicted and flow-normalized DIN, 50\textsuperscript{th} percentile.}
+\end{figure}
+\vspace{-0.2in}
+\onslide<+->
+\begin{figure}
+\centerline{\includegraphics[width = \textwidth, page = 2]{fig/c10flow.pdf}}
+\caption{Daily flow at San Joaquin with locally-estimated smooth.}
+\end{figure}
+\end{frame}
+
+
+
+%%%%%%
+\begin{frame}[t]{\textbf{Selected case studies}}{\textbf{DIN trends at C10}}
+\onslide<+->
+\vspace{-0.1in}
+\begin{figure}
+\centerline{\includegraphics[width = \textwidth]{fig/c10grd1.pdf}}
+\caption{Modelled relationships between DIN, flow, and time.}
+\end{figure}
+\vspace{-0.3in}
+\onslide<+->
+\begin{figure}
+\centerline{\includegraphics[width = \textwidth]{fig/c10grd2.pdf}}
+\caption{Annual variation of DIN for selected months.}
+\end{figure}
+\end{frame}
+
+%%%%%%
+\begin{frame}{\textbf{Selected case studies}}{\textbf{DIN trends at C10}}
+Results at C10 showed the breadth of information provided by WRTDS\\~\\
+\begin{columns}
+\begin{column}{0.45\textwidth}
+\begin{itemize}
+\item Independent annual, seasonal trends \\~\\
+\item Explicit flow effects in residuals \\~\\
+\item Dynamic flow, season, time response
+\end{itemize}
+\end{column}
+\begin{column}{0.35\textwidth}
+\centerline{\includegraphics[width = \textwidth, page = 2]{fig/c10obspred.pdf}}
+\centerline{\includegraphics[width = \textwidth]{fig/c10prdnrm.pdf}}
+\centerline{\includegraphics[width = \textwidth, page = 1]{fig/c10flow.pdf}}
+\centerline{\includegraphics[width = \textwidth, page = 2]{fig/c10flow.pdf}}
+\centerline{\includegraphics[width = \textwidth]{fig/c10grd1.pdf}}
+\centerline{\includegraphics[width = \textwidth]{fig/c10grd2.pdf}}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+
+%%%%%%
+\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of wastewater treatment upgrades}}
+Now... how can model information be linked to causation?
+\vspace{0.1in}
+\begin{figure}
+\centerline{\includegraphics[width = 0.75\textwidth]{fig/tracy.pdf}}
+\caption{Nitrogen load measurements (kg d$^{-1}$) at the Tracy Wastewater Treatment Plant.  Wastewater discharge requirements were implemented in May, 2007.}
+\end{figure}
+\end{frame}
+
+%%%%%%
+\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of wastewater treatment upgrades}}
+\emtxt{Hypothesis}: Response of nutrient concentrations at P8 is directly related to upstream WWTP upgrades \\~\\
+We should be able to \emtxt{predict}: \\~\\
+\begin{itemize}
+\item A flow-normalized annual trend concurrent with WWTP upgrades \\~\\
+\item Variation in nitrogen species response depending on change in load outputs
+\end{itemize}
+\end{frame}
+
+
+
+%%%%%%
+\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of wastewater treatment upgrades}}
+\onslide<+->
+\begin{figure}
+\centerline{\includegraphics[width = \textwidth]{fig/p8obs.pdf}}
+\caption{Observed nitrogen time series at P8}
+\end{figure}
+\onslide<+->
+\vspace{-0.35in}
+\begin{figure}
+\centerline{\includegraphics[width = \textwidth]{fig/p8prdnrm.pdf}}
+\caption{Annual predicted and flow-normalized nitrogen from WRTDS.}
+\end{figure}
+\end{frame}
+
+%%%%%%
+\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of wastewater treatment upgrades}}
+\vspace{0.1in}
+\begin{figure}
+\centerline{\includegraphics[width = \textwidth]{fig/p8dyna.pdf}}
+\caption{Nitrogen relationships with flow over time at P8.}
+\end{figure}
+\end{frame}
+
+%%%%%%
+\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of wastewater treatment upgrades}}
+Results at P8 were linked to WWTP upgrades:
+\begin{columns}
+\begin{column}{0.45\textwidth}
+\begin{itemize}
+\item Flow-normalized changes at P8, also nitrite/nitrate \\~\\
+\item Ammonium reductions occurred in winter \\~\\
+\item Largest response of ammonium at low flow... but not in summer
+\end{itemize}
+\end{column}
+\begin{column}{0.4\textwidth}
+\vspace{0.3in}
+\centerline{\includegraphics[width = \textwidth]{fig/p8dyna_thumb.pdf}}
+\end{column}
+\end{columns}
+\end{frame}
+
+%%%%%%
+\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
+\emtxt{Hypothesis}: Biological invasions by benthic filter feeders have shifted abundance and composition of phtyoplankton in Suisun Bay \\~\\
+We should be able to \emtxt{predict}: \\~\\
+\begin{itemize}
+\item A decline in annual, flow-normalized chlorophyll following increase in invaders\\~\\
+\item Varying effects of flow given complex relationships between chlorophyll and invaders
+\end{itemize}
+\end{frame}
+
+
+
+%%%%%%
+\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
+\vspace{-0.1in}
+\onslide<1->
+\begin{figure}
+\centerline{\includegraphics[width = \textwidth]{fig/d7clam.pdf}}
+\caption{Clam density by year at D7, Suisun Bay.}
+\end{figure}
+\vspace{-0.1in}
+\begin{columns}
+\begin{column}{0.35\textwidth}
+\onslide<2->{
+\includegraphics[width = \textwidth, page = 1]{fig/d7prdnrm.pdf}
+}
+\end{column}
+\begin{column}{0.35\textwidth}
+\onslide<3->{
+\includegraphics[width = \textwidth, page = 2]{fig/d7prdnrm.pdf}
+}
+\end{column}
+\begin{column}{0.35\textwidth}
+\onslide<4->{
+\includegraphics[width = \textwidth, page = 3]{fig/d7prdnrm.pdf}
+}
+\end{column}
+\end{columns}
+\vspace{-0.05in}
+\onslide<2->
+\begin{figure}
+\caption{Annual predicted (points) and flow-normalized (lines) water quality data at D7.}
+\end{figure}
+\end{frame}
+
+
+
+\section{Conclusions and future work}
+
+%%%%%%
+\begin{frame}{\textbf{Conclusions}}{\textbf{}}
+Model predictions are not inherently interesting
+But predictions based on time-varying parameters
+A means to an end 
 \end{frame}
 
 %%%%%%
