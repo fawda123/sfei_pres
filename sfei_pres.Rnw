@@ -39,6 +39,108 @@ frame()
 invisible(dev.off())
 @
 
+% title graphic
+<<echo = F, cache = TRUE, eval = F, message = F, results = 'hide'>>=
+data(h2dat)
+
+nomod <-  filter(h2dat, resvar == 'no23') %>% 
+  .$mod %>% 
+  .[[1]]
+
+nhmod <- filter(h2dat, resvar == 'nh') %>% 
+  .$mod %>% 
+  .[[1]]
+
+# globals
+ylab1 <- expression(paste(NO [2] ^ '-', ' / ', NO [3] ^ '2-', ' (mg ', L^-1, ')'))
+ylab2 <- expression(paste(NH [4] ^ '+', ' (mg ', L^-1, ')'))
+flolab <- expression(paste('ln-Flow (', m^3, ' ', s^-1, ')'))
+
+# default theme
+mytheme <- theme_minimal() + 
+  theme(
+    plot.background = element_rect(fill='transparent', 
+      colour = NA),
+    panel.background = element_rect(fill='transparent', 
+      colour = NA),
+    legend.background = element_rect(fill='transparent', 
+      colour = NA),
+    legend.key = element_rect(fill = 'transparent', 
+      colour = NA),
+    axis.line.x = element_line(), 
+    axis.line.y = element_line(), 
+    axis.ticks.x = element_line(),
+    axis.ticks.y = element_line(),
+    axis.ticks.length = unit(.1, "cm"), 
+    panel.grid.major = element_line(colour = "#7BCCC4"),
+    panel.grid.minor = element_blank(), 
+    plot.margin = unit(c(3, 3, 3, 3), 'pt')
+  )   
+col_vec <- RColorBrewer::brewer.pal(9, 'Blues')[c(9, 8, 7)]
+dynacol_vec <- RColorBrewer::brewer.pal(9, 'Spectral')
+xlims <- range(nomod$date)
+
+# observed time series
+toplo1 <- select(nomod, date, res) %>% 
+  na.omit()
+toplo2 <- select(nhmod, date, res) %>% 
+  na.omit()
+p1 <- ggplot(toplo1, aes(x = date, y = exp(res))) + 
+  geom_line() + 
+  mytheme + 
+  scale_y_continuous(ylab1) +
+  theme(
+    axis.title.x = element_blank()
+  ) +
+  scale_x_date(limits = xlims) 
+p2 <- ggplot(toplo2, aes(x = date, y = exp(res))) + 
+  geom_line() + 
+  mytheme + 
+  scale_y_continuous(ylab2) +
+  theme(
+    axis.title.x = element_blank()
+  ) +
+  scale_x_date(limits = xlims)  
+
+# prdnrmplots
+p3 <- prdnrmplot(nomod, logspace = F, col_vec = col_vec, min_mo = 10) + 
+  mytheme + 
+  scale_y_continuous(ylab1) +
+  theme(
+    legend.position = 'none', 
+    legend.title = element_blank(),
+    axis.title.x = element_blank()
+  ) +
+  scale_x_date(limits = xlims) 
+p4 <- prdnrmplot(nhmod, logspace = F, col_vec = col_vec, min_mo = 10) + 
+  mytheme + 
+  scale_y_continuous(ylab2) +
+  theme(
+    legend.position = 'none',
+    legend.title = element_blank(),
+    axis.title.x = element_blank()
+  ) +
+  scale_x_date(limits = xlims) 
+
+# align widths of plots in first column, first two
+pA <- ggplot_gtable(ggplot_build(p1))
+pB <- ggplot_gtable(ggplot_build(p2))
+pC <- ggplot_gtable(ggplot_build(p3))
+pD <- ggplot_gtable(ggplot_build(p4))
+
+maxWidth = unit.pmax(pA$widths[2:3], pB$widths[2:3], pC$widths[2:3], pD$widths[2:3])
+
+# Set the widths
+pA$widths[2:3] <- maxWidth
+pB$widths[2:3] <- maxWidth
+pC$widths[2:3] <- maxWidth
+pD$widths[2:3] <- maxWidth
+
+pdf('fig/titlegraphic.pdf', height = 2, width = 18, family = 'serif')
+grid.arrange(arrangeGrob(pA, pC, pB, pD, ncol = 4))
+dev.off()
+@
+
 \tikzstyle{decision} = [diamond, draw, text width=6em, text badly centered, inner sep = 2pt, top color=white, bottom color=mypal3, drop shadow]
 \tikzstyle{block} = [rectangle, draw, text width=10em, text centered, rounded corners, minimum height=3em, minimum width=8em, top color = white, bottom color=mypal4,  drop shadow]
 \tikzstyle{declare} = [rectangle, draw, text width=10em, text centered, minimum height=3em, minimum width=8em, top color = white, bottom color=mypal5,  drop shadow]
@@ -90,17 +192,18 @@ writeLines(refs, con = file('refs.bib'))
 
 \begin{document}
 
-\title[Evaluating water quality]{\textbf{Quantitative approaches to understand nutrient pollution in estuaries: An example for the upper San Francisco Estuary}}
+\title[Understanding nutrient pollution]{\textbf{Quantitative approaches to understanding nutrient pollution: Examples from the upper San Francisco Estuary}}
 \author[M. Beck]{Marcus W. Beck, PhD}
 
 \institute[USEPA]{USEPA National Health and Environmental Effects Research Laboratory, Gulf Ecology Division, \href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov}, Phone: 8509342480}
 
 \date{Aug. 26, 2016}
 
-% \titlegraphic{\includegraphics[width=0.95\linewidth]{fig/title_plo.pdf}}
+\titlegraphic{\includegraphics[width=\linewidth]{fig/titlegraphic.pdf}}
 
 %%%%%%
 \begin{frame}[shrink]
+\vspace{0.2in}
 \titlepage
 \end{frame}
 
@@ -592,7 +695,7 @@ dev.off()
 \item Four decades of data, 1976-2013
 \end{itemize}
 \end{column}
-\begin{column}{0.45\textwidth}
+\begin{column}{0.5\textwidth}
 \begin{figure}
 \begin{center}
 \includegraphics[width = \textwidth]{fig/stations.pdf}
@@ -891,7 +994,7 @@ mytheme <- theme_minimal() +
     axis.ticks.x = element_line(),
     axis.ticks.y = element_line(),
     axis.ticks.length = unit(.1, "cm"), 
-    panel.grid.major = element_line(colour = pal(num_col)[3]),
+    panel.grid.major = element_line(colour = "#7BCCC4"),
     panel.grid.minor = element_blank(), 
     axis.title.x = element_blank()
   )   
@@ -1038,7 +1141,9 @@ mytheme <- theme_minimal() +
     axis.ticks.x = element_line(),
     axis.ticks.y = element_line(),
     axis.ticks.length = unit(.1, "cm"), 
-    plot.margin = unit(c(0, 3, 3, 3), 'pt'), 
+    plot.margin = unit(c(0, 3, 3, 3), 'pt'),
+    panel.grid.major = element_line(colour = "#7BCCC4"),
+    panel.grid.minor = element_blank(), 
     axis.title.x = element_blank()
   )   
 
@@ -1122,12 +1227,28 @@ Results at C10 showed the breadth of information provided by WRTDS\\~\\
 <<echo = F, cache = TRUE, eval = F, message = F, results = 'hide'>>=
 data(potw_load)
 
-ptheme <- theme_minimal() + 
+# default theme
+mytheme <- theme_minimal() + 
   theme(
-    axis.line.x = element_line(),
+    plot.background = element_rect(fill='transparent', 
+      colour = NA),
+    panel.background = element_rect(fill='transparent', 
+      colour = NA),
+    legend.background = element_rect(fill='transparent', 
+      colour = NA),
+    legend.key = element_rect(fill = 'transparent', 
+      colour = NA),
+    axis.line.x = element_line(), 
     axis.line.y = element_line(), 
+    axis.ticks.x = element_line(),
+    axis.ticks.y = element_line(),
+    axis.ticks.length = unit(.1, "cm"), 
+    plot.margin = unit(c(0, 3, 3, 3), 'pt'),
+    panel.grid.major = element_line(colour = "#7BCCC4"),
+    panel.grid.minor = element_blank(), 
     axis.title.x = element_blank()
-  )
+  )   
+
 lncol <- RColorBrewer::brewer.pal(9, 'Set1')[2]
 
 toplo1 <- filter(potw_load, loc %in% 'tracy' & var %in% c('tn'))
@@ -1153,7 +1274,7 @@ p1 <- ggplot(toplo1) +
     box.padding = grid::unit(2, "lines"), 
     nudge_x = 1
     ) + 
-  ptheme
+  mytheme
 
 p2 <- ggplot(toplo2, aes(x = date, y = val, group = var, fill = var)) + 
   geom_area(stat = 'identity', position = 'fill') + 
@@ -1161,7 +1282,7 @@ p2 <- ggplot(toplo2, aes(x = date, y = val, group = var, fill = var)) +
   scale_fill_brewer(palette = 'Blues', labels = leglabs) + 
   scale_y_continuous('% of total nitrogen', expand = c(0, 0)) + 
   geom_vline(xintercept = as.numeric(lndate), linetype = 'dashed') +
-  ptheme + 
+  mytheme + 
   theme(
     legend.position = 'top', 
     legend.title = element_blank()
@@ -1233,6 +1354,8 @@ mytheme <- theme_minimal() +
     axis.ticks.x = element_line(),
     axis.ticks.y = element_line(),
     axis.ticks.length = unit(.1, "cm"), 
+    panel.grid.major = element_line(colour = "#7BCCC4"),
+    panel.grid.minor = element_blank(), 
     plot.margin = unit(c(3, 3, 3, 3), 'pt')
   )   
 col_vec <- RColorBrewer::brewer.pal(9, 'Blues')[c(9, 8, 7)]
@@ -1384,7 +1507,7 @@ Results at P8 were linked to WWTP upgrades:
 \begin{columns}
 \begin{column}{0.45\textwidth}
 \begin{itemize}
-\item Flow-normalized changes at P8, also nitrite/nitrate \\~\\
+\item Flow-normalized changes in ammonium, also nitrite/nitrate \\~\\
 \item Ammonium reductions occurred in winter \\~\\
 \item Largest response of ammonium at low flow... but not in summer
 \end{itemize}
@@ -1398,7 +1521,7 @@ Results at P8 were linked to WWTP upgrades:
 
 %%%%%%
 \begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
-\emtxt{Hypothesis}: Biological invasions by benthic filter feeders have shifted abundance and composition of phtyoplankton in Suisun Bay \\~\\
+\emtxt{Hypothesis}: Biological invasions by benthic filter feeders have shifted abundance and composition of phytoplankton in Suisun Bay \\~\\
 We should be able to \emtxt{predict}: \\~\\
 \begin{itemize}
 \item A decline in annual, flow-normalized chlorophyll following increase in invaders\\~\\
@@ -1440,6 +1563,8 @@ mytheme <- theme_minimal() +
     axis.ticks.x = element_line(),
     axis.ticks.y = element_line(),
     axis.ticks.length = unit(.1, "cm"), 
+    panel.grid.major = element_line(colour = "#7BCCC4"),
+    panel.grid.minor = element_blank(), 
     plot.margin = unit(c(3, 3, 3, 3), 'pt')
   )   
 
@@ -1526,18 +1651,18 @@ dev.off()
 \onslide<1->
 \begin{figure}
 \centerline{\includegraphics[width = \textwidth]{fig/d7clam.pdf}}
-\caption{Clam density by year at D7, Suisun Bay.}
+\caption{Clam density by year at D7, Suisun Bay \cite{Crauder16}.}
 \end{figure}
 \vspace{-0.1in}
 \begin{columns}
 \begin{column}{0.35\textwidth}
 \onslide<2->{
-\includegraphics[width = \textwidth, page = 1]{fig/d7prdnrm.pdf}
+\includegraphics[width = \textwidth, page = 2]{fig/d7prdnrm.pdf}
 }
 \end{column}
 \begin{column}{0.35\textwidth}
 \onslide<3->{
-\includegraphics[width = \textwidth, page = 2]{fig/d7prdnrm.pdf}
+\includegraphics[width = \textwidth, page = 1]{fig/d7prdnrm.pdf}
 }
 \end{column}
 \begin{column}{0.35\textwidth}
@@ -1587,6 +1712,8 @@ mytheme <- theme_minimal() +
     axis.ticks.x = element_line(),
     axis.ticks.y = element_line(),
     axis.ticks.length = unit(.1, "cm"), 
+    panel.grid.major = element_line(colour = "#7BCCC4"),
+    panel.grid.minor = element_blank(), 
     plot.margin = unit(c(3, 3, 3, 3), 'pt')
   )   
 
@@ -1617,13 +1744,11 @@ ylab <- expression(paste(italic(Potamocorbula), " biomass (g ", m^-2, ")"))
 xlab <- expression(paste("Sacramento daily flow (", m^3, ' ', s^-1, ")"))
 
 # scatter plot of concentration x biomass with model 
-p2 <- ggplot(clmflo, aes(x = q, y = biomass)) + 
+p1 <- ggplot(clmflo, aes(x = q, y = biomass)) + 
   geom_point(size = 3, alpha = 0.8, colour = 'darkgrey') + 
   geom_line(data = data.frame(x = xvals, y = yvals), aes(x, y, colour = 'black'), lwd = 1) +
-  theme_minimal() + 
+  mytheme +
   theme(
-    axis.line.y = element_line(), 
-    axis.line.x = element_line(),
     legend.position = 'top', 
     legend.title = element_blank(), 
     legend.box = 'horizontal'
@@ -1631,6 +1756,7 @@ p2 <- ggplot(clmflo, aes(x = q, y = biomass)) +
   scale_colour_manual(label = 'log(1 + biomass) = 5.2 - 0.6log(1 + flow)', values = 'black') +
   scale_x_continuous(xlab) + 
   scale_y_continuous(ylab, limits = c(0,15))
+
 ##
 # chlorophyll by month
 chldat <- filter(h3dat, resvar %in% 'chl' & Site_Code %in% 'D7') %>% 
@@ -1668,13 +1794,11 @@ xlab <- expression(paste(italic(Potamocorbula), " biomass (g ", m^-2, ")"))
 ylab <- expression(paste("Flow-normalized chlorophyll (", italic(mu), "g ", L^-1, ")"))
 
 # scatter plot of concetration x biomass with model 
-p3 <- ggplot(toplo, aes(x = biomass, y = bt_norm)) + 
+p2 <- ggplot(toplo, aes(x = biomass, y = bt_norm)) + 
   geom_point(size = 3, alpha = 0.8, colour = 'darkgrey') + 
   geom_line(data = data.frame(x = xvals, y = yvals), aes(x, y, colour = 'black'), lwd = 1) +
-  theme_minimal() + 
+  mytheme + 
   theme(
-    axis.line.y = element_line(), 
-    axis.line.x = element_line(),
     legend.position = 'top', 
     legend.title = element_blank(), 
     legend.box = 'horizontal'
@@ -1688,11 +1812,9 @@ p3 <- ggplot(toplo, aes(x = biomass, y = bt_norm)) +
 cols <- RColorBrewer::brewer.pal(10, 'Set2')[1:2]
 ylab <- attr(chld7, 'reslab')
 
-p4 <- dynaplot(chld7, mo = 6, col_vec = cols, floscl = F) +
-  theme_minimal() +
+p3 <- dynaplot(chld7, mo = 6, col_vec = cols, floscl = F) +
+  mytheme +
   theme(
-    axis.line.y = element_line(), 
-    axis.line.x = element_line(),
     legend.position = 'top', 
     legend.title = element_blank(), 
     legend.box = 'horizontal',
@@ -1706,63 +1828,376 @@ p4 <- dynaplot(chld7, mo = 6, col_vec = cols, floscl = F) +
 # align widths of plots in first column, first two
 pA <- ggplot_gtable(ggplot_build(p1))
 pB <- ggplot_gtable(ggplot_build(p2))
-maxWidth = unit.pmax(pA$widths[2:3], pB$widths[2:3])
+pC <- ggplot_gtable(ggplot_build(p3))
+maxWidth = unit.pmax(pA$widths[2:3], pB$widths[2:3], pC$widths[2:3])
 
 # Set the widths
 pA$widths[2:3] <- maxWidth
 pB$widths[2:3] <- maxWidth
-
-# align widths of plots in first column, first two
-pC <- ggplot_gtable(ggplot_build(p3))
-pD <- ggplot_gtable(ggplot_build(p4))
-maxWidth = unit.pmax(pC$widths[2:3], pD$widths[2:3])
-
-# Set the widths
 pC$widths[2:3] <- maxWidth
-pD$widths[2:3] <- maxWidth
 
-# combine all
-grid.arrange(
-  arrangeGrob(pA, pB, ncol = 1, heights = c(1, 1)), 
-  arrangeGrob(pC, pD, ncol = 1, heights = c(1.05, 1)), 
-  ncol = 2, widths = c(1, 1)
-  )
+pdf('fig/d7flos.pdf', height = 2.75, width = 4.25, family = 'serif')
+grid.arrange(pA)
+grid.arrange(pB)
+grid.arrange(pC)
+dev.off()
 @
+
+%%%%%%
+\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
+\onslide<1->
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\centerline{\includegraphics[width = 0.95\textwidth, page = 3]{fig/d7flos.pdf}}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item Early: Flow-stimulation, then flushing \\~\\
+\item Later: Flow-stimulation
+\end{itemize}
+\end{column}
+\end{columns}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\onslide<2->{
+\centerline{\includegraphics[width = 0.95\textwidth, page = 2]{fig/d7flos.pdf}}
+}
+\end{column}
+\begin{column}{0.5\textwidth}
+\onslide<3->{
+\centerline{\includegraphics[width = 0.95\textwidth, page = 1]{fig/d7flos.pdf}}
+}
+\end{column}
+\end{columns}
+\end{frame}
+
+%%%%%%
+\begin{frame}[t]{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
+\onslide<1->
+Results at D7 show complex response of chlorophyll:
+\vspace{0.05in}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\vspace{0.2in}
+\begin{itemize}
+\onslide<1->{
+\item Increase in clam abundance, decrease in chlorophyll \\~\\
+\item Increase in DIN... but also decrease in SiO$_2$ \\~\\
+}
+\onslide<2->{
+\item Relationship with flow changed depending on physical or biological forcing
+}
+\end{itemize}
+\end{column}
+\begin{column}{0.25\textwidth}
+
+\includegraphics<1>[width = \textwidth, trim = 0mm -10mm 0mm 0mm, clip, page = 2]{fig/d7prdnrm.pdf}
+
+\includegraphics<1>[width = \textwidth, trim = 0mm -10mm 0mm 0mm, clip, page = 1]{fig/d7prdnrm.pdf}
+
+\includegraphics<1>[width = \textwidth, trim = 0mm -10mm 0mm 0mm, clip, page = 3]{fig/d7prdnrm.pdf}
+\includegraphics<2>[width = \textwidth, page = 3]{fig/d7flos.pdf}
+
+\includegraphics<2>[width = \textwidth, page = 2]{fig/d7flos.pdf}
+
+\includegraphics<2>[width = \textwidth, page = 1]{fig/d7flos.pdf}
+\end{column}
+\end{columns}
+\end{frame}
 
 \section{Conclusions and future work}
 
 %%%%%%
-\begin{frame}{\textbf{Conclusions}}{\textbf{}}
-Model predictions are not inherently interesting
-But predictions based on time-varying parameters
-A means to an end 
+\begin{frame}{\textbf{Conclusions}}{\textbf{Lessons for monitoring and future work}}
+\onslide<+->
+Monitoring data are not particularly telling... \\
+...so we use models or other methods to \emtxt{decompose} the observations \\~\\
+\onslide<+->
+Chosen method depends on the question: WRTDS because water quality varies with time, season, and flow \\~\\
+\onslide<+->
+\begin{itemize}
+\item More complete description of trends
+\item Better link to causal events
+\item More comprehensive evaluation of site-specific issues
+\item Deconstruct the past to predict the future\\~\\
+\end{itemize}
+\onslide<+->
+\emtxt{WRTDStidal} package for R, active development
+\href{https://github.com/fawda123/WRTDStidal}{\url{https://github.com/fawda123/WRTDStidal}}
+\end{frame}
+
+% patux map
+<<echo = F, cache = T, message = F, eval = F>>=
+
+# load data
+data(cb_poly)
+data(usa_poly)
+data(patux_poly)
+data(pax_meta)
+data(cb_poly_simp)
+
+# lims <- bbox(patux_poly)
+
+# color palette
+mapcols <- RColorBrewer::brewer.pal(5, 'GnBu')
+bg_col <- '#F0F9E8'
+
+# prep for plots
+cb_poly <- fortify(cb_poly)
+usa_poly <- fortify(usa_poly)
+patux_poly <- fortify(patux_poly) %>% 
+  mutate(id = factor(id, levels = c('60', '74', '88'), labels = c('TF', 'OH', 'MH')))
+
+pax_meta$lab <- with(pax_meta, paste0('"', STATION, ' (', round(dist_km, 1), ')"'))
+pax_meta$lab[c(4, 8)] <- paste0('bold(', pax_meta$lab[c(4, 8)], ')') 
+
+# base map
+p1 <- ggplot(patux_poly, aes(x = long, y = lat)) + 
+  geom_polygon(data = cb_poly, aes(x = long, y = lat, group = group), 
+    fill = 'grey90', colour = 'grey50') +
+  geom_polygon(aes(fill = factor(id), group = group), colour = NA) +
+  scale_fill_manual(values = rev(mapcols)) +
+  geom_point(data = pax_meta, aes(x = LONG, y = LAT), size = 5, alpha = 0.8) +
+  geom_text(data = pax_meta, aes(x = LONG * 1.001, y = LAT, label = lab), size = 5, 
+    parse = TRUE) +
+  theme_classic() + 
+  theme(axis.line=element_blank(), axis.text.x=element_blank(),
+    axis.text.y=element_blank(), axis.ticks=element_blank(),
+    axis.title.x=element_blank(),
+    axis.title.y=element_blank(),
+    panel.background=element_blank(),panel.border=element_blank(),panel.grid.major=element_blank(),
+    panel.grid.minor=element_blank(),plot.background=element_blank(), 
+    legend.position = 'top', 
+    legend.title = element_blank(), 
+    legend.background = element_rect(fill =  scales::alpha(bg_col, 0))
+    ) +
+  coord_fixed(ratio = 1, xlim = c(-76.84, -76.38), ylim = c(38.27, 38.88))
+
+
+# inset
+p2 <- ggplot(patux_poly, aes(x = long, y = lat)) + 
+  geom_polygon(data = usa_poly, aes(x = long, y = lat, group = group), 
+    fill = 'white', colour = 'grey50') +
+  geom_polygon(aes(group = group), colour = 'black', fill = 'black') +
+  theme(axis.title =element_blank(), 
+          axis.text.y = element_text(colour = 'black'), 
+          axis.text.x = element_text(colour = 'black', angle = 90, vjust = 0.5), 
+          panel.background=element_rect(fill = 'grey90'),
+          panel.grid.major=element_blank(),
+          panel.grid.minor=element_blank(),
+          plot.background=element_blank(),
+          panel.border = element_rect(colour = "black", fill = NA, size = 1)
+    ) +
+  coord_fixed(ratio = 1, xlim = c(-77.5, -75.5), ylim = c(36.7, 39.7))
+
+grid.newpage()
+v1 <- viewport(width = 1, height = 1, x = 0.5, y = 0.5) 
+v2 <- viewport(width = 0.55, height = 0.55, x = 0.7275, y = 0.64)
+
+pdf('fig/patux_map.pdf', height = 7, width = 5, family = 'serif')
+print(p1, vp = v1) 
+print(p2, vp = v2)
+dev.off()
+@
+
+% patux trends
+<<echo = F, cache = T, message = F, eval = F>>=
+
+data(bestLE12)
+data(bestTF16)
+
+cols <- RColorBrewer::brewer.pal(5, 'GnBu')
+
+mytheme <- theme_bw() + 
+  theme(
+    plot.background = element_rect(fill='transparent', 
+      colour = NA),
+    panel.background = element_rect(fill='transparent', 
+      colour = NA),
+    legend.background = element_rect(fill='transparent', 
+      colour = NA),
+    legend.key = element_rect(fill = 'transparent', 
+      colour = NA),
+    strip.background = element_rect(fill = cols[2], colour = 'black'),
+    axis.line.x = element_line(), 
+    axis.line.y = element_line(), 
+    axis.ticks.x = element_line(),
+    axis.ticks.y = element_line(),
+    axis.ticks.length = unit(.1, "cm"), 
+    panel.grid.major = element_line(colour = "#7BCCC4"),
+    panel.grid.minor = element_blank(), 
+    plot.margin = unit(c(3, 3, 3, 3), 'pt')
+  )   
+
+# some plots
+bestTF16$site <- 'TF1.6'
+bestLE12$site <- 'LE1.2'
+names(bestLE12) <- gsub('gams$', 'GAM', names(bestLE12))
+names(bestLE12) <- gsub('wrtds$', 'WRTDS', names(bestLE12))
+names(bestTF16) <- gsub('gams$', 'GAM', names(bestTF16))
+names(bestTF16) <- gsub('wrtds$', 'WRTDS', names(bestTF16))
+
+bestLE12 <- select(bestLE12, -sal, -lnQ, -dec_time, -se_GAM)
+bestTF16 <- select(bestTF16, -lnQ, -sal, -dec_time, -se_GAM)
+toplo <- rbind(bestTF16, bestLE12) %>% 
+  gather(variable, value, fits_WRTDS:res_GAM) %>% 
+  separate(variable, c('output', 'model'), sep = '_') %>% 
+  mutate(output = factor(output, levels = c('fits', 'norm', 'res'), labels = c('Pred', 'Norm', 'Res')))
+
+toplo2 <- mutate(toplo, year = as.numeric(strftime(date, '%Y'))) %>% 
+  group_by(year, site, output, model) %>% 
+  summarise(value = mean(value, na.rm = TRUE)) %>% 
+  filter(output != 'Res') %>% 
+  spread(output, value) 
+
+p2 <- ggplot(toplo2, aes(x = year, y = Pred, colour = 'Pred')) + 
+  geom_line(aes(x = year, y = Norm, colour = 'Norm'), size = 1) + 
+  geom_point() + 
+  mytheme + 
+  facet_wrap(site ~ model) + 
+  theme(
+    axis.text.x = element_text(size = 8, angle = 90, vjust = 0.5),
+    axis.title.x = element_blank(), 
+    legend.title = element_blank(), 
+    legend.position = 'top'
+    ) +
+  scale_y_continuous(limits = c(1.5, 3), breaks = seq(1.5, 3, 0.5)) + 
+  scale_colour_manual(values = cols[c(5, 4)]) + 
+  ylab(expression(paste('ln-Chl ',' (',italic('\u03bc'),'g ',L^-1,')'))) +
+  guides(color=guide_legend(override.aes=list(shape=c(NA,16),linetype=c(1,0))))
+
+pdf('fig/predann.pdf', height = 6, width = 7, family = 'serif')
+print(p2)
+dev.off()
+@
+
+%%%%%%
+\begin{frame}{\textbf{Conclusions}}{\textbf{Lessons for monitoring and future work}}
+Comparing WRTDS and GAMs for trend evaluation
+\begin{columns}
+\begin{column}{0.38\textwidth}
+\includegraphics[width = \textwidth]{fig/patux_map.pdf}
+\end{column}
+\begin{column}{0.65\textwidth}
+\includegraphics[width = \textwidth]{fig/predann.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+<<echo = F, cache = T, message = F, eval = F>>=
+data(RKBMB_wtreg)
+to_plo <- RKBMB_wtreg
+
+pal <- RColorBrewer::brewer.pal(5, 'GnBu')
+
+data(met_ls)
+met_ls <- met_ls[['RKBMB_wtreg.RData']]
+met_plo <- reshape2::melt(met_ls, id.var = 'Date', measure.var = c('Pg', 'Rt', 'Pg_dtd', 'Rt_dtd'))
+met_plo$type <- rep('Observed', length = nrow(met_plo))
+met_plo$type[grep('dtd$', met_plo$variable)] <- 'Detided'
+met_plo$variable <- gsub('_dtd$', '', met_plo$variable)
+met_plo$variable <- factor(met_plo$variable, levels = c('Pg', 'Rt'), labels = c('Production', 'Respiration'))
+met_plo$type<- factor(met_plo$type, levels = c('Observed', 'Detided'), labels = c('Observed', 'Detided'))
+
+mytheme <- theme_minimal() + 
+  theme(
+    plot.background = element_rect(fill='transparent', 
+      colour = NA),
+    panel.background = element_rect(fill='transparent', 
+      colour = NA),
+    legend.background = element_rect(fill='transparent', 
+      colour = NA),
+    legend.key = element_rect(fill = 'transparent', 
+      colour = NA),
+    axis.line.x = element_line(), 
+    axis.line.y = element_line(), 
+    axis.ticks.x = element_line(),
+    axis.ticks.y = element_line(),
+    axis.ticks.length = unit(.1, "cm"), 
+    panel.grid.major = element_line(colour = "#7BCCC4"),
+    panel.grid.minor = element_blank(), 
+    plot.margin = unit(c(0, 0, 0, 0), 'pt')
+  )   
+
+## 
+
+ylab<-expression(paste('DO (mg ',L^-1,')'))
+p1 <- ggplot(to_plo, aes(x = DateTimeStamp)) + 
+  geom_line(aes(y = DO_obs, colour = 'Observed')) +
+  geom_line(aes(y = DO_nrm, colour = 'Detided')) +
+  scale_colour_manual('', values=pal[c(3, 5)]) +
+  scale_y_continuous(ylab) +
+  mytheme +
+  theme(legend.position = 'top', axis.title.x = element_blank())
+
+ylab<-expression(paste('mmol ', O[2],' ', m^-2,' ', d^-1))
+p2 <- ggplot(met_plo, aes(x = Date, y = value, group = variable, colour = variable)) + 
+  geom_line() +
+  geom_point() +
+  facet_wrap(~type, ncol = 1) + 
+  scale_colour_manual('', values=pal[c(3, 4)]) +
+  scale_y_continuous(ylab) +
+  mytheme + 
+  theme(legend.position = 'top', axis.title.x = element_blank())
+
+pdf('fig/metex.pdf', height = 5, width = 9, family = 'serif')
+grid.arrange(p1, p2, ncol = 1, heights = c(1.5,2))
+dev.off()
+@
+
+%%%%%%
+\begin{frame}{\textbf{Conclusions}}{\textbf{Lessons for monitoring and future work}}
+DO time series and ecosystem metabolism \cite{Beck15b}
+\includegraphics[width = \textwidth]{fig/metex.pdf}
+\end{frame}
+
+%%%%%%
+\begin{frame}{\textbf{Conclusions}}{\textbf{Lessons for monitoring and future work}}
+Data management and analysis tools
+\begin{center}
+\fbox{\includegraphics[width = 0.9\textwidth]{fig/shinyex.png}}
+\end{center}
 \end{frame}
 
 %%%%%%
 \begin{frame}
-Acknowledgments:\\~\\
+Acknowledgments and contact info:\\~\\
 \begin{columns}
-\begin{column}{0.8\textwidth}
+\begin{column}{0.9\textwidth}
 {\footnotesize
-Research staff and employees at USEPA Gulf Ecology Division \\~\\
+Research staff and employees at USEPA Gulf Ecology Division, San Francisco Estuary Institute \\~\\
+David Senn, Phil Bresnahan, Emily Novick, James D. Hagy III, Thomas Jabusch
 }
-\end{column}
-\begin{column}{0.2\textwidth}
 \end{column}
 \end{columns}
 \vfill
-Funding sources and contact:\\~\\
 \begin{columns}
 \begin{column}{0.5\textwidth}
-\centerline{\includegraphics[width=0.4\linewidth]{fig/epa_logo.png}}
+\begin{center}
+\includegraphics[width=0.7\linewidth]{fig/titlegraphic.png}
+\end{center}
 \end{column}
 \begin{column}{0.5\textwidth}
 \scriptsize
+\begin{center}
 \href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov} \\~\\
+Github @fawda123 \\~\\
 Phone: 8509342480
+\end{center}
 \end{column}
 \end{columns}
-\vspace{0.2in}
+\vfill
+Links:\\~\\
+\begin{columns}
+\begin{column}{0.9\textwidth}
+\scriptsize
+This presentation: \href{https://github.com/fawda123/sfei_pres}{\url{https://github.com/fawda123/sfei\_pres}}
+
+Shiny app: \href{https://beckmw.shinyapps.io/sf_trends/}{\url{https://beckmw.shinyapps.io/sf_trends/}}
+
+Detailed results: \href{http://fawda123.github.io/sf_trends/README}{\url{http://fawda123.github.io/sf\_trends/README}}
+\end{column}
+\end{columns}
 \end{frame}
 
 %%%%%%

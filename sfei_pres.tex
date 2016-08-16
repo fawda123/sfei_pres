@@ -71,6 +71,9 @@
 % custom colors
 \definecolor{mypal1}{HTML}{F0F9E8}\definecolor{mypal2}{HTML}{BAE4BC}\definecolor{mypal3}{HTML}{7BCCC4}\definecolor{mypal4}{HTML}{43A2CA}\definecolor{mypal5}{HTML}{0868AC}
 
+% title graphic
+
+
 \tikzstyle{decision} = [diamond, draw, text width=6em, text badly centered, inner sep = 2pt, top color=white, bottom color=mypal3, drop shadow]
 \tikzstyle{block} = [rectangle, draw, text width=10em, text centered, rounded corners, minimum height=3em, minimum width=8em, top color = white, bottom color=mypal4,  drop shadow]
 \tikzstyle{declare} = [rectangle, draw, text width=10em, text centered, minimum height=3em, minimum width=8em, top color = white, bottom color=mypal5,  drop shadow]
@@ -98,17 +101,18 @@
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
 
-\title[Evaluating water quality]{\textbf{Quantitative approaches to understand nutrient pollution in estuaries: An example for the upper San Francisco Estuary}}
+\title[Understanding nutrient pollution]{\textbf{Quantitative approaches to understanding nutrient pollution: Examples from the upper San Francisco Estuary}}
 \author[M. Beck]{Marcus W. Beck, PhD}
 
 \institute[USEPA]{USEPA National Health and Environmental Effects Research Laboratory, Gulf Ecology Division, \href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov}, Phone: 8509342480}
 
 \date{Aug. 26, 2016}
 
-% \titlegraphic{\includegraphics[width=0.95\linewidth]{fig/title_plo.pdf}}
+\titlegraphic{\includegraphics[width=\linewidth]{fig/titlegraphic.pdf}}
 
 %%%%%%
 \begin{frame}[shrink]
+\vspace{0.2in}
 \titlepage
 \end{frame}
 
@@ -282,7 +286,7 @@ How does weighted regression work?
 \item Four decades of data, 1976-2013
 \end{itemize}
 \end{column}
-\begin{column}{0.45\textwidth}
+\begin{column}{0.5\textwidth}
 \begin{figure}
 \begin{center}
 \includegraphics[width = \textwidth]{fig/stations.pdf}
@@ -495,7 +499,7 @@ Results at P8 were linked to WWTP upgrades:
 \begin{columns}
 \begin{column}{0.45\textwidth}
 \begin{itemize}
-\item Flow-normalized changes at P8, also nitrite/nitrate \\~\\
+\item Flow-normalized changes in ammonium, also nitrite/nitrate \\~\\
 \item Ammonium reductions occurred in winter \\~\\
 \item Largest response of ammonium at low flow... but not in summer
 \end{itemize}
@@ -509,7 +513,7 @@ Results at P8 were linked to WWTP upgrades:
 
 %%%%%%
 \begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
-\emtxt{Hypothesis}: Biological invasions by benthic filter feeders have shifted abundance and composition of phtyoplankton in Suisun Bay \\~\\
+\emtxt{Hypothesis}: Biological invasions by benthic filter feeders have shifted abundance and composition of phytoplankton in Suisun Bay \\~\\
 We should be able to \emtxt{predict}: \\~\\
 \begin{itemize}
 \item A decline in annual, flow-normalized chlorophyll following increase in invaders\\~\\
@@ -525,18 +529,18 @@ We should be able to \emtxt{predict}: \\~\\
 \onslide<1->
 \begin{figure}
 \centerline{\includegraphics[width = \textwidth]{fig/d7clam.pdf}}
-\caption{Clam density by year at D7, Suisun Bay.}
+\caption{Clam density by year at D7, Suisun Bay \cite{Crauder16}.}
 \end{figure}
 \vspace{-0.1in}
 \begin{columns}
 \begin{column}{0.35\textwidth}
 \onslide<2->{
-\includegraphics[width = \textwidth, page = 1]{fig/d7prdnrm.pdf}
+\includegraphics[width = \textwidth, page = 2]{fig/d7prdnrm.pdf}
 }
 \end{column}
 \begin{column}{0.35\textwidth}
 \onslide<3->{
-\includegraphics[width = \textwidth, page = 2]{fig/d7prdnrm.pdf}
+\includegraphics[width = \textwidth, page = 1]{fig/d7prdnrm.pdf}
 }
 \end{column}
 \begin{column}{0.35\textwidth}
@@ -554,40 +558,163 @@ We should be able to \emtxt{predict}: \\~\\
 
 
 
+%%%%%%
+\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
+\onslide<1->
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\centerline{\includegraphics[width = 0.95\textwidth, page = 3]{fig/d7flos.pdf}}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item Early: Flow-stimulation, then flushing \\~\\
+\item Later: Flow-stimulation
+\end{itemize}
+\end{column}
+\end{columns}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\onslide<2->{
+\centerline{\includegraphics[width = 0.95\textwidth, page = 2]{fig/d7flos.pdf}}
+}
+\end{column}
+\begin{column}{0.5\textwidth}
+\onslide<3->{
+\centerline{\includegraphics[width = 0.95\textwidth, page = 1]{fig/d7flos.pdf}}
+}
+\end{column}
+\end{columns}
+\end{frame}
+
+%%%%%%
+\begin{frame}[t]{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
+\onslide<1->
+Results at D7 show complex response of chlorophyll:
+\vspace{0.05in}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\vspace{0.2in}
+\begin{itemize}
+\onslide<1->{
+\item Increase in clam abundance, decrease in chlorophyll \\~\\
+\item Increase in DIN... but also decrease in SiO$_2$ \\~\\
+}
+\onslide<2->{
+\item Relationship with flow changed depending on physical or biological forcing
+}
+\end{itemize}
+\end{column}
+\begin{column}{0.25\textwidth}
+
+\includegraphics<1>[width = \textwidth, trim = 0mm -10mm 0mm 0mm, clip, page = 2]{fig/d7prdnrm.pdf}
+
+\includegraphics<1>[width = \textwidth, trim = 0mm -10mm 0mm 0mm, clip, page = 1]{fig/d7prdnrm.pdf}
+
+\includegraphics<1>[width = \textwidth, trim = 0mm -10mm 0mm 0mm, clip, page = 3]{fig/d7prdnrm.pdf}
+\includegraphics<2>[width = \textwidth, page = 3]{fig/d7flos.pdf}
+
+\includegraphics<2>[width = \textwidth, page = 2]{fig/d7flos.pdf}
+
+\includegraphics<2>[width = \textwidth, page = 1]{fig/d7flos.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
 \section{Conclusions and future work}
 
 %%%%%%
-\begin{frame}{\textbf{Conclusions}}{\textbf{}}
-Model predictions are not inherently interesting
-But predictions based on time-varying parameters
-A means to an end 
+\begin{frame}{\textbf{Conclusions}}{\textbf{Lessons for monitoring and future work}}
+\onslide<+->
+Monitoring data are not particularly telling... \\
+...so we use models or other methods to \emtxt{decompose} the observations \\~\\
+\onslide<+->
+Chosen method depends on the question: WRTDS because water quality varies with time, season, and flow \\~\\
+\onslide<+->
+\begin{itemize}
+\item More complete description of trends
+\item Better link to causal events
+\item More comprehensive evaluation of site-specific issues
+\item Deconstruct the past to predict the future\\~\\
+\end{itemize}
+\onslide<+->
+\emtxt{WRTDStidal} package for R, active development
+\href{https://github.com/fawda123/WRTDStidal}{\url{https://github.com/fawda123/WRTDStidal}}
+\end{frame}
+
+% patux map
+
+
+% patux trends
+
+
+%%%%%%
+\begin{frame}{\textbf{Conclusions}}{\textbf{Lessons for monitoring and future work}}
+Comparing WRTDS and GAMs for trend evaluation
+\begin{columns}
+\begin{column}{0.38\textwidth}
+\includegraphics[width = \textwidth]{fig/patux_map.pdf}
+\end{column}
+\begin{column}{0.65\textwidth}
+\includegraphics[width = \textwidth]{fig/predann.pdf}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+
+%%%%%%
+\begin{frame}{\textbf{Conclusions}}{\textbf{Lessons for monitoring and future work}}
+DO time series and ecosystem metabolism \cite{Beck15b}
+\includegraphics[width = \textwidth]{fig/metex.pdf}
+\end{frame}
+
+%%%%%%
+\begin{frame}{\textbf{Conclusions}}{\textbf{Lessons for monitoring and future work}}
+Data management and analysis tools
+\begin{center}
+\fbox{\includegraphics[width = 0.9\textwidth]{fig/shinyex.png}}
+\end{center}
 \end{frame}
 
 %%%%%%
 \begin{frame}
-Acknowledgments:\\~\\
+Acknowledgments and contact info:\\~\\
 \begin{columns}
-\begin{column}{0.8\textwidth}
+\begin{column}{0.9\textwidth}
 {\footnotesize
-Research staff and employees at USEPA Gulf Ecology Division \\~\\
+Research staff and employees at USEPA Gulf Ecology Division, San Francisco Estuary Institute \\~\\
+David Senn, Phil Bresnahan, Emily Novick, James D. Hagy III, Thomas Jabusch
 }
-\end{column}
-\begin{column}{0.2\textwidth}
 \end{column}
 \end{columns}
 \vfill
-Funding sources and contact:\\~\\
 \begin{columns}
 \begin{column}{0.5\textwidth}
-\centerline{\includegraphics[width=0.4\linewidth]{fig/epa_logo.png}}
+\begin{center}
+\includegraphics[width=0.7\linewidth]{fig/titlegraphic.png}
+\end{center}
 \end{column}
 \begin{column}{0.5\textwidth}
 \scriptsize
+\begin{center}
 \href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov} \\~\\
+Github @fawda123 \\~\\
 Phone: 8509342480
+\end{center}
 \end{column}
 \end{columns}
-\vspace{0.2in}
+\vfill
+Links:\\~\\
+\begin{columns}
+\begin{column}{0.9\textwidth}
+\scriptsize
+This presentation: \href{https://github.com/fawda123/sfei_pres}{\url{https://github.com/fawda123/sfei\_pres}}
+
+Shiny app: \href{https://beckmw.shinyapps.io/sf_trends/}{\url{https://beckmw.shinyapps.io/sf_trends/}}
+
+Detailed results: \href{http://fawda123.github.io/sf_trends/README}{\url{http://fawda123.github.io/sf\_trends/README}}
+\end{column}
+\end{columns}
 \end{frame}
 
 %%%%%%
