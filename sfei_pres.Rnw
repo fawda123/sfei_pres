@@ -165,6 +165,7 @@ library(purrr)
 library(tidyr)
 library(Hmisc)
 library(ggrepel)
+library(lubridate)
 @
 
 % get online bib file
@@ -192,7 +193,7 @@ writeLines(refs, con = file('refs.bib'))
 
 \begin{document}
 
-\title[Understanding nutrient pollution]{\textbf{Quantitative approaches to understanding nutrient pollution: Examples from the upper San Francisco Estuary}}
+\title[Understanding nitrogen pollution]{\textbf{Quantitative approaches to understanding nitrogen pollution: Examples from the upper San Francisco Estuary}}
 \author[M. Beck]{Marcus W. Beck, PhD}
 
 \institute[USEPA]{USEPA National Health and Environmental Effects Research Laboratory, Gulf Ecology Division, \href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov}, Phone: 8509342480}
@@ -211,40 +212,7 @@ writeLines(refs, con = file('refs.bib'))
 
 %%%%%%
 \begin{frame}{\textbf{Evaluating estuarine condition}}{\textbf{How do we collect and use data?}}
-\onslide<+->
-The foundation of environmental management is a strong monitoring network \scriptsize \cite{NRC90}\\~\\
-\normalsize
-Monitoring provides information for decision-making based on apparent trends...
-\vspace{0.2in}
-\begin{center}
-\emtxt{What are the changes in environmental condition over time?}\\~\\
-\emtxt{Are these changes `good' or `bad' based on our management objectives?}\\~\\
-\emtxt{What may have caused these changes?}
-\end{center}
-\end{frame}
-
-%%%%%%
-\begin{frame}{\textbf{Evaluating estuarine condition}}{\textbf{How do we collect and use data?}}
-\onslide<+->
-\emtxt{The good news}: We are getting better at monitoring - standardized, automated, increased coverage, real-time/continuous \\~\\
-\emtxt{The bad news}: Our ability to use these data for decision-making has not kept pace with availability! \\~\\
-\onslide<+->
-<<theo, fig.height = 3.25, fig.width = 5, out.width = '0.55\\textwidth'>>=
-par(mar = c(4, 4, 0.5, 0.5), family = 'serif')
-x <- seq(1,100)
-y1 <- x^2
-y2 <- 4000 + 10*x
-plot(x, y1, type = 'l', xlab = 'Time', ylab = 'Relative quantities', axes = F, col = pal(5)[4], lty = 2, lwd = 2)
-lines(x, y2, col = pal(5)[4], lty = 1, lwd = 2)
-axis(side = 1, c(1, 100), labels = F)
-axis(side = 2, c(1, 100^2), labels = F)
-legend('topleft', lty = c(2,1), lwd = c(2,2), legend= c('Data', 'Analysis tools'), col = c(pal(5)[4], pal(5)[4]), bty = 'n')
-@
-\end{frame}
-
-%%%%%%
-\begin{frame}{\textbf{Evaluating estuarine condition}}{\textbf{How do we collect and use data?}}
-Most of my research career has focused on using monitoring data to understand effects of eutrophication in one form or another \\~\\
+How can we leverage monitoring data to develop our conceptual model of eutrophication? \\~\\
 \onslide<+->
 \begin{quote}
 Eutrophication (noun) - an \emtxt{increase} in the rate of supply of \emtxt{organic matter} to an ecosystem\\
@@ -270,12 +238,15 @@ Eutrophication (noun) - an \emtxt{increase} in the rate of supply of \emtxt{orga
 \begin{frame}{\textbf{Evaluating estuarine condition}}{\textbf{How do we collect and use data?}}
 \onslide<+->
 \emtxt{Today's talk}: My experience evaluating monitoring data to inform our understanding of the eutrophication paradigm\\~\\
+\onslide<+->
 Water quality trends in the Delta: \\~\\
 \begin{itemize}
 \item \emtxt{Example 1}: Model theory and application \\~\\
 \item \emtxt{Example 2}: Trends over time \\~\\
-\item \emtxt{Example 3}: Selected case studies 
+\item \emtxt{Example 3}: Selected case studies \\~\\
 \end{itemize}
+\onslide<+->
+Can we \emtxt{develop} and \emtxt{apply} methods that \emtxt{link trends} with \emtxt{causal events}?
 \end{frame}
 
 \section{Model theory and background}
@@ -398,17 +369,6 @@ dev.off()
 @
 
 %%%%%%
-\begin{frame}{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
-Increasing availability of records describing \emtxt{long-term changes} \\~\\
-Observed data can provide a means to an end, potentially \emtxt{high power} with large sample size \\~\\
-Can we \emtxt{develop} and \emtxt{apply} tools that leverage the descriptive capabilities of these large datasets? \\~\\
-Can we \emtxt{link descriptions} to \emtxt{causal events} to inform management or understanding? \\~\\
-\begin{figure}
-\centerline{\includegraphics[width = \textwidth]{fig/ts_ex.pdf}}
-\end{figure}
-\end{frame}
-
-%%%%%%
 \begin{frame}[t]{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
 {\bf \centerline{Observed data represents effects of many processes}}
 \vspace{0.15in}
@@ -465,10 +425,12 @@ flow changes
 
 %%%%%%
 \begin{frame}[t]{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
+\onslide<+->
 \emtxt{Problem:} Response endpoints of eutrophication vary naturally over time and with discharge or tidal patterns\\~\\
 \emtxt{Solution:} Develop a model that accounts for changes in relationships between drivers of pollution over time\\~\\
-The \emtxt{weighted regression (WRTDS)} model is being developed by USGS for pollutant modelling in rivers \cite{Hirsch10}\\~\\
-Models pollution concentration as a function of \emtxt{time}, \emtxt{discharge}, and \emtxt{season}\\~\\
+\onslide<+->
+The \emtxt{weighted regression (WRTDS)} approach models pollutants in rivers as a function of \emtxt{time}, \emtxt{discharge}, and \emtxt{season} \cite{Hirsch10}\\~\\
+\onslide<+->
 \emtxt{Adaptation:} Applied to Tampa Bay \cite{Beck15}, further validated/compared in Patuxent Estuary [Beck and Murphy, In review]
 \end{frame}
 
@@ -676,7 +638,7 @@ pdelta <- ggplot(delt_map, aes(x = long, y = lat)) +
   scale_fill_manual(values = c("cornflowerblue", pal(num_col)[1]), guide = "none") +
   geom_label(data = sacsjr[1, ], aes(x = Longitude, y = Latitude, label = flovar), fill = cols[1]) +
   geom_label_repel(data = sacsjr[2, ], aes(x = Longitude, y = Latitude, label = flovar), fill = cols[1],
-    point.padding = unit(2, "lines"), force = 2.5) +
+    point.padding = unit(0.4, "lines"), force = 2.5) +
   geom_label(data = statmeta, aes(x = Longitude, y = Latitude, label = Site_Code), fill = cols[2])
 
 pdf('fig/stations.pdf', height = 3.5, width = 4.5, family = 'serif')
@@ -825,6 +787,7 @@ for(moyr in moyrs){
     ) +
     scale_x_date(expand = c(0, 0)) + 
     geom_vline(xintercept = as.numeric(moyr)) + 
+    geom_point(data = toplo, aes(x = date, y = fit), size = 2.5) + 
     facet_grid(Site_Code ~ .) + 
     scale_y_continuous('ln-DIN')
 
@@ -949,279 +912,15 @@ Predicted trends follow observed... how can we leverage the results to better un
 
 %%%%%%
 \begin{frame}{\textbf{Selected case studies}}{\textbf{}}
-Three examples were chosen to demonstrate the utility of WRTDS \\~\\
+\onslide<+->
+Two examples demonstrate the utility of WRTDS adaptation to tidal waters: \\~\\
 \begin{itemize}
-\item Disaggregating observed nitrogen time series \\~\\
-\item Effects of wastewater treatment \\~\\
-\item Effects of biological invasion \\~\\
+\item Effects of wastewater treatment at P8 \\~\\
+\item Effects of biological invasion in Suisun Bay\\~\\
 \end{itemize}
-\centerline{\textit{Each example shows how {\bf model components} describe {\bf processes}}}
-\end{frame}
-
-%%%%%%
-\begin{frame}{\textbf{Selected case studies}}{\textbf{DIN trends at C10}}
-\emtxt{Hypothesis}: Because multiple factors influence nutrients at different times, WRTDS should describe non-linear complex relationships between nutrients, time, and flow \\~\\
-We should be able to \emtxt{predict}: \\~\\
-\begin{itemize}
-\item Annual trend independent of seasonal trend \\~\\
-\item Changes in seasonal amplitudes and quantile trends over time \\~\\
-\item Varying flow contributions 
-\end{itemize}
-\end{frame}
-
-<<echo = F, cache = TRUE, eval = F, message = F, results = 'hide'>>=
-data(dinc10)
-
-# din at c10
-toplo <- dinc10
-
-# globals
-ylab <- expression(paste('DIN (mg ', L^-1, ')'))
-
-# default theme
-mytheme <- theme_minimal() + 
-  theme(
-    plot.background = element_rect(fill='transparent', 
-      colour = NA),
-    panel.background = element_rect(fill='transparent', 
-      colour = NA),
-    legend.background = element_rect(fill='transparent', 
-      colour = NA),
-    legend.key = element_rect(fill = 'transparent', 
-      colour = NA),
-    axis.line.x = element_line(), 
-    axis.line.y = element_line(), 
-    axis.ticks.x = element_line(),
-    axis.ticks.y = element_line(),
-    axis.ticks.length = unit(.1, "cm"), 
-    panel.grid.major = element_line(colour = "#7BCCC4"),
-    panel.grid.minor = element_blank(), 
-    axis.title.x = element_blank()
-  )   
-
-col_vec <- RColorBrewer::brewer.pal(9, 'Set1')[c(3, 2, 1)]
-col_lim <- c(0, 3.8)
-xlims <- range(toplo$date)
-
-# observed din
-toplo1 <- select(toplo, date, res) %>% 
-  na.omit()
-p1 <- ggplot(toplo1, aes(x = date, y = exp(res))) + 
-  geom_line() + 
-  mytheme + 
-  scale_y_continuous(ylab, limits = c(0, 4)) +
-  scale_x_date(limits = xlims) 
-
-toplo2 <- select(toplo, date, fit0.5) %>% 
-  na.omit()
-
-p2 <- ggplot(toplo2, aes(x = date, y = exp(fit0.5))) + 
-  geom_line() + 
-  mytheme + 
-  scale_y_continuous(ylab, limits = c(0, 4)) +
-  scale_x_date(limits = xlims) 
-
-pdf('fig/c10obspred.pdf', height = 2.5, width = 12, family = 'serif')
-p1
-p2
-dev.off()
-
-# din prdnrmplot
-p3 <- prdnrmplot(toplo, logspace = F, col_vec = col_vec) + 
-  mytheme + 
-  scale_y_continuous(ylab) +
-  theme(
-    legend.position = 'top'
-  ) +
-  scale_x_date(limits = xlims) 
-pdf('fig/c10prdnrm.pdf', height = 3, width = 12, family = 'serif')
-p3
-dev.off()
-
-# flo/observed diffs
-toplo2 <- prdnrmplot(toplo, plot = F)
-toplo2 <- left_join(toplo2$fits, toplo2$nrms, by = c('date', 'taus')) %>% 
-  mutate(flodiff = fits_value - nrms_value) %>% 
-  filter(taus == 0.5)
-toplo3 <- toplo
-toplo3$flo <- scales::rescale(toplo3$flo, to = attr(toplo, 'floobs_rng'))
-ylab <- expression(paste('Pred - norm DIN (mg ', L^-1, ')'))
-p4 <- ggplot(toplo2, aes(x = date, y = flodiff)) + 
-  geom_bar(stat = 'identity') + 
-  mytheme +
-  scale_y_continuous(ylab) +
-  scale_x_date(limits = xlims)
-
-# flo with loess
-ylab <- expression(paste('ln-Flow (', m^3, ' ', s^-1, ')'))
-p5 <- ggplot(toplo3, aes(x = date, y = flo)) + 
-  geom_line() +
-  stat_smooth(se = F) + 
-  mytheme + 
-  scale_y_continuous(ylab) +
-  scale_x_date(limits = range(toplo3$date))
-
-pD <- ggplot_gtable(ggplot_build(p4))
-pE <- ggplot_gtable(ggplot_build(p5))
-maxWidth = grid::unit.pmax(pD$widths[2:3], pE$widths[2:3])
-
-pD$widths[2:3] <- maxWidth
-pE$widths[2:3] <- maxWidth
-
-pdf('fig/c10flow.pdf', height = 2.5, width = 12, family = 'serif')
-grid.arrange(pD)
-grid.arrange(pE)
-dev.off()
-@
-
-%%%%%%
-\begin{frame}[t]{\textbf{Selected case studies}}{\textbf{DIN trends at C10}}
 \onslide<+->
-\begin{figure}
-\centerline{\includegraphics[width = \textwidth, page = 1]{fig/c10obspred.pdf}}
-\caption{Observed DIN at C10, monthly samples.}
-\end{figure}
-\vspace{-0.2in}
-\onslide<+->
-\begin{figure}
-\centerline{\includegraphics[width = \textwidth, page = 2]{fig/c10obspred.pdf}}
-\caption{Predicted DIN at C10 using WRTDS and daily flow estimates.}
-\end{figure}
-\end{frame}
-
-%%%%%%
-\begin{frame}[t]{\textbf{Selected case studies}}{\textbf{DIN trends at C10}}
-\begin{figure}
-\centerline{\includegraphics[width = \textwidth, page = 1]{fig/c10obspred.pdf}}
-\caption{Observed DIN at C10, monthly samples.}
-\end{figure}
-\vspace{-0.45in}
-\begin{figure}
-\centerline{\includegraphics[width = \textwidth]{fig/c10prdnrm.pdf}}
-\caption{Annual trends by quantiles. Predicted and flow-normalized results are shown as points and lines.}
-\end{figure}
-\end{frame}
-
-%%%%%%
-\begin{frame}[t]{\textbf{Selected case studies}}{\textbf{DIN trends at C10}}
-\onslide<+->
-\begin{figure}
-\centerline{\includegraphics[width = \textwidth, page = 1]{fig/c10flow.pdf}}
-\caption{Difference between annual predicted and flow-normalized DIN, 50\textsuperscript{th} percentile.}
-\end{figure}
-\vspace{-0.2in}
-\onslide<+->
-\begin{figure}
-\centerline{\includegraphics[width = \textwidth, page = 2]{fig/c10flow.pdf}}
-\caption{Daily flow at San Joaquin with locally-estimated smooth.}
-\end{figure}
-\end{frame}
-
-<<echo = F, cache = TRUE, eval = F, message = F, results = 'hide'>>=
-
-# data
-data(dinc10)
-
-# din at c10
-toplo <- dinc10
-
-# default theme
-mytheme <- theme_minimal() + 
-  theme(
-    plot.background = element_rect(fill='transparent', 
-      colour = NA),
-    panel.background = element_rect(fill='transparent', 
-      colour = NA),
-    legend.background = element_rect(fill='transparent', 
-      colour = NA),
-    legend.key = element_rect(fill = 'transparent', 
-      colour = NA),
-    axis.line.x = element_line(), 
-    axis.line.y = element_line(), 
-    axis.ticks.x = element_line(),
-    axis.ticks.y = element_line(),
-    axis.ticks.length = unit(.1, "cm"), 
-    plot.margin = unit(c(0, 3, 3, 3), 'pt'),
-    panel.grid.major = element_line(colour = "#7BCCC4"),
-    panel.grid.minor = element_blank(), 
-    axis.title.x = element_blank()
-  )   
-
-col_lim <- c(0, 2.9)
-
-# dynaplot, all
-col_vec = NULL
-attr(toplo, 'reslab') <- expression(paste("DIN (mg ", L^-1, ")"))
-ylab <- expression(paste('ln-Flow (', m^3, ' ', s^-1, ')'))
-p1 <- gridplot(toplo, month = 'all', logspace = F, tau = 0.5, col_lim = col_lim, floscl = F, col_vec = rev(col_vec)) +
-  scale_y_continuous(ylab, expand = c(0, 0)) + 
-  mytheme + 
-  theme(legend.position = 'top') +
-  guides(fill = guide_colourbar(barheight = 0.5, barwidth = 10))
-
-# dynaplot selected months
-p2 <- gridplot(toplo, logspace = F, tau = 0.5, col_lim = col_lim, month = c(1, 4, 7, 10), ncol = 4, floscl = F) + 
-  mytheme + 
-  theme(
-    strip.background = element_blank(),
-    legend.position = 'none', 
-    panel.grid.major = element_blank(),
-    panel.grid.minor = element_blank()
-    ) + 
-  scale_y_continuous(ylab, expand = c(0, 0)) 
-
-# align widths of plots in first column, first two
-pA <- ggplot_gtable(ggplot_build(p1))
-pB <- ggplot_gtable(ggplot_build(p2))
-maxWidth = grid::unit.pmax(pA$widths[2:3], pB$widths[2:3])
-
-pA$widths[2:3] <- maxWidth
-pB$widths[2:3] <- maxWidth
-
-pdf('fig/c10grd1.pdf', height = 2.4, width = 9, family = 'serif')
-grid.arrange(pA)
-dev.off()
-pdf('fig/c10grd2.pdf', height = 2, width = 9, family = 'serif')
-grid.arrange(pB)
-dev.off()
-@
-
-%%%%%%
-\begin{frame}[t]{\textbf{Selected case studies}}{\textbf{DIN trends at C10}}
-\onslide<+->
-\vspace{-0.1in}
-\begin{figure}
-\centerline{\includegraphics[width = \textwidth]{fig/c10grd1.pdf}}
-\caption{Modelled relationships between DIN, flow, and time.}
-\end{figure}
-\vspace{-0.3in}
-\onslide<+->
-\begin{figure}
-\centerline{\includegraphics[width = \textwidth]{fig/c10grd2.pdf}}
-\caption{Annual variation of DIN for selected months.}
-\end{figure}
-\end{frame}
-
-%%%%%%
-\begin{frame}{\textbf{Selected case studies}}{\textbf{DIN trends at C10}}
-Results at C10 showed the breadth of information provided by WRTDS\\~\\
-\begin{columns}
-\begin{column}{0.45\textwidth}
-\begin{itemize}
-\item Independent annual, seasonal trends \\~\\
-\item Explicit flow effects in residuals \\~\\
-\item Dynamic flow, season, time response
-\end{itemize}
-\end{column}
-\begin{column}{0.35\textwidth}
-\centerline{\includegraphics[width = \textwidth, page = 2]{fig/c10obspred.pdf}}
-\centerline{\includegraphics[width = \textwidth]{fig/c10prdnrm.pdf}}
-\centerline{\includegraphics[width = \textwidth, page = 1]{fig/c10flow.pdf}}
-\centerline{\includegraphics[width = \textwidth, page = 2]{fig/c10flow.pdf}}
-\centerline{\includegraphics[width = \textwidth]{fig/c10grd1.pdf}}
-\centerline{\includegraphics[width = \textwidth]{fig/c10grd2.pdf}}
-\end{column}
-\end{columns}
+Each shows how \emtxt{model components} describe \emtxt{processes} \\~\\
+Uses \emtxt{WRTDStidal} package for R
 \end{frame}
 
 <<echo = F, cache = TRUE, eval = F, message = F, results = 'hide'>>=
@@ -1304,17 +1003,17 @@ dev.off()
 
 %%%%%%
 \begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of wastewater treatment upgrades}}
-Now... how can model information be linked to causation?
+How can model information be linked to causation?
 \vspace{0.1in}
 \begin{figure}
-\centerline{\includegraphics[width = 0.75\textwidth]{fig/tracy.pdf}}
+\centerline{\includegraphics[width = 0.8\textwidth]{fig/tracy.pdf}}
 \caption{Nitrogen load measurements (kg d$^{-1}$) at the Tracy Wastewater Treatment Plant.  Wastewater discharge requirements were implemented in May, 2007.}
 \end{figure}
 \end{frame}
 
 %%%%%%
 \begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of wastewater treatment upgrades}}
-\emtxt{Hypothesis}: Response of nutrient concentrations at P8 is directly related to upstream WWTP upgrades \\~\\
+\emtxt{Hypothesis}: Response of nutrient concentrations at P8 is linked to upstream WWTP upgrades \\~\\
 We should be able to \emtxt{predict}: \\~\\
 \begin{itemize}
 \item A flow-normalized annual trend concurrent with WWTP upgrades \\~\\
@@ -1869,6 +1568,135 @@ dev.off()
 }
 \end{column}
 \end{columns}
+\end{frame}
+
+<<echo = F, cache = TRUE, eval = F, message = F, results = 'hide'>>=
+
+# clam and model data at D7
+data(clams)
+data(h3dat)
+data(flow_dat)
+chld7 <- filter(h3dat, Site_Code %in% 'D7' & resvar %in% 'chl')$mod[[1]]
+
+clmdat <- group_by(clams, yr, species) %>% 
+  dplyr::summarize(
+    clams_smp = mean(clams_smp, na.rm = TRUE),
+    biomass = mean(biomass, na.rm = TRUE)
+    ) %>% 
+  ungroup %>% 
+  mutate(yr = as.Date(paste0(yr, '-10-01')))
+
+# make sure date range is same on both
+xlims <- as.Date(c('1976-10-01', '2014-10-01'))
+
+mytheme <- theme_minimal() + 
+  theme(
+    plot.background = element_rect(fill='transparent', 
+      colour = NA),
+    panel.background = element_rect(fill='transparent', 
+      colour = NA),
+    legend.background = element_rect(fill='transparent', 
+      colour = NA),
+    legend.key = element_rect(fill = 'transparent', 
+      colour = NA),
+    axis.line.x = element_line(), 
+    axis.line.y = element_line(), 
+    axis.ticks.x = element_line(),
+    axis.ticks.y = element_line(),
+    axis.ticks.length = unit(.1, "cm"), 
+    panel.grid.major = element_line(colour = "#7BCCC4"),
+    panel.grid.minor = element_blank(), 
+    plot.margin = unit(c(3, 3, 3, 3), 'pt'), 
+    axis.title.x = element_blank()
+  )   
+
+##
+# annual clam time series
+p1 <- ggplot(clmdat, aes(x = yr, y = clams_smp, fill = species)) + 
+  geom_bar(stat = 'identity') + 
+  mytheme + 
+  theme(
+    legend.position = c(0.22, 0.82), 
+    legend.title = element_blank(),
+    axis.title.x = element_blank(),
+    legend.background = element_rect(fill='transparent', 
+      colour = NA),
+    legend.direction = 'horizontal'
+    ) + 
+  scale_fill_brewer(
+    palette = 'Set2',
+    labels = parse(text = c('italic(Corbicula)', 'italic(Potamocorbula)'))
+    ) + 
+  scale_x_date('Year', limits = xlims) +
+  scale_y_continuous('Clams per sample') +
+  guides(fill = guide_legend(keywidth = 0.5, keyheight = 0.5))
+
+# separate each site
+toplo1 <- filter(h3dat, Site_Code %in% 'D7')
+
+# y axis labels
+ylab <- expression(paste("Chl-", italic(a), " (", italic(mu), "g ", L^-1, ")"))
+
+# colors
+cols <- RColorBrewer::brewer.pal(9, 'Set1')[1:3]
+col_vec <- RColorBrewer::brewer.pal(9, 'Blues')[c(9, 8, 7)]
+
+##
+# chlorophyll prdnrmplot
+p2 <- prdnrmplot(toplo1$mod[[1]], col_vec = col_vec, logspace = F, min_mo = 10) +
+  mytheme + 
+  theme(
+    legend.position = 'none'
+    ) + 
+  scale_y_continuous(ylab) + 
+  scale_x_date(limits = xlims)
+
+## flo with loess
+flow_dat <- mutate(flow_dat, 
+    year = year(Date), 
+    month = month(Date)
+  ) %>% 
+  group_by(year, month) %>% 
+  summarise(q = mean(q, na.rm = T)) %>% 
+  unite('Date', year:month, sep = '-') %>% 
+  mutate(
+    Date = paste0(Date, '-01'), 
+    Date = as.Date(Date, format = '%Y-%m-%d')
+  ) %>% 
+  arrange(Date)
+  
+ylab <- expression(paste('ln-Flow (', m^3, ' ', s^-1, ')'))
+p3 <- ggplot(flow_dat, aes(x = Date, y = log(q))) + 
+  geom_line() +
+  stat_smooth(se = F, span = 0.25) + 
+  mytheme + 
+  scale_y_continuous(ylab) +
+  scale_x_date(limits = xlims)
+
+# Set the widths
+pA <- ggplot_gtable(ggplot_build(p1))
+pB <- ggplot_gtable(ggplot_build(p2))
+pC <- ggplot_gtable(ggplot_build(p3))
+maxWidth = unit.pmax(pA$widths[2:3], pB$widths[2:3], pC$widths[2:3])
+pA$widths[2:3] <- maxWidth
+pB$widths[2:3] <- maxWidth
+pC$widths[2:3] <- maxWidth
+
+pdf('fig/d7links.pdf', height = 1.5, width = 7.5, family = 'serif')
+grid.arrange(pA)
+grid.arrange(pB)
+grid.arrange(pC)
+dev.off()
+@
+
+%%%%%%
+\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
+\onslide<1->
+\centerline{\includegraphics[width = 0.97\textwidth, page = 1]{fig/d7links.pdf}}
+\onslide<2->
+\centerline{\includegraphics[width = 0.97\textwidth, page = 2]{fig/d7links.pdf}}
+\onslide<3->
+\centerline{\includegraphics[width = 0.97\textwidth, page = 3]{fig/d7links.pdf}}
 \end{frame}
 
 %%%%%%

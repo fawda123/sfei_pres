@@ -1,7 +1,7 @@
 \beamer@endinputifotherversion {3.27pt}
 \beamer@sectionintoc {1}{Background}{2}{0}{1}
-\beamer@sectionintoc {2}{Model theory and background}{10}{0}{2}
+\beamer@sectionintoc {2}{Model theory and background}{9}{0}{2}
 \beamer@sectionintoc {3}{Trends}{18}{0}{3}
 \beamer@sectionintoc {4}{Selected case studies}{23}{0}{4}
-\beamer@sectionintoc {5}{Conclusions and future work}{49}{0}{5}
-\beamer@sectionintoc {6}{References}{57}{0}{6}
+\beamer@sectionintoc {5}{Conclusions and future work}{44}{0}{5}
+\beamer@sectionintoc {6}{References}{52}{0}{6}

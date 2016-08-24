@@ -101,7 +101,7 @@
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
 
-\title[Understanding nutrient pollution]{\textbf{Quantitative approaches to understanding nutrient pollution: Examples from the upper San Francisco Estuary}}
+\title[Understanding nitrogen pollution]{\textbf{Quantitative approaches to understanding nitrogen pollution: Examples from the upper San Francisco Estuary}}
 \author[M. Beck]{Marcus W. Beck, PhD}
 
 \institute[USEPA]{USEPA National Health and Environmental Effects Research Laboratory, Gulf Ecology Division, \href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov}, Phone: 8509342480}
@@ -120,37 +120,7 @@
 
 %%%%%%
 \begin{frame}{\textbf{Evaluating estuarine condition}}{\textbf{How do we collect and use data?}}
-\onslide<+->
-The foundation of environmental management is a strong monitoring network \scriptsize \cite{NRC90}\\~\\
-\normalsize
-Monitoring provides information for decision-making based on apparent trends...
-\vspace{0.2in}
-\begin{center}
-\emtxt{What are the changes in environmental condition over time?}\\~\\
-\emtxt{Are these changes `good' or `bad' based on our management objectives?}\\~\\
-\emtxt{What may have caused these changes?}
-\end{center}
-\end{frame}
-
-%%%%%%
-\begin{frame}{\textbf{Evaluating estuarine condition}}{\textbf{How do we collect and use data?}}
-\onslide<+->
-\emtxt{The good news}: We are getting better at monitoring - standardized, automated, increased coverage, real-time/continuous \\~\\
-\emtxt{The bad news}: Our ability to use these data for decision-making has not kept pace with availability! \\~\\
-\onslide<+->
-
-
-{\centering \includegraphics[width=0.55\textwidth]{fig/theo-1} 
-
-}
-
-
-
-\end{frame}
-
-%%%%%%
-\begin{frame}{\textbf{Evaluating estuarine condition}}{\textbf{How do we collect and use data?}}
-Most of my research career has focused on using monitoring data to understand effects of eutrophication in one form or another \\~\\
+How can we leverage monitoring data to develop our conceptual model of eutrophication? \\~\\
 \onslide<+->
 \begin{quote}
 Eutrophication (noun) - an \emtxt{increase} in the rate of supply of \emtxt{organic matter} to an ecosystem\\
@@ -176,28 +146,20 @@ Eutrophication (noun) - an \emtxt{increase} in the rate of supply of \emtxt{orga
 \begin{frame}{\textbf{Evaluating estuarine condition}}{\textbf{How do we collect and use data?}}
 \onslide<+->
 \emtxt{Today's talk}: My experience evaluating monitoring data to inform our understanding of the eutrophication paradigm\\~\\
+\onslide<+->
 Water quality trends in the Delta: \\~\\
 \begin{itemize}
 \item \emtxt{Example 1}: Model theory and application \\~\\
 \item \emtxt{Example 2}: Trends over time \\~\\
-\item \emtxt{Example 3}: Selected case studies 
+\item \emtxt{Example 3}: Selected case studies \\~\\
 \end{itemize}
+\onslide<+->
+Can we \emtxt{develop} and \emtxt{apply} methods that \emtxt{link trends} with \emtxt{causal events}?
 \end{frame}
 
 \section{Model theory and background}
 
 
-
-%%%%%%
-\begin{frame}{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
-Increasing availability of records describing \emtxt{long-term changes} \\~\\
-Observed data can provide a means to an end, potentially \emtxt{high power} with large sample size \\~\\
-Can we \emtxt{develop} and \emtxt{apply} tools that leverage the descriptive capabilities of these large datasets? \\~\\
-Can we \emtxt{link descriptions} to \emtxt{causal events} to inform management or understanding? \\~\\
-\begin{figure}
-\centerline{\includegraphics[width = \textwidth]{fig/ts_ex.pdf}}
-\end{figure}
-\end{frame}
 
 %%%%%%
 \begin{frame}[t]{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
@@ -256,10 +218,12 @@ flow changes
 
 %%%%%%
 \begin{frame}[t]{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
+\onslide<+->
 \emtxt{Problem:} Response endpoints of eutrophication vary naturally over time and with discharge or tidal patterns\\~\\
 \emtxt{Solution:} Develop a model that accounts for changes in relationships between drivers of pollution over time\\~\\
-The \emtxt{weighted regression (WRTDS)} model is being developed by USGS for pollutant modelling in rivers \cite{Hirsch10}\\~\\
-Models pollution concentration as a function of \emtxt{time}, \emtxt{discharge}, and \emtxt{season}\\~\\
+\onslide<+->
+The \emtxt{weighted regression (WRTDS)} approach models pollutants in rivers as a function of \emtxt{time}, \emtxt{discharge}, and \emtxt{season} \cite{Hirsch10}\\~\\
+\onslide<+->
 \emtxt{Adaptation:} Applied to Tampa Bay \cite{Beck15}, further validated/compared in Patuxent Estuary [Beck and Murphy, In review]
 \end{frame}
 
@@ -340,126 +304,32 @@ Predicted trends follow observed... how can we leverage the results to better un
 
 %%%%%%
 \begin{frame}{\textbf{Selected case studies}}{\textbf{}}
-Three examples were chosen to demonstrate the utility of WRTDS \\~\\
+\onslide<+->
+Two examples demonstrate the utility of WRTDS adaptation to tidal waters: \\~\\
 \begin{itemize}
-\item Disaggregating observed nitrogen time series \\~\\
-\item Effects of wastewater treatment \\~\\
-\item Effects of biological invasion \\~\\
+\item Effects of wastewater treatment at P8 \\~\\
+\item Effects of biological invasion in Suisun Bay\\~\\
 \end{itemize}
-\centerline{\textit{Each example shows how {\bf model components} describe {\bf processes}}}
-\end{frame}
-
-%%%%%%
-\begin{frame}{\textbf{Selected case studies}}{\textbf{DIN trends at C10}}
-\emtxt{Hypothesis}: Because multiple factors influence nutrients at different times, WRTDS should describe non-linear complex relationships between nutrients, time, and flow \\~\\
-We should be able to \emtxt{predict}: \\~\\
-\begin{itemize}
-\item Annual trend independent of seasonal trend \\~\\
-\item Changes in seasonal amplitudes and quantile trends over time \\~\\
-\item Varying flow contributions 
-\end{itemize}
-\end{frame}
-
-
-
-%%%%%%
-\begin{frame}[t]{\textbf{Selected case studies}}{\textbf{DIN trends at C10}}
 \onslide<+->
-\begin{figure}
-\centerline{\includegraphics[width = \textwidth, page = 1]{fig/c10obspred.pdf}}
-\caption{Observed DIN at C10, monthly samples.}
-\end{figure}
-\vspace{-0.2in}
-\onslide<+->
-\begin{figure}
-\centerline{\includegraphics[width = \textwidth, page = 2]{fig/c10obspred.pdf}}
-\caption{Predicted DIN at C10 using WRTDS and daily flow estimates.}
-\end{figure}
-\end{frame}
-
-%%%%%%
-\begin{frame}[t]{\textbf{Selected case studies}}{\textbf{DIN trends at C10}}
-\begin{figure}
-\centerline{\includegraphics[width = \textwidth, page = 1]{fig/c10obspred.pdf}}
-\caption{Observed DIN at C10, monthly samples.}
-\end{figure}
-\vspace{-0.45in}
-\begin{figure}
-\centerline{\includegraphics[width = \textwidth]{fig/c10prdnrm.pdf}}
-\caption{Annual trends by quantiles. Predicted and flow-normalized results are shown as points and lines.}
-\end{figure}
-\end{frame}
-
-%%%%%%
-\begin{frame}[t]{\textbf{Selected case studies}}{\textbf{DIN trends at C10}}
-\onslide<+->
-\begin{figure}
-\centerline{\includegraphics[width = \textwidth, page = 1]{fig/c10flow.pdf}}
-\caption{Difference between annual predicted and flow-normalized DIN, 50\textsuperscript{th} percentile.}
-\end{figure}
-\vspace{-0.2in}
-\onslide<+->
-\begin{figure}
-\centerline{\includegraphics[width = \textwidth, page = 2]{fig/c10flow.pdf}}
-\caption{Daily flow at San Joaquin with locally-estimated smooth.}
-\end{figure}
-\end{frame}
-
-
-
-%%%%%%
-\begin{frame}[t]{\textbf{Selected case studies}}{\textbf{DIN trends at C10}}
-\onslide<+->
-\vspace{-0.1in}
-\begin{figure}
-\centerline{\includegraphics[width = \textwidth]{fig/c10grd1.pdf}}
-\caption{Modelled relationships between DIN, flow, and time.}
-\end{figure}
-\vspace{-0.3in}
-\onslide<+->
-\begin{figure}
-\centerline{\includegraphics[width = \textwidth]{fig/c10grd2.pdf}}
-\caption{Annual variation of DIN for selected months.}
-\end{figure}
-\end{frame}
-
-%%%%%%
-\begin{frame}{\textbf{Selected case studies}}{\textbf{DIN trends at C10}}
-Results at C10 showed the breadth of information provided by WRTDS\\~\\
-\begin{columns}
-\begin{column}{0.45\textwidth}
-\begin{itemize}
-\item Independent annual, seasonal trends \\~\\
-\item Explicit flow effects in residuals \\~\\
-\item Dynamic flow, season, time response
-\end{itemize}
-\end{column}
-\begin{column}{0.35\textwidth}
-\centerline{\includegraphics[width = \textwidth, page = 2]{fig/c10obspred.pdf}}
-\centerline{\includegraphics[width = \textwidth]{fig/c10prdnrm.pdf}}
-\centerline{\includegraphics[width = \textwidth, page = 1]{fig/c10flow.pdf}}
-\centerline{\includegraphics[width = \textwidth, page = 2]{fig/c10flow.pdf}}
-\centerline{\includegraphics[width = \textwidth]{fig/c10grd1.pdf}}
-\centerline{\includegraphics[width = \textwidth]{fig/c10grd2.pdf}}
-\end{column}
-\end{columns}
+Each shows how \emtxt{model components} describe \emtxt{processes} \\~\\
+Uses \emtxt{WRTDStidal} package for R
 \end{frame}
 
 
 
 %%%%%%
 \begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of wastewater treatment upgrades}}
-Now... how can model information be linked to causation?
+How can model information be linked to causation?
 \vspace{0.1in}
 \begin{figure}
-\centerline{\includegraphics[width = 0.75\textwidth]{fig/tracy.pdf}}
+\centerline{\includegraphics[width = 0.8\textwidth]{fig/tracy.pdf}}
 \caption{Nitrogen load measurements (kg d$^{-1}$) at the Tracy Wastewater Treatment Plant.  Wastewater discharge requirements were implemented in May, 2007.}
 \end{figure}
 \end{frame}
 
 %%%%%%
 \begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of wastewater treatment upgrades}}
-\emtxt{Hypothesis}: Response of nutrient concentrations at P8 is directly related to upstream WWTP upgrades \\~\\
+\emtxt{Hypothesis}: Response of nutrient concentrations at P8 is linked to upstream WWTP upgrades \\~\\
 We should be able to \emtxt{predict}: \\~\\
 \begin{itemize}
 \item A flow-normalized annual trend concurrent with WWTP upgrades \\~\\
@@ -584,6 +454,18 @@ We should be able to \emtxt{predict}: \\~\\
 }
 \end{column}
 \end{columns}
+\end{frame}
+
+
+
+%%%%%%
+\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
+\onslide<1->
+\centerline{\includegraphics[width = 0.97\textwidth, page = 1]{fig/d7links.pdf}}
+\onslide<2->
+\centerline{\includegraphics[width = 0.97\textwidth, page = 2]{fig/d7links.pdf}}
+\onslide<3->
+\centerline{\includegraphics[width = 0.97\textwidth, page = 3]{fig/d7links.pdf}}
 \end{frame}
 
 %%%%%%
