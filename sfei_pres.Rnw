@@ -919,8 +919,7 @@ Two examples demonstrate the utility of WRTDS adaptation to tidal waters: \\~\\
 \item Effects of biological invasion in Suisun Bay\\~\\
 \end{itemize}
 \onslide<+->
-Each shows how \emtxt{model components} describe \emtxt{processes} \\~\\
-Uses \emtxt{WRTDStidal} package for R
+Each shows how \emtxt{model components} describe \emtxt{processes}
 \end{frame}
 
 <<echo = F, cache = TRUE, eval = F, message = F, results = 'hide'>>=
@@ -1710,7 +1709,7 @@ Results at D7 show complex response of chlorophyll:
 \begin{itemize}
 \onslide<1->{
 \item Increase in clam abundance, decrease in chlorophyll \\~\\
-\item Increase in DIN... but also decrease in SiO$_2$ \\~\\
+\item Increase in DIN... but also increase in SiO$_2$ \\~\\
 }
 \onslide<2->{
 \item Relationship with flow changed depending on physical or biological forcing
