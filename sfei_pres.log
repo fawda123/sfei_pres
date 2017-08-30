@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.8.29)  30 AUG 2017 08:53
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.8.29)  30 AUG 2017 09:01
 entering extended mode
 **sfei_pres.tex
 (M:\presentations\sfei_pres\sfei_pres.tex
@@ -2604,14 +2604,14 @@ Package pdftex.def Info: fig/back_tmp.pdf used on input line 516.
 ]
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 537.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 534.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [48
 
 ]
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 537.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 534.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
 
 [49
@@ -2619,75 +2619,68 @@ Package pdftex.def Info: fig/back_tmp.pdf used on input line 537.
 ]
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 537.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 534.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [50
 
 ]
-File: fig/back_tmp.pdf Graphic file (type pdf)
- <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 537.
-(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [51
-
-]
-<fig/shinyex.png, id=3224, 817.55438pt x 446.41782pt>
+<fig/shinyex.png, id=3210, 817.55438pt x 446.41782pt>
 File: fig/shinyex.png Graphic file (type png)
  <use fig/shinyex.png>
-Package pdftex.def Info: fig/shinyex.png used on input line 545.
+Package pdftex.def Info: fig/shinyex.png used on input line 542.
 (pdftex.def)             Requested size: 308.06367pt x 168.21686pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
 
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 545.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 542.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [52
+ [51
 
  <M:/presentations/sfei_pres/fig/shinyex.png>]
-<fig/epa_logo.png, id=3233, 195.6108pt x 196.0926pt>
+<fig/epa_logo.png, id=3219, 195.6108pt x 196.0926pt>
 File: fig/epa_logo.png Graphic file (type png)
  <use fig/epa_logo.png>
-Package pdftex.def Info: fig/epa_logo.png used on input line 593.
+Package pdftex.def Info: fig/epa_logo.png used on input line 590.
 (pdftex.def)             Requested size: 71.88243pt x 72.05942pt.
 
-<fig/sfei1.png, id=3234, 677.53125pt x 677.53125pt>
+<fig/sfei1.png, id=3220, 677.53125pt x 677.53125pt>
 File: fig/sfei1.png Graphic file (type png)
  <use fig/sfei1.png>
-Package pdftex.def Info: fig/sfei1.png used on input line 593.
+Package pdftex.def Info: fig/sfei1.png used on input line 590.
 (pdftex.def)             Requested size: 71.88243pt x 71.88206pt.
 
-<fig/sfei2.png, id=3235, 752.8125pt x 752.8125pt>
+<fig/sfei2.png, id=3221, 752.8125pt x 752.8125pt>
 File: fig/sfei2.png Graphic file (type png)
  <use fig/sfei2.png>
-Package pdftex.def Info: fig/sfei2.png used on input line 593.
+Package pdftex.def Info: fig/sfei2.png used on input line 590.
 (pdftex.def)             Requested size: 71.88243pt x 71.87402pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
 
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 593.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 590.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [53
+ [52
 
  <M:/presentations/sfei_pres/fig/epa_logo.png> <M:/presentations/sfei_pres/fig/
 sfei1.png> <M:/presentations/sfei_pres/fig/sfei2.png>] (M:\presentations\sfei_p
 res\sfei_pres.bbl)
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 602.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 599.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
-Package atenddvi Info: Last page = 54.
- [54
+Package atenddvi Info: Last page = 53.
+ [53
 
 ]
 \tf@nav=\write6
 \tf@toc=\write7
 \tf@snm=\write8
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 604.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 604.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 601.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 601.
 
 (M:\presentations\sfei_pres\sfei_pres.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 604.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 604.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 601.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 601.
 Package rerunfilecheck Info: File `sfei_pres.out' has not changed.
 (rerunfilecheck)             Checksum: 5B3CFB5746F0D669DBB9ED8BA3C25EB8;317.
 
@@ -2695,11 +2688,11 @@ Package rerunfilecheck Info: File `sfei_pres.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 604.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 601.
  ) 
 Here is how much of TeX's memory you used:
- 34611 strings out of 493921
- 706161 string characters out of 3147282
+ 34609 strings out of 493921
+ 706142 string characters out of 3147282
  742507 words of memory out of 3000000
  37163 multiletter control sequences out of 15000+200000
  11815 words of font info for 45 fonts, out of 3000000 for 9000
@@ -2717,9 +2710,9 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on sfei_pres.pdf (54 pages, 11007313 bytes).
+Output written on sfei_pres.pdf (53 pages, 11002421 bytes).
 PDF statistics:
- 3333 PDF objects out of 3580 (max. 8388607)
- 120 named destinations out of 1000 (max. 500000)
+ 3319 PDF objects out of 3580 (max. 8388607)
+ 118 named destinations out of 1000 (max. 500000)
  8811 words of extra memory for PDF output out of 10000 (max. 10000000)
 

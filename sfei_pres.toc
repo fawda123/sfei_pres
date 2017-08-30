@@ -4,4 +4,4 @@
 \beamer@sectionintoc {3}{Trends}{21}{0}{3}
 \beamer@sectionintoc {4}{Selected case studies}{27}{0}{4}
 \beamer@sectionintoc {5}{Conclusions and future work}{48}{0}{5}
-\beamer@sectionintoc {6}{References}{54}{0}{6}
+\beamer@sectionintoc {6}{References}{53}{0}{6}
