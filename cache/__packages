@@ -12,3 +12,5 @@ Formula
 Hmisc
 ggrepel
 lubridate
+sp
+bindrcpp

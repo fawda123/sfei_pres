@@ -1,4 +1,11 @@
+ \newcommand{\noop}[1]{}
 \begin{thebibliography}{}
+
+\bibitem[Beck, 2017]{Beck17b}
+Beck MW. 2017.
+\newblock {WRTDStidal: Weighted Regression for Water Quality Evaluation in
+  Tidal Waters}.
+\newblock R package version 1.1.0.
 
 \bibitem[Beck and {Hagy III}, 2015]{Beck15}
 Beck MW, {Hagy III} JD. 2015.
@@ -6,16 +13,11 @@ Beck MW, {Hagy III} JD. 2015.
   quality trends in an estuary.
 \newblock Environmental Modelling and Assessment, 20(6):637--655.
 
-\bibitem[Beck et~al., 2015]{Beck15b}
-Beck MW, {Hagy III} JD, Murrell MC. 2015.
-\newblock Improving estimates of ecosystem metabolism by reducing effects of
-  tidal advection on dissolved oxygen time series.
-\newblock Limnology and Oceanography: Methods, 13(12):731--745.
-
-\bibitem[Cloern, 2001]{Cloern01}
-Cloern JE. 2001.
-\newblock Our evolving conceptual model of the coastal eutrophication problem.
-\newblock Marine Ecology Progress Series, 210:223--253.
+\bibitem[Beck and Murphy, 2017]{Beck17}
+Beck MW, Murphy RR. 2017.
+\newblock Numerical and qualitative contrasts of two statistical models for
+  water quality change in tidal waters.
+\newblock Journal of the American Water Resources Association, 53(1):197--219.
 
 \bibitem[Crauder et~al., 2016]{Crauder16}
 Crauder JS, Thompson JK, Parchaso F, Anduaga RI, Pearson SA, Gehrts K, Fuller
@@ -31,11 +33,5 @@ Hirsch RM, Moyer DL, Archfield SA. 2010.
 \newblock Weighted regressions on time, discharge, and season ({WRTDS}), with
   an application to {C}hesapeake {B}ay river inputs.
 \newblock Journal of the American Water Resources Association, 46(5):857--880.
-
-\bibitem[Nixon, 1995]{Nixon95}
-Nixon SW. 1995.
-\newblock Coastal marine eutrophication: A definition, social causes, and
-  future concerns.
-\newblock Ophelia, 41:199--219.
 
 \end{thebibliography}

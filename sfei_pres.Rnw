@@ -193,12 +193,12 @@ writeLines(refs, con = file('refs.bib'))
 
 \begin{document}
 
-\title[Understanding nitrogen pollution]{\textbf{Quantitative approaches to understanding nitrogen pollution: Examples from the upper San Francisco Estuary}}
+\title[Evaluation of Delta RMP data]{\textbf{Evaluation of Delta RMP nutrient data using weighted regression for trend analysis}}
 \author[M. Beck]{Marcus W. Beck, PhD}
 
 \institute[USEPA]{USEPA National Health and Environmental Effects Research Laboratory, Gulf Ecology Division, \href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov}, Phone: 8509342480}
 
-\date{Aug. 26, 2016}
+\date{August 30, 2017}
 
 \titlegraphic{\includegraphics[width=\linewidth]{fig/titlegraphic.pdf}}
 
@@ -211,39 +211,15 @@ writeLines(refs, con = file('refs.bib'))
 \section{Background}
 
 %%%%%%
-\begin{frame}{\textbf{Evaluating estuarine condition}}{\textbf{How do we collect and use data?}}
-How can we leverage monitoring data to develop our conceptual model of eutrophication? \\~\\
+\begin{frame}{\textbf{Evaluating Delta RMP data}}{}
 \onslide<+->
-\begin{quote}
-Eutrophication (noun) - an \emtxt{increase} in the rate of supply of \emtxt{organic matter} to an ecosystem\\
-\hfill -- \cite{Nixon95}
-\end{quote}
-\begin{center}
-\scalebox{1}{
-\begin{tikzpicture}[node distance = 4cm, auto, >=stealth]
-  \onslide<+->{
-  \node[block] (a) {Nutrient Loading};}
-  \onslide<+->{
-	\node[decision] (b)  [right of=a] {Responses};
- 	\draw[->] (a) -- (b);}
-  \onslide<+->{
-  \draw[decorate,decoration={brace,amplitude=10pt}] [right of=b] (2,-1.5) -- (2,1.5);
-  \node[draw,align=left,draw=none] [right of=b] {\textbf{Changes in:}\\ Chlorophyll\\ Primary Production\\ System Metabolism\\ Dissolved Oxygen};}
-\end{tikzpicture}}
-\end{center}
-\vspace{-0.5cm}\hspace*{15pt}\scalebox{0.7}{\hbox{\tiny Adapted from \cite{Cloern01}}}\\~\\
-\end{frame}
-
-%%%%%%
-\begin{frame}{\textbf{Evaluating estuarine condition}}{\textbf{How do we collect and use data?}}
-\onslide<+->
-\emtxt{Today's talk}: My experience evaluating monitoring data to inform our understanding of the eutrophication paradigm\\~\\
+\emtxt{Today's talk}: Evaluation of forty years of Delta RMP nutrient data with weighted regression \\~\\
 \onslide<+->
 Water quality trends in the Delta: \\~\\
 \begin{itemize}
-\item \emtxt{Example 1}: Model theory and application \\~\\
-\item \emtxt{Example 2}: Trends over time \\~\\
-\item \emtxt{Example 3}: Selected case studies \\~\\
+\item \emtxt{Part 1}: Model theory and application \\~\\
+\item \emtxt{Part 2}: Trends over time \\~\\
+\item \emtxt{Part 3}: Selected case studies \\~\\
 \end{itemize}
 \onslide<+->
 Can we \emtxt{develop} and \emtxt{apply} methods that \emtxt{link trends} with \emtxt{causal events}?
@@ -431,7 +407,24 @@ flow changes
 \onslide<+->
 The \emtxt{weighted regression (WRTDS)} approach models pollutants in rivers as a function of \emtxt{time}, \emtxt{discharge}, and \emtxt{season} \cite{Hirsch10}\\~\\
 \onslide<+->
-\emtxt{Adaptation:} Applied to Tampa Bay \cite{Beck15}, further validated/compared in Patuxent Estuary [Beck and Murphy, In review]
+\emtxt{Adaptation:} Applied to Tampa Bay \cite{Beck15}, further validated/compared in Patuxent Estuary \cite{Beck17}
+\end{frame}
+
+%%%%%%
+\begin{frame}[t]{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
+\onslide<1->
+How does weighted regression work?  
+\begin{center}
+$\ln\left(N\right) = \beta_0 + \beta_1 t + \beta_2 Sal + \beta_3 \sin\left(2\pi t\right) + \beta_4 \cos\left(2\pi t\right)$\\~\\
+$N$: nitrogen (or other response endpoint)\\
+$t$: time\\
+$Sal$: Salinity (or other flow-related variable)
+\end{center}
+\includegraphics<2>[width = \textwidth, page = 1]{fig/wrtds_pieces.pdf}
+\includegraphics<3>[width = \textwidth, page = 2]{fig/wrtds_pieces.pdf}
+\includegraphics<4>[width = \textwidth, page = 3]{fig/wrtds_pieces.pdf}
+\includegraphics<5>[width = \textwidth, page = 4]{fig/wrtds_pieces.pdf}
+\includegraphics<6>[width = \textwidth, page = 5]{fig/wrtds_pieces.pdf}
 \end{frame}
 
 <<wtex, echo = F, results = 'hide', message = F, eval = F>>=
@@ -572,6 +565,19 @@ How does weighted regression work?
 \animategraphics[controls,width=\linewidth]{10}{fig/wtex}{}{} %frame rate is 12 per/sec
 \end{center}
 \end{frame}
+ 
+%%%%%%
+\begin{frame}[t]{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
+{\small
+\emtxt{Points}: observed time series (black are weighted, grey is zero weight)\\
+\emtxt{Green point}: observation at the center of the regression\\
+\emtxt{Blue line}: Global model with weights specific to the window\\
+\emtxt{Red line}: Accumulated WRTDS model
+}
+\begin{center}
+\animategraphics[controls,width=\linewidth]{10}{fig/wrtds_pieces2}{}{} %frame rate is 12 per/sec
+\end{center}
+\end{frame} 
  
 <<map, echo = F, include = F, results = 'hide'>>=
 # load required data
@@ -837,6 +843,12 @@ dev.off()
 \centerline{\includegraphics[width = 0.93\textwidth, page = 2]{fig/trndsperno23.pdf}}
 \end{frame}
 
+%%%%%%
+\begin{frame}{The ORISE experience}{Additional WRTDS applications}
+Better description of nutrient endpoints can change conclusions
+\centerline{\includegraphics[width = \textwidth]{fig/trndcomp1.pdf}}
+\end{frame}
+
 <<echo = F, cache = TRUE, eval = T, message = F, results = 'hide'>>=
 data("mods_nolag")
 
@@ -913,91 +925,68 @@ Predicted trends follow observed... how can we leverage the results to better un
 %%%%%%
 \begin{frame}{\textbf{Selected case studies}}{\textbf{}}
 \onslide<+->
-Two examples demonstrate the utility of WRTDS adaptation to tidal waters: \\~\\
+Two examples demonstrate the utility of WRTDS adaptation to Delta RMP data: \\~\\
 \begin{itemize}
 \item Effects of wastewater treatment at P8 \\~\\
 \item Effects of biological invasion in Suisun Bay\\~\\
 \end{itemize}
 \onslide<+->
 Each shows how \emtxt{model components} describe \emtxt{processes} \\~\\
-Uses \emtxt{WRTDStidal} package for R
+Uses \emtxt{WRTDStidal} package for R \cite{Beck17b}: \href{https://cran.rstudio.com/web/packages/WRTDStidal/index.html}{\url{https://cran.rstudio.com/web/packages/WRTDStidal}}
 \end{frame}
 
-<<echo = F, cache = TRUE, eval = F, message = F, results = 'hide'>>=
-data(potw_load)
+<<echo = F, cache = TRUE, eval = T, message = F, results = 'hide'>>=
+data(stock_conc)
 
-# default theme
-mytheme <- theme_minimal() + 
+stock_conc <- filter(stock_conc, date >= as.Date('2003-01-01'))
+
+ptheme <- theme_minimal() + 
   theme(
-    plot.background = element_rect(fill='transparent', 
-      colour = NA),
-    panel.background = element_rect(fill='transparent', 
-      colour = NA),
-    legend.background = element_rect(fill='transparent', 
-      colour = NA),
-    legend.key = element_rect(fill = 'transparent', 
-      colour = NA),
     axis.line.x = element_line(), 
     axis.line.y = element_line(), 
     axis.ticks.x = element_line(),
     axis.ticks.y = element_line(),
-    axis.ticks.length = unit(.1, "cm"), 
-    plot.margin = unit(c(0, 3, 3, 3), 'pt'),
-    panel.grid.major = element_line(colour = "#7BCCC4"),
-    panel.grid.minor = element_blank(), 
-    axis.title.x = element_blank()
-  )   
+    axis.ticks.length = unit(.1, "cm"),
+    axis.title.x = element_blank(),
+    legend.position = 'top', 
+    legend.title = element_blank()
+  )
+cols <- RColorBrewer::brewer.pal(9, 'Blues')[c(3, 5, 8)] %>% 
+  rev
 
-lncol <- RColorBrewer::brewer.pal(9, 'Set1')[2]
+toplo1 <- stock_conc %>% 
+  select(-val2) %>% 
+  spread(var, val) %>% 
+  mutate(TN = NH3 + NO2 + NO3)
+toplo2 <- stock_conc
 
-toplo1 <- filter(potw_load, loc %in% 'tracy' & var %in% c('tn'))
-toplo2 <- filter(potw_load, loc %in% 'tracy' & var %in% c('nh4', 'no3', 'orgn'))
-
-ylab <- expression(paste("Total nitrogen load (kg ", d^-1, ")"))
+ylab1 <- expression(paste("Total nitrogen (mg ", L^-1, ")"))
+xrng <- range(c(toplo1$date, toplo2$date))
+yrng <- c(0, 50)
 leglabs <- list(
   expression(NH [4] ^ '+'),
-  expression(NO [3] ^ '2-'),
-  expression('organic N')
+  expression(NO [2] ^ '-'),
+  expression(NO [3] ^ '2-')
   )
 
-lndate <- as.Date('2007/05/01')
+lndate <- as.Date('2006/01/01')
 
-p1 <- ggplot(toplo1) + 
-  geom_line(colour = lncol, aes(x = date, y = val)) + 
-  scale_x_date(expand = c(0, 0)) + 
-  scale_y_continuous(ylab, expand = c(0, 0), limits = c(50, 850)) + 
+p1 <- ggplot(toplo2) + 
+  geom_area(aes(x = date, y = val, group = var, fill = var), stat = 'identity', position = 'stack', alpha = 0.75) + 
+  scale_x_date(expand = c(0, 0), limits = xrng) + 
+  scale_fill_manual(values = cols, labels = leglabs) + 
   geom_vline(xintercept = as.numeric(lndate), linetype = 'dashed') +
   geom_label_repel(
-    data = data.frame(x = lndate, y = 600), 
+    data = data.frame(x = lndate, y = 35), 
     aes(x, y, label = 'WWTP upgrades'), 
     box.padding = grid::unit(2, "lines"), 
     nudge_x = 1
-    ) + 
-  mytheme
+    ) +
+  scale_y_continuous(ylab1, expand = c(0, 0)) + 
+  ptheme
 
-p2 <- ggplot(toplo2, aes(x = date, y = val, group = var, fill = var)) + 
-  geom_area(stat = 'identity', position = 'fill') + 
-  scale_x_date(expand = c(0, 0)) + 
-  scale_fill_brewer(palette = 'Blues', labels = leglabs) + 
-  scale_y_continuous('% of total nitrogen', expand = c(0, 0)) + 
-  geom_vline(xintercept = as.numeric(lndate), linetype = 'dashed') +
-  mytheme + 
-  theme(
-    legend.position = 'top', 
-    legend.title = element_blank()
-    )
-
-# align widths of plots in first column, first two
-pA <- ggplot_gtable(ggplot_build(p1))
-pB <- ggplot_gtable(ggplot_build(p2))
-maxWidth = unit.pmax(pA$widths[2:3], pB$widths[2:3])
-
-# Set the widths
-pA$widths[2:3] <- maxWidth
-pB$widths[2:3] <- maxWidth
-
-pdf('fig/tracy.pdf', height = 5, width = 9, family = 'serif')
-grid.arrange(pA, pB, ncol = 1, heights = c(0.8, 1))
+pdf('fig/stock.pdf', height = 3, width = 8, family = 'serif')
+p1
 dev.off()
 @
 
@@ -1006,8 +995,8 @@ dev.off()
 How can model information be linked to causation?
 \vspace{0.1in}
 \begin{figure}
-\centerline{\includegraphics[width = 0.8\textwidth]{fig/tracy.pdf}}
-\caption{Nitrogen load measurements (kg d$^{-1}$) at the Tracy Wastewater Treatment Plant.  Wastewater discharge requirements were implemented in May, 2007.}
+\centerline{\includegraphics[width = \textwidth]{fig/stock.pdf}}
+\caption{Nitrogen concentration measurements (mg L$^{-1}$) from the City of Stockton Wastewater Treatment Plant, San Joaquin County.  Wastewater discharge requirements were implemented in 2006 for nitrification/denitrification and tertiary filtration to convert ammonium to nitrate.}
 \end{figure}
 \end{frame}
 
@@ -1710,7 +1699,7 @@ Results at D7 show complex response of chlorophyll:
 \begin{itemize}
 \onslide<1->{
 \item Increase in clam abundance, decrease in chlorophyll \\~\\
-\item Increase in DIN... but also decrease in SiO$_2$ \\~\\
+\item Increase in DIN... but also increase in SiO$_2$ \\~\\
 }
 \onslide<2->{
 \item Relationship with flow changed depending on physical or biological forcing
@@ -1754,234 +1743,9 @@ Chosen method depends on the question: WRTDS because water quality varies with t
 \href{https://github.com/fawda123/WRTDStidal}{\url{https://github.com/fawda123/WRTDStidal}}
 \end{frame}
 
-% patux map
-<<echo = F, cache = T, message = F, eval = F>>=
-
-# load data
-data(cb_poly)
-data(usa_poly)
-data(patux_poly)
-data(pax_meta)
-data(cb_poly_simp)
-
-# lims <- bbox(patux_poly)
-
-# color palette
-mapcols <- RColorBrewer::brewer.pal(5, 'GnBu')
-bg_col <- '#F0F9E8'
-
-# prep for plots
-cb_poly <- fortify(cb_poly)
-usa_poly <- fortify(usa_poly)
-patux_poly <- fortify(patux_poly) %>% 
-  mutate(id = factor(id, levels = c('60', '74', '88'), labels = c('TF', 'OH', 'MH')))
-
-pax_meta$lab <- with(pax_meta, paste0('"', STATION, ' (', round(dist_km, 1), ')"'))
-pax_meta$lab[c(4, 8)] <- paste0('bold(', pax_meta$lab[c(4, 8)], ')') 
-
-# base map
-p1 <- ggplot(patux_poly, aes(x = long, y = lat)) + 
-  geom_polygon(data = cb_poly, aes(x = long, y = lat, group = group), 
-    fill = 'grey90', colour = 'grey50') +
-  geom_polygon(aes(fill = factor(id), group = group), colour = NA) +
-  scale_fill_manual(values = rev(mapcols)) +
-  geom_point(data = pax_meta, aes(x = LONG, y = LAT), size = 5, alpha = 0.8) +
-  geom_text(data = pax_meta, aes(x = LONG * 1.001, y = LAT, label = lab), size = 5, 
-    parse = TRUE) +
-  theme_classic() + 
-  theme(axis.line=element_blank(), axis.text.x=element_blank(),
-    axis.text.y=element_blank(), axis.ticks=element_blank(),
-    axis.title.x=element_blank(),
-    axis.title.y=element_blank(),
-    panel.background=element_blank(),panel.border=element_blank(),panel.grid.major=element_blank(),
-    panel.grid.minor=element_blank(),plot.background=element_blank(), 
-    legend.position = 'top', 
-    legend.title = element_blank(), 
-    legend.background = element_rect(fill =  scales::alpha(bg_col, 0))
-    ) +
-  coord_fixed(ratio = 1, xlim = c(-76.84, -76.38), ylim = c(38.27, 38.88))
-
-
-# inset
-p2 <- ggplot(patux_poly, aes(x = long, y = lat)) + 
-  geom_polygon(data = usa_poly, aes(x = long, y = lat, group = group), 
-    fill = 'white', colour = 'grey50') +
-  geom_polygon(aes(group = group), colour = 'black', fill = 'black') +
-  theme(axis.title =element_blank(), 
-          axis.text.y = element_text(colour = 'black'), 
-          axis.text.x = element_text(colour = 'black', angle = 90, vjust = 0.5), 
-          panel.background=element_rect(fill = 'grey90'),
-          panel.grid.major=element_blank(),
-          panel.grid.minor=element_blank(),
-          plot.background=element_blank(),
-          panel.border = element_rect(colour = "black", fill = NA, size = 1)
-    ) +
-  coord_fixed(ratio = 1, xlim = c(-77.5, -75.5), ylim = c(36.7, 39.7))
-
-grid.newpage()
-v1 <- viewport(width = 1, height = 1, x = 0.5, y = 0.5) 
-v2 <- viewport(width = 0.55, height = 0.55, x = 0.7275, y = 0.64)
-
-pdf('fig/patux_map.pdf', height = 7, width = 5, family = 'serif')
-print(p1, vp = v1) 
-print(p2, vp = v2)
-dev.off()
-@
-
-% patux trends
-<<echo = F, cache = T, message = F, eval = F>>=
-
-data(bestLE12)
-data(bestTF16)
-
-cols <- RColorBrewer::brewer.pal(5, 'GnBu')
-
-mytheme <- theme_bw() + 
-  theme(
-    plot.background = element_rect(fill='transparent', 
-      colour = NA),
-    panel.background = element_rect(fill='transparent', 
-      colour = NA),
-    legend.background = element_rect(fill='transparent', 
-      colour = NA),
-    legend.key = element_rect(fill = 'transparent', 
-      colour = NA),
-    strip.background = element_rect(fill = cols[2], colour = 'black'),
-    axis.line.x = element_line(), 
-    axis.line.y = element_line(), 
-    axis.ticks.x = element_line(),
-    axis.ticks.y = element_line(),
-    axis.ticks.length = unit(.1, "cm"), 
-    panel.grid.major = element_line(colour = "#7BCCC4"),
-    panel.grid.minor = element_blank(), 
-    plot.margin = unit(c(3, 3, 3, 3), 'pt')
-  )   
-
-# some plots
-bestTF16$site <- 'TF1.6'
-bestLE12$site <- 'LE1.2'
-names(bestLE12) <- gsub('gams$', 'GAM', names(bestLE12))
-names(bestLE12) <- gsub('wrtds$', 'WRTDS', names(bestLE12))
-names(bestTF16) <- gsub('gams$', 'GAM', names(bestTF16))
-names(bestTF16) <- gsub('wrtds$', 'WRTDS', names(bestTF16))
-
-bestLE12 <- select(bestLE12, -sal, -lnQ, -dec_time, -se_GAM)
-bestTF16 <- select(bestTF16, -lnQ, -sal, -dec_time, -se_GAM)
-toplo <- rbind(bestTF16, bestLE12) %>% 
-  gather(variable, value, fits_WRTDS:res_GAM) %>% 
-  separate(variable, c('output', 'model'), sep = '_') %>% 
-  mutate(output = factor(output, levels = c('fits', 'norm', 'res'), labels = c('Pred', 'Norm', 'Res')))
-
-toplo2 <- mutate(toplo, year = as.numeric(strftime(date, '%Y'))) %>% 
-  group_by(year, site, output, model) %>% 
-  summarise(value = mean(value, na.rm = TRUE)) %>% 
-  filter(output != 'Res') %>% 
-  spread(output, value) 
-
-p2 <- ggplot(toplo2, aes(x = year, y = Pred, colour = 'Pred')) + 
-  geom_line(aes(x = year, y = Norm, colour = 'Norm'), size = 1) + 
-  geom_point() + 
-  mytheme + 
-  facet_wrap(site ~ model) + 
-  theme(
-    axis.text.x = element_text(size = 8, angle = 90, vjust = 0.5),
-    axis.title.x = element_blank(), 
-    legend.title = element_blank(), 
-    legend.position = 'top'
-    ) +
-  scale_y_continuous(limits = c(1.5, 3), breaks = seq(1.5, 3, 0.5)) + 
-  scale_colour_manual(values = cols[c(5, 4)]) + 
-  ylab(expression(paste('ln-Chl ',' (',italic('\u03bc'),'g ',L^-1,')'))) +
-  guides(color=guide_legend(override.aes=list(shape=c(NA,16),linetype=c(1,0))))
-
-pdf('fig/predann.pdf', height = 6, width = 7, family = 'serif')
-print(p2)
-dev.off()
-@
-
 %%%%%%
 \begin{frame}{\textbf{Conclusions}}{\textbf{Lessons for monitoring and future work}}
-Comparing WRTDS and GAMs for trend evaluation
-\begin{columns}
-\begin{column}{0.38\textwidth}
-\includegraphics[width = \textwidth]{fig/patux_map.pdf}
-\end{column}
-\begin{column}{0.65\textwidth}
-\includegraphics[width = \textwidth]{fig/predann.pdf}
-\end{column}
-\end{columns}
-\end{frame}
-
-<<echo = F, cache = T, message = F, eval = F>>=
-data(RKBMB_wtreg)
-to_plo <- RKBMB_wtreg
-
-pal <- RColorBrewer::brewer.pal(5, 'GnBu')
-
-data(met_ls)
-met_ls <- met_ls[['RKBMB_wtreg.RData']]
-met_plo <- reshape2::melt(met_ls, id.var = 'Date', measure.var = c('Pg', 'Rt', 'Pg_dtd', 'Rt_dtd'))
-met_plo$type <- rep('Observed', length = nrow(met_plo))
-met_plo$type[grep('dtd$', met_plo$variable)] <- 'Detided'
-met_plo$variable <- gsub('_dtd$', '', met_plo$variable)
-met_plo$variable <- factor(met_plo$variable, levels = c('Pg', 'Rt'), labels = c('Production', 'Respiration'))
-met_plo$type<- factor(met_plo$type, levels = c('Observed', 'Detided'), labels = c('Observed', 'Detided'))
-
-mytheme <- theme_minimal() + 
-  theme(
-    plot.background = element_rect(fill='transparent', 
-      colour = NA),
-    panel.background = element_rect(fill='transparent', 
-      colour = NA),
-    legend.background = element_rect(fill='transparent', 
-      colour = NA),
-    legend.key = element_rect(fill = 'transparent', 
-      colour = NA),
-    axis.line.x = element_line(), 
-    axis.line.y = element_line(), 
-    axis.ticks.x = element_line(),
-    axis.ticks.y = element_line(),
-    axis.ticks.length = unit(.1, "cm"), 
-    panel.grid.major = element_line(colour = "#7BCCC4"),
-    panel.grid.minor = element_blank(), 
-    plot.margin = unit(c(0, 0, 0, 0), 'pt')
-  )   
-
-## 
-
-ylab<-expression(paste('DO (mg ',L^-1,')'))
-p1 <- ggplot(to_plo, aes(x = DateTimeStamp)) + 
-  geom_line(aes(y = DO_obs, colour = 'Observed')) +
-  geom_line(aes(y = DO_nrm, colour = 'Detided')) +
-  scale_colour_manual('', values=pal[c(3, 5)]) +
-  scale_y_continuous(ylab) +
-  mytheme +
-  theme(legend.position = 'top', axis.title.x = element_blank())
-
-ylab<-expression(paste('mmol ', O[2],' ', m^-2,' ', d^-1))
-p2 <- ggplot(met_plo, aes(x = Date, y = value, group = variable, colour = variable)) + 
-  geom_line() +
-  geom_point() +
-  facet_wrap(~type, ncol = 1) + 
-  scale_colour_manual('', values=pal[c(3, 4)]) +
-  scale_y_continuous(ylab) +
-  mytheme + 
-  theme(legend.position = 'top', axis.title.x = element_blank())
-
-pdf('fig/metex.pdf', height = 5, width = 9, family = 'serif')
-grid.arrange(p1, p2, ncol = 1, heights = c(1.5,2))
-dev.off()
-@
-
-%%%%%%
-\begin{frame}{\textbf{Conclusions}}{\textbf{Lessons for monitoring and future work}}
-DO time series and ecosystem metabolism \cite{Beck15b}
-\includegraphics[width = \textwidth]{fig/metex.pdf}
-\end{frame}
-
-%%%%%%
-\begin{frame}{\textbf{Conclusions}}{\textbf{Lessons for monitoring and future work}}
-Data management and analysis tools
+Shiny app: \href{https://beckmw.shinyapps.io/sf_trends/}{\url{https://beckmw.shinyapps.io/sf_trends/}}
 \begin{center}
 \fbox{\includegraphics[width = 0.9\textwidth]{fig/shinyex.png}}
 \end{center}
@@ -1994,23 +1758,28 @@ Acknowledgments and contact info:\\~\\
 \begin{column}{0.9\textwidth}
 {\footnotesize
 Research staff and employees at USEPA Gulf Ecology Division, San Francisco Estuary Institute \\~\\
-David Senn, Phil Bresnahan, Emily Novick, James D. Hagy III, Thomas Jabusch
+David Senn, Jabusch, Phil Bresnahan, Emily Novick
 }
 \end{column}
 \end{columns}
 \vfill
 \begin{columns}
-\begin{column}{0.5\textwidth}
+\begin{column}{0.7\textwidth}
 \begin{center}
-\includegraphics[width=0.7\linewidth]{fig/titlegraphic.png}
+\includegraphics[width=0.3\linewidth]{fig/epa_logo.png}
+\hfill
+\includegraphics[width=0.3\linewidth]{fig/sfei1.png}
+\hfill
+\includegraphics[width=0.3\linewidth]{fig/sfei2.png}
 \end{center}
 \end{column}
-\begin{column}{0.5\textwidth}
+\begin{column}{0.3\textwidth}
 \scriptsize
 \begin{center}
 \href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov} \\~\\
-Github @fawda123 \\~\\
-Phone: 8509342480
+\href{mailto:marcusb@sccwrp.org}{marcusb@sccwrp.org} \\~\\
+Phone (EPA): 8509342480 \\~\\
+Phone (SCCWRP): 7147553217
 \end{center}
 \end{column}
 \end{columns}
@@ -2024,6 +1793,8 @@ This presentation: \href{https://github.com/fawda123/sfei_pres}{\url{https://git
 Shiny app: \href{https://beckmw.shinyapps.io/sf_trends/}{\url{https://beckmw.shinyapps.io/sf_trends/}}
 
 Detailed results: \href{http://fawda123.github.io/sf_trends/README}{\url{http://fawda123.github.io/sf\_trends/README}}
+
+Draft manuscript: \href{http://fawda123.github.io/sftrends_manu}{\url{http://fawda123.github.io/sftrends\_manu}}
 \end{column}
 \end{columns}
 \end{frame}

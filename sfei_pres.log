@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.8.29)  24 AUG 2016 08:32
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.8.29)  30 AUG 2017 08:53
 entering extended mode
 **sfei_pres.tex
 (M:\presentations\sfei_pres\sfei_pres.tex
@@ -1347,20 +1347,20 @@ Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
 (M:\presentations\sfei_pres\sfei_pres.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1398,7 +1398,7 @@ LaTeX Font Info:    ... okay on input line 102.
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box104
-Package hyperref Info: Link coloring OFF on input line 102.
+Package hyperref Info: Link coloring OFF on input line 103.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1408,9 +1408,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count319
 )
-LaTeX Info: Redefining \ref on input line 102.
-LaTeX Info: Redefining \pageref on input line 102.
-LaTeX Info: Redefining \nameref on input line 102.
+LaTeX Info: Redefining \ref on input line 103.
+LaTeX Info: Redefining \pageref on input line 103.
+LaTeX Info: Redefining \nameref on input line 103.
 
 (M:\presentations\sfei_pres\sfei_pres.out)
 (M:\presentations\sfei_pres\sfei_pres.out)
@@ -1442,7 +1442,7 @@ Dictionary: translator-numbers-dictionary, Language: English
 ts\translator-theorem-dictionary\translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 102.
+LaTeX Info: Redefining \includegraphics on input line 103.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -1450,23 +1450,23 @@ Package caption Info: End \AtBeginDocument code.
 (M:\presentations\sfei_pres\sfei_pres.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 105.
+(hyperref)                setting the option has no effect on input line 106.
 
 <fig/titlegraphic.pdf, id=62, 1300.86pt x 144.54pt>
 File: fig/titlegraphic.pdf Graphic file (type pdf)
  <use fig/titlegraphic.pdf>
-Package pdftex.def Info: fig/titlegraphic.pdf used on input line 117.
+Package pdftex.def Info: fig/titlegraphic.pdf used on input line 118.
 (pdftex.def)             Requested size: 342.2953pt x 38.03163pt.
 
 <fig/back_tmp.pdf, id=63, 505.89pt x 505.89pt>
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 117.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 118.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 117.
+(Font)              size <5> substituted on input line 118.
 
 [1
 
@@ -1475,14 +1475,14 @@ tions/sfei_pres/fig/back_tmp.pdf> <M:/presentations/sfei_pres/fig/titlegraphic.
 pdf>]
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 143.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 135.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [2
 
 ]
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 143.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 135.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [3
 
@@ -1490,104 +1490,74 @@ Package pdftex.def Info: fig/back_tmp.pdf used on input line 143.
 File: fig/back_tmp.pdf Graphic file (type pdf)
 
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 143.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 135.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [4
 
-]
-File: fig/back_tmp.pdf Graphic file (type pdf)
- <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 143.
-(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [5
-
-]
-File: fig/back_tmp.pdf Graphic file (type pdf)
- <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 158.
-(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
-
-[6
-
-]
-File: fig/back_tmp.pdf Graphic file (type pdf)
- <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 158.
-(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [7
-
-]
-File: fig/back_tmp.pdf Graphic file (type pdf)
- <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 158.
-(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [8
-
-]
-<fig/ts_ex.pdf, id=149, 867.24pt x 144.54pt>
+] <fig/ts_ex.pdf, id=107, 867.24pt x 144.54pt>
 File: fig/ts_ex.pdf Graphic file (type pdf)
- <use fig/ts_ex.pdf>
-Package pdftex.def Info: fig/ts_ex.pdf used on input line 193.
-(pdftex.def)             Requested size: 342.2953pt x 57.04965pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 193.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+<use fig/ts_ex.pdf>
+Package pdftex.def Info: fig/ts_ex.pdf used on input line 170.
+(pdftex.def)             Requested size: 342.2953pt x 57.04965pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 170.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 193.
+LaTeX Font Info:    Try loading font information for U+msb on input line 170.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (2.63007pt too wide) in paragraph at lines 193--193
+Overfull \hbox (2.63007pt too wide) in paragraph at lines 170--170
 []$[]$  
  []
 
 File: fig/back_tmp.pdf Graphic file (type pdf)
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 193.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 170.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [9
+ [5
 
  <M:/presentations/sfei_pres/fig/ts_ex.pdf>]
 File: fig/ts_ex.pdf Graphic file (type pdf)
 
 <use fig/ts_ex.pdf>
-Package pdftex.def Info: fig/ts_ex.pdf used on input line 217.
+Package pdftex.def Info: fig/ts_ex.pdf used on input line 194.
 (pdftex.def)             Requested size: 342.2953pt x 57.04965pt.
- <fig/schematic2.pdf, id=162, 325.215pt x 126.4725pt>
+ <fig/schematic2.pdf, id=122, 325.215pt x 126.4725pt>
 File: fig/schematic2.pdf Graphic file (type pdf)
 
 <use fig/schematic2.pdf>
-Package pdftex.def Info: fig/schematic2.pdf used on input line 217.
+Package pdftex.def Info: fig/schematic2.pdf used on input line 194.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
- <fig/schematic3.pdf, id=163, 325.215pt x 126.4725pt>
+ <fig/schematic3.pdf, id=123, 325.215pt x 126.4725pt>
 File: fig/schematic3.pdf Graphic file (type pdf)
 
 <use fig/schematic3.pdf>
-Package pdftex.def Info: fig/schematic3.pdf used on input line 217.
+Package pdftex.def Info: fig/schematic3.pdf used on input line 194.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
- <fig/schematic4.pdf, id=164, 325.215pt x 126.4725pt>
+ <fig/schematic4.pdf, id=124, 325.215pt x 126.4725pt>
 File: fig/schematic4.pdf Graphic file (type pdf)
 
 <use fig/schematic4.pdf>
-Package pdftex.def Info: fig/schematic4.pdf used on input line 217.
+Package pdftex.def Info: fig/schematic4.pdf used on input line 194.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
- <fig/schematic5.pdf, id=165, 325.215pt x 126.4725pt>
+ <fig/schematic5.pdf, id=125, 325.215pt x 126.4725pt>
 File: fig/schematic5.pdf Graphic file (type pdf)
 
 <use fig/schematic5.pdf>
-Package pdftex.def Info: fig/schematic5.pdf used on input line 217.
+Package pdftex.def Info: fig/schematic5.pdf used on input line 194.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 
-Overfull \vbox (14.4352pt too high) detected at line 217
+Overfull \vbox (14.4352pt too high) detected at line 194
  []
 
 File: fig/back_tmp.pdf Graphic file (type pdf)
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 217.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 194.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [10
+ [6
 
  <M:/presentations/sfei_pres/fig/schematic2.pdf> <M:/presentations/sfei_pres/fi
 g/schematic3.pdf> <M:/presentations/sfei_pres/fig/schematic4.pdf> <M:/presentat
@@ -1595,864 +1565,1129 @@ ions/sfei_pres/fig/schematic5.pdf>]
 File: fig/ts_ex.pdf Graphic file (type pdf)
 
 <use fig/ts_ex.pdf>
-Package pdftex.def Info: fig/ts_ex.pdf used on input line 217.
+Package pdftex.def Info: fig/ts_ex.pdf used on input line 194.
 (pdftex.def)             Requested size: 342.2953pt x 57.04965pt.
 File: fig/schematic2.pdf Graphic file (type pdf)
  <use fig/schematic2.pdf>
-Package pdftex.def Info: fig/schematic2.pdf used on input line 217.
+Package pdftex.def Info: fig/schematic2.pdf used on input line 194.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 File: fig/schematic3.pdf Graphic file (type pdf)
  <use fig/schematic3.pdf>
-Package pdftex.def Info: fig/schematic3.pdf used on input line 217.
+Package pdftex.def Info: fig/schematic3.pdf used on input line 194.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 File: fig/schematic4.pdf Graphic file (type pdf)
 
 <use fig/schematic4.pdf>
-Package pdftex.def Info: fig/schematic4.pdf used on input line 217.
+Package pdftex.def Info: fig/schematic4.pdf used on input line 194.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 File: fig/schematic5.pdf Graphic file (type pdf)
  <use fig/schematic5.pdf>
-Package pdftex.def Info: fig/schematic5.pdf used on input line 217.
+Package pdftex.def Info: fig/schematic5.pdf used on input line 194.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 
-Overfull \vbox (14.4352pt too high) detected at line 217
+Overfull \vbox (14.4352pt too high) detected at line 194
  []
 
 File: fig/back_tmp.pdf Graphic file (type pdf)
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 217.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 194.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [11
+ [7
 
 ]
 File: fig/ts_ex.pdf Graphic file (type pdf)
  <use fig/ts_ex.pdf>
-Package pdftex.def Info: fig/ts_ex.pdf used on input line 217.
+Package pdftex.def Info: fig/ts_ex.pdf used on input line 194.
 (pdftex.def)             Requested size: 342.2953pt x 57.04965pt.
 File: fig/schematic2.pdf Graphic file (type pdf)
  <use fig/schematic2.pdf>
-Package pdftex.def Info: fig/schematic2.pdf used on input line 217.
+Package pdftex.def Info: fig/schematic2.pdf used on input line 194.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 File: fig/schematic3.pdf Graphic file (type pdf)
 
 <use fig/schematic3.pdf>
-Package pdftex.def Info: fig/schematic3.pdf used on input line 217.
+Package pdftex.def Info: fig/schematic3.pdf used on input line 194.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 File: fig/schematic4.pdf Graphic file (type pdf)
  <use fig/schematic4.pdf>
-Package pdftex.def Info: fig/schematic4.pdf used on input line 217.
+Package pdftex.def Info: fig/schematic4.pdf used on input line 194.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 File: fig/schematic5.pdf Graphic file (type pdf)
  <use fig/schematic5.pdf>
-Package pdftex.def Info: fig/schematic5.pdf used on input line 217.
+Package pdftex.def Info: fig/schematic5.pdf used on input line 194.
 (pdftex.def)             Requested size: 136.91862pt x 53.24738pt.
 
-Overfull \vbox (14.4352pt too high) detected at line 217
+Overfull \vbox (14.4352pt too high) detected at line 194
  []
 
 File: fig/back_tmp.pdf Graphic file (type pdf)
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 217.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 194.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [8
+
+]
+File: fig/back_tmp.pdf Graphic file (type pdf)
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 205.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [9
+
+]
+File: fig/back_tmp.pdf Graphic file (type pdf)
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 205.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+
+[10
+
+]
+File: fig/back_tmp.pdf Graphic file (type pdf)
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 205.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [11
+
+]
+File: fig/back_tmp.pdf Graphic file (type pdf)
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 222.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [12
 
 ]
+<fig/wrtds_pieces.pdf, id=206, page=1, 505.89pt x 180.675pt>
+File: fig/wrtds_pieces.pdf Graphic file (type pdf)
+
+<use fig/wrtds_pieces.pdf, page 1>
+Package pdftex.def Info: fig/wrtds_pieces.pdf, page1 used on input line 222.
+(pdftex.def)             Requested size: 342.2953pt x 122.25085pt.
+
+Overfull \vbox (3.33736pt too high) detected at line 222
+ []
+
 File: fig/back_tmp.pdf Graphic file (type pdf)
- <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 228.
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 222.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [13
 
-]
+ <M:/presentations/sfei_pres/fig/wrtds_pieces.pdf>]
+<fig/wrtds_pieces.pdf, id=223, page=2, 505.89pt x 180.675pt>
+File: fig/wrtds_pieces.pdf Graphic file (type pdf)
+
+<use fig/wrtds_pieces.pdf, page 2>
+Package pdftex.def Info: fig/wrtds_pieces.pdf, page2 used on input line 222.
+(pdftex.def)             Requested size: 342.2953pt x 122.25085pt.
+
+Overfull \vbox (3.33736pt too high) detected at line 222
+ []
+
 File: fig/back_tmp.pdf Graphic file (type pdf)
- <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 228.
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 222.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [14
 
-[14
+ <M:/presentations/sfei_pres/fig/wrtds_pieces.pdf>]
+<fig/wrtds_pieces.pdf, id=239, page=3, 505.89pt x 180.675pt>
+File: fig/wrtds_pieces.pdf Graphic file (type pdf)
 
-]
+<use fig/wrtds_pieces.pdf, page 3>
+Package pdftex.def Info: fig/wrtds_pieces.pdf, page3 used on input line 222.
+(pdftex.def)             Requested size: 342.2953pt x 122.25085pt.
+
+Overfull \vbox (3.33736pt too high) detected at line 222
+ []
+
 File: fig/back_tmp.pdf Graphic file (type pdf)
- <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 228.
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 222.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [15
 
-] <M:/presentations/sfei_pres/fig/wtex.pdf> <1> <M:/presentations/sfei_pres/fig
-/wtex.pdf> <2> <M:/presentations/sfei_pres/fig/wtex.pdf> <3> <M:/presentations/
-sfei_pres/fig/wtex.pdf> <4> <M:/presentations/sfei_pres/fig/wtex.pdf> <5> <M:/p
-resentations/sfei_pres/fig/wtex.pdf> <6> <M:/presentations/sfei_pres/fig/wtex.p
-df> <7> <M:/presentations/sfei_pres/fig/wtex.pdf> <8> <M:/presentations/sfei_pr
-es/fig/wtex.pdf> <9> <M:/presentations/sfei_pres/fig/wtex.pdf> <10> <M:/present
-ations/sfei_pres/fig/wtex.pdf> <11> <M:/presentations/sfei_pres/fig/wtex.pdf> <
-12> <M:/presentations/sfei_pres/fig/wtex.pdf>
-<13> <M:/presentations/sfei_pres/fig/wtex.pdf> <14> <M:/presentations/sfei_pres
-/fig/wtex.pdf> <15> <M:/presentations/sfei_pres/fig/wtex.pdf> <16> <M:/presenta
-tions/sfei_pres/fig/wtex.pdf> <17> <M:/presentations/sfei_pres/fig/wtex.pdf>
-<18> <M:/presentations/sfei_pres/fig/wtex.pdf> <19> <M:/presentations/sfei_pres
-/fig/wtex.pdf> <20> <M:/presentations/sfei_pres/fig/wtex.pdf> <21> <M:/presenta
-tions/sfei_pres/fig/wtex.pdf> <22> <M:/presentations/sfei_pres/fig/wtex.pdf>
-<23> <M:/presentations/sfei_pres/fig/wtex.pdf> <24> <M:/presentations/sfei_pres
-/fig/wtex.pdf> <25> <M:/presentations/sfei_pres/fig/wtex.pdf> <26> <M:/presenta
-tions/sfei_pres/fig/wtex.pdf> <27> <M:/presentations/sfei_pres/fig/wtex.pdf>
-<28> <M:/presentations/sfei_pres/fig/wtex.pdf> <29> <M:/presentations/sfei_pres
-/fig/wtex.pdf> <30> <M:/presentations/sfei_pres/fig/wtex.pdf> <31> <M:/presenta
-tions/sfei_pres/fig/wtex.pdf> <32> <M:/presentations/sfei_pres/fig/wtex.pdf>
-<33> <M:/presentations/sfei_pres/fig/wtex.pdf> <34> <M:/presentations/sfei_pres
-/fig/wtex.pdf> <35> <M:/presentations/sfei_pres/fig/wtex.pdf> <36> <M:/presenta
-tions/sfei_pres/fig/wtex.pdf> <37> <M:/presentations/sfei_pres/fig/wtex.pdf>
-<38> <M:/presentations/sfei_pres/fig/wtex.pdf> <39> <M:/presentations/sfei_pres
-/fig/wtex.pdf> <40> <M:/presentations/sfei_pres/fig/wtex.pdf> <41> <M:/presenta
-tions/sfei_pres/fig/wtex.pdf> <42> <M:/presentations/sfei_pres/fig/wtex.pdf>
-<43> <M:/presentations/sfei_pres/fig/wtex.pdf> <44> <M:/presentations/sfei_pres
-/fig/wtex.pdf> <45> <M:/presentations/sfei_pres/fig/wtex.pdf> <46> <M:/presenta
-tions/sfei_pres/fig/wtex.pdf> <47> <M:/presentations/sfei_pres/fig/wtex.pdf>
-<48> <M:/presentations/sfei_pres/fig/wtex.pdf> <49> <M:/presentations/sfei_pres
-/fig/wtex.pdf> <50> <M:/presentations/sfei_pres/fig/wtex.pdf> <51> <M:/presenta
-tions/sfei_pres/fig/wtex.pdf> <52> <M:/presentations/sfei_pres/fig/wtex.pdf>
-<53> <M:/presentations/sfei_pres/fig/wtex.pdf> <54> <M:/presentations/sfei_pres
-/fig/wtex.pdf> <55> <M:/presentations/sfei_pres/fig/wtex.pdf> <56> <M:/presenta
-tions/sfei_pres/fig/wtex.pdf> <57> <M:/presentations/sfei_pres/fig/wtex.pdf>
-<58> <M:/presentations/sfei_pres/fig/wtex.pdf> <59> <M:/presentations/sfei_pres
-/fig/wtex.pdf> <60> <M:/presentations/sfei_pres/fig/wtex.pdf> <61> <M:/presenta
-tions/sfei_pres/fig/wtex.pdf> <62> <M:/presentations/sfei_pres/fig/wtex.pdf>
-<63> <M:/presentations/sfei_pres/fig/wtex.pdf> <64> <M:/presentations/sfei_pres
-/fig/wtex.pdf> <65> <M:/presentations/sfei_pres/fig/wtex.pdf> <66> <M:/presenta
-tions/sfei_pres/fig/wtex.pdf> <67> <M:/presentations/sfei_pres/fig/wtex.pdf>
-<68> <M:/presentations/sfei_pres/fig/wtex.pdf> <69> <M:/presentations/sfei_pres
-/fig/wtex.pdf> <70> <M:/presentations/sfei_pres/fig/wtex.pdf> <71> <M:/presenta
-tions/sfei_pres/fig/wtex.pdf> <72> <M:/presentations/sfei_pres/fig/wtex.pdf>
-<73> <M:/presentations/sfei_pres/fig/wtex.pdf> <74> <M:/presentations/sfei_pres
-/fig/wtex.pdf> <75> <M:/presentations/sfei_pres/fig/wtex.pdf> <76> <M:/presenta
-tions/sfei_pres/fig/wtex.pdf> <77> <M:/presentations/sfei_pres/fig/wtex.pdf>
-<78> <M:/presentations/sfei_pres/fig/wtex.pdf> <79> <M:/presentations/sfei_pres
-/fig/wtex.pdf> <80> <M:/presentations/sfei_pres/fig/wtex.pdf> <81> <M:/presenta
-tions/sfei_pres/fig/wtex.pdf> <82> <M:/presentations/sfei_pres/fig/wtex.pdf>
-<83> <M:/presentations/sfei_pres/fig/wtex.pdf> <84> <M:/presentations/sfei_pres
-/fig/wtex.pdf> <85> <M:/presentations/sfei_pres/fig/wtex.pdf> <86> <M:/presenta
-tions/sfei_pres/fig/wtex.pdf> <87> <M:/presentations/sfei_pres/fig/wtex.pdf>
-<88> <M:/presentations/sfei_pres/fig/wtex.pdf> <89> <M:/presentations/sfei_pres
-/fig/wtex.pdf> <90> <M:/presentations/sfei_pres/fig/wtex.pdf> <91> <M:/presenta
-tions/sfei_pres/fig/wtex.pdf> <92> <M:/presentations/sfei_pres/fig/wtex.pdf>
-<93> <M:/presentations/sfei_pres/fig/wtex.pdf> <94> <M:/presentations/sfei_pres
-/fig/wtex.pdf> <95> <M:/presentations/sfei_pres/fig/wtex.pdf> <96> <M:/presenta
-tions/sfei_pres/fig/wtex.pdf> <97> <M:/presentations/sfei_pres/fig/wtex.pdf>
-<98> <M:/presentations/sfei_pres/fig/wtex.pdf> <99> <M:/presentations/sfei_pres
-/fig/wtex.pdf> <100> <M:/presentations/sfei_pres/fig/wtex.pdf> <101> <M:/presen
-tations/sfei_pres/fig/wtex.pdf> <102> <M:/presentations/sfei_pres/fig/wtex.pdf>
-<103> <M:/presentations/sfei_pres/fig/wtex.pdf> <104> <M:/presentations/sfei_pr
-es/fig/wtex.pdf> <105> <M:/presentations/sfei_pres/fig/wtex.pdf> <106> <M:/pres
-entations/sfei_pres/fig/wtex.pdf> <107> <M:/presentations/sfei_pres/fig/wtex.pd
-f> <108> <M:/presentations/sfei_pres/fig/wtex.pdf> <109> <M:/presentations/sfei
-_pres/fig/wtex.pdf> <110> <M:/presentations/sfei_pres/fig/wtex.pdf> <111> <M:/p
-resentations/sfei_pres/fig/wtex.pdf> <112> <M:/presentations/sfei_pres/fig/wtex
-.pdf> <113> <M:/presentations/sfei_pres/fig/wtex.pdf> <114> <M:/presentations/s
-fei_pres/fig/wtex.pdf> <115> <M:/presentations/sfei_pres/fig/wtex.pdf> <116> <M
-:/presentations/sfei_pres/fig/wtex.pdf> <117> <M:/presentations/sfei_pres/fig/w
-tex.pdf> <118> <M:/presentations/sfei_pres/fig/wtex.pdf> <119> <M:/presentation
-s/sfei_pres/fig/wtex.pdf> <120> <M:/presentations/sfei_pres/fig/wtex.pdf>
-<121> <M:/presentations/sfei_pres/fig/wtex.pdf> <122> <M:/presentations/sfei_pr
-es/fig/wtex.pdf> <123> <M:/presentations/sfei_pres/fig/wtex.pdf> <124> <M:/pres
-entations/sfei_pres/fig/wtex.pdf> <125> <M:/presentations/sfei_pres/fig/wtex.pd
-f> <126> <M:/presentations/sfei_pres/fig/wtex.pdf> <127> <M:/presentations/sfei
-_pres/fig/wtex.pdf> <128> <M:/presentations/sfei_pres/fig/wtex.pdf> <129> <M:/p
-resentations/sfei_pres/fig/wtex.pdf> <130> <M:/presentations/sfei_pres/fig/wtex
-.pdf> <131> <M:/presentations/sfei_pres/fig/wtex.pdf> <132>
-File: fig/back_tmp.pdf Graphic file (type pdf)
+ <M:/presentations/sfei_pres/fig/wrtds_pieces.pdf>]
+<fig/wrtds_pieces.pdf, id=255, page=4, 505.89pt x 180.675pt>
+File: fig/wrtds_pieces.pdf Graphic file (type pdf)
 
+<use fig/wrtds_pieces.pdf, page 4>
+Package pdftex.def Info: fig/wrtds_pieces.pdf, page4 used on input line 222.
+(pdftex.def)             Requested size: 342.2953pt x 122.25085pt.
+
+Overfull \vbox (3.33736pt too high) detected at line 222
+ []
+
+File: fig/back_tmp.pdf Graphic file (type pdf)
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 238.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 222.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [16
 
-] <fig/stations.pdf, id=941, 325.215pt x 252.945pt>
-File: fig/stations.pdf Graphic file (type pdf)
+ <M:/presentations/sfei_pres/fig/wrtds_pieces.pdf>]
+<fig/wrtds_pieces.pdf, id=271, page=5, 505.89pt x 180.675pt>
+File: fig/wrtds_pieces.pdf Graphic file (type pdf)
 
-<use fig/stations.pdf>
-Package pdftex.def Info: fig/stations.pdf used on input line 262.
-(pdftex.def)             Requested size: 171.14764pt x 133.11845pt.
+<use fig/wrtds_pieces.pdf, page 5>
+Package pdftex.def Info: fig/wrtds_pieces.pdf, page5 used on input line 222.
+(pdftex.def)             Requested size: 342.2953pt x 122.25085pt.
+
+Overfull \vbox (3.33736pt too high) detected at line 222
+ []
+
 File: fig/back_tmp.pdf Graphic file (type pdf)
- <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 262.
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 222.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [17
 
- <M:/presentations/sfei_pres/fig/stations.pdf>] <M:/presentations/sfei_pres/fig
-/trnds.pdf> <1> <M:/presentations/sfei_pres/fig/trnds.pdf> <2> <M:/presentation
-s/sfei_pres/fig/trnds.pdf>
-<3> <M:/presentations/sfei_pres/fig/trnds.pdf> <4> <M:/presentations/sfei_pres/
-fig/trnds.pdf> <5> <M:/presentations/sfei_pres/fig/trnds.pdf> <6> <M:/presentat
-ions/sfei_pres/fig/trnds.pdf> <7> <M:/presentations/sfei_pres/fig/trnds.pdf>
-<8> <M:/presentations/sfei_pres/fig/trnds.pdf> <9> <M:/presentations/sfei_pres/
-fig/trnds.pdf> <10> <M:/presentations/sfei_pres/fig/trnds.pdf> <11> <M:/present
-ations/sfei_pres/fig/trnds.pdf> <12> <M:/presentations/sfei_pres/fig/trnds.pdf>
-<13> <M:/presentations/sfei_pres/fig/trnds.pdf> <14> <M:/presentations/sfei_pre
-s/fig/trnds.pdf> <15> <M:/presentations/sfei_pres/fig/trnds.pdf> <16> <M:/prese
-ntations/sfei_pres/fig/trnds.pdf> <17> <M:/presentations/sfei_pres/fig/trnds.pd
-f> <18> <M:/presentations/sfei_pres/fig/trnds.pdf> <19> <M:/presentations/sfei_
-pres/fig/trnds.pdf> <20> <M:/presentations/sfei_pres/fig/trnds.pdf> <21> <M:/pr
-esentations/sfei_pres/fig/trnds.pdf> <22> <M:/presentations/sfei_pres/fig/trnds
-.pdf> <23> <M:/presentations/sfei_pres/fig/trnds.pdf> <24> <M:/presentations/sf
-ei_pres/fig/trnds.pdf> <25> <M:/presentations/sfei_pres/fig/trnds.pdf> <26> <M:
-/presentations/sfei_pres/fig/trnds.pdf> <27> <M:/presentations/sfei_pres/fig/tr
-nds.pdf> <28> <M:/presentations/sfei_pres/fig/trnds.pdf> <29> <M:/presentations
-/sfei_pres/fig/trnds.pdf> <30> <M:/presentations/sfei_pres/fig/trnds.pdf> <31> 
-<M:/presentations/sfei_pres/fig/trnds.pdf> <32> <M:/presentations/sfei_pres/fig
-/trnds.pdf> <33> <M:/presentations/sfei_pres/fig/trnds.pdf> <34> <M:/presentati
-ons/sfei_pres/fig/trnds.pdf> <35> <M:/presentations/sfei_pres/fig/trnds.pdf>
-<36> <M:/presentations/sfei_pres/fig/trnds.pdf> <37> <M:/presentations/sfei_pre
-s/fig/trnds.pdf> <38> <M:/presentations/sfei_pres/fig/trnds.pdf> <39> <M:/prese
-ntations/sfei_pres/fig/trnds.pdf> <40> <M:/presentations/sfei_pres/fig/trnds.pd
-f> <41> <M:/presentations/sfei_pres/fig/trnds.pdf> <42> <M:/presentations/sfei_
-pres/fig/trnds.pdf> <43> <M:/presentations/sfei_pres/fig/trnds.pdf> <44> <M:/pr
-esentations/sfei_pres/fig/trnds.pdf> <45> <M:/presentations/sfei_pres/fig/trnds
-.pdf> <46> <M:/presentations/sfei_pres/fig/trnds.pdf> <47> <M:/presentations/sf
-ei_pres/fig/trnds.pdf> <48> <M:/presentations/sfei_pres/fig/trnds.pdf> <49> <M:
-/presentations/sfei_pres/fig/trnds.pdf> <50> <M:/presentations/sfei_pres/fig/tr
-nds.pdf> <51> <M:/presentations/sfei_pres/fig/trnds.pdf> <52> <M:/presentations
-/sfei_pres/fig/trnds.pdf> <53> <M:/presentations/sfei_pres/fig/trnds.pdf> <54> 
-<M:/presentations/sfei_pres/fig/trnds.pdf> <55> <M:/presentations/sfei_pres/fig
-/trnds.pdf> <56> <M:/presentations/sfei_pres/fig/trnds.pdf> <57> <M:/presentati
-ons/sfei_pres/fig/trnds.pdf> <58> <M:/presentations/sfei_pres/fig/trnds.pdf>
-<59> <M:/presentations/sfei_pres/fig/trnds.pdf> <60> <M:/presentations/sfei_pre
-s/fig/trnds.pdf> <61> <M:/presentations/sfei_pres/fig/trnds.pdf> <62> <M:/prese
-ntations/sfei_pres/fig/trnds.pdf> <63> <M:/presentations/sfei_pres/fig/trnds.pd
-f> <64> <M:/presentations/sfei_pres/fig/trnds.pdf> <65> <M:/presentations/sfei_
-pres/fig/trnds.pdf> <66> <M:/presentations/sfei_pres/fig/trnds.pdf> <67> <M:/pr
-esentations/sfei_pres/fig/trnds.pdf> <68> <M:/presentations/sfei_pres/fig/trnds
-.pdf> <69> <M:/presentations/sfei_pres/fig/trnds.pdf> <70> <M:/presentations/sf
-ei_pres/fig/trnds.pdf> <71> <M:/presentations/sfei_pres/fig/trnds.pdf> <72> <M:
-/presentations/sfei_pres/fig/trnds.pdf> <73> <M:/presentations/sfei_pres/fig/tr
-nds.pdf> <74> <M:/presentations/sfei_pres/fig/trnds.pdf> <75> <M:/presentations
-/sfei_pres/fig/trnds.pdf> <76> <M:/presentations/sfei_pres/fig/trnds.pdf> <77> 
-<M:/presentations/sfei_pres/fig/trnds.pdf> <78> <M:/presentations/sfei_pres/fig
-/trnds.pdf> <79> <M:/presentations/sfei_pres/fig/trnds.pdf> <80> <M:/presentati
-ons/sfei_pres/fig/trnds.pdf> <81> <M:/presentations/sfei_pres/fig/trnds.pdf>
-<82> <M:/presentations/sfei_pres/fig/trnds.pdf> <83> <M:/presentations/sfei_pre
-s/fig/trnds.pdf> <84> <M:/presentations/sfei_pres/fig/trnds.pdf> <85> <M:/prese
-ntations/sfei_pres/fig/trnds.pdf> <86> <M:/presentations/sfei_pres/fig/trnds.pd
-f> <87> <M:/presentations/sfei_pres/fig/trnds.pdf> <88> <M:/presentations/sfei_
-pres/fig/trnds.pdf> <89> <M:/presentations/sfei_pres/fig/trnds.pdf> <90> <M:/pr
-esentations/sfei_pres/fig/trnds.pdf> <91> <M:/presentations/sfei_pres/fig/trnds
-.pdf> <92> <M:/presentations/sfei_pres/fig/trnds.pdf> <93> <M:/presentations/sf
-ei_pres/fig/trnds.pdf> <94> <M:/presentations/sfei_pres/fig/trnds.pdf> <95> <M:
-/presentations/sfei_pres/fig/trnds.pdf> <96> <M:/presentations/sfei_pres/fig/tr
-nds.pdf> <97> <M:/presentations/sfei_pres/fig/trnds.pdf> <98> <M:/presentations
-/sfei_pres/fig/trnds.pdf> <99> <M:/presentations/sfei_pres/fig/trnds.pdf>
-<100> <M:/presentations/sfei_pres/fig/trnds.pdf> <101> <M:/presentations/sfei_p
-res/fig/trnds.pdf> <102> <M:/presentations/sfei_pres/fig/trnds.pdf> <103> <M:/p
-resentations/sfei_pres/fig/trnds.pdf> <104> <M:/presentations/sfei_pres/fig/trn
-ds.pdf> <105> <M:/presentations/sfei_pres/fig/trnds.pdf> <106> <M:/presentation
-s/sfei_pres/fig/trnds.pdf> <107> <M:/presentations/sfei_pres/fig/trnds.pdf>
-<108> <M:/presentations/sfei_pres/fig/trnds.pdf> <109> <M:/presentations/sfei_p
-res/fig/trnds.pdf> <110> <M:/presentations/sfei_pres/fig/trnds.pdf> <111> <M:/p
-resentations/sfei_pres/fig/trnds.pdf> <112> <M:/presentations/sfei_pres/fig/trn
-ds.pdf> <113> <M:/presentations/sfei_pres/fig/trnds.pdf> <114> <M:/presentation
-s/sfei_pres/fig/trnds.pdf> <115> <M:/presentations/sfei_pres/fig/trnds.pdf>
-<116> <M:/presentations/sfei_pres/fig/trnds.pdf> <117> <M:/presentations/sfei_p
-res/fig/trnds.pdf> <118> <M:/presentations/sfei_pres/fig/trnds.pdf> <119> <M:/p
-resentations/sfei_pres/fig/trnds.pdf> <120>
+ <M:/presentations/sfei_pres/fig/wrtds_pieces.pdf>] <M:/presentations/sfei_pres
+/fig/wtex.pdf> <1> <M:/presentations/sfei_pres/fig/wtex.pdf> <2> <M:/presentati
+ons/sfei_pres/fig/wtex.pdf> <3> <M:/presentations/sfei_pres/fig/wtex.pdf> <4> <
+M:/presentations/sfei_pres/fig/wtex.pdf> <5> <M:/presentations/sfei_pres/fig/wt
+ex.pdf> <6> <M:/presentations/sfei_pres/fig/wtex.pdf> <7> <M:/presentations/sfe
+i_pres/fig/wtex.pdf> <8> <M:/presentations/sfei_pres/fig/wtex.pdf> <9> <M:/pres
+entations/sfei_pres/fig/wtex.pdf> <10> <M:/presentations/sfei_pres/fig/wtex.pdf
+> <11> <M:/presentations/sfei_pres/fig/wtex.pdf>
+<12> <M:/presentations/sfei_pres/fig/wtex.pdf> <13> <M:/presentations/sfei_pres
+/fig/wtex.pdf> <14> <M:/presentations/sfei_pres/fig/wtex.pdf> <15> <M:/presenta
+tions/sfei_pres/fig/wtex.pdf> <16> <M:/presentations/sfei_pres/fig/wtex.pdf>
+<17> <M:/presentations/sfei_pres/fig/wtex.pdf> <18> <M:/presentations/sfei_pres
+/fig/wtex.pdf> <19> <M:/presentations/sfei_pres/fig/wtex.pdf> <20> <M:/presenta
+tions/sfei_pres/fig/wtex.pdf> <21> <M:/presentations/sfei_pres/fig/wtex.pdf>
+<22> <M:/presentations/sfei_pres/fig/wtex.pdf> <23> <M:/presentations/sfei_pres
+/fig/wtex.pdf> <24> <M:/presentations/sfei_pres/fig/wtex.pdf> <25> <M:/presenta
+tions/sfei_pres/fig/wtex.pdf> <26> <M:/presentations/sfei_pres/fig/wtex.pdf>
+<27> <M:/presentations/sfei_pres/fig/wtex.pdf> <28> <M:/presentations/sfei_pres
+/fig/wtex.pdf> <29> <M:/presentations/sfei_pres/fig/wtex.pdf> <30> <M:/presenta
+tions/sfei_pres/fig/wtex.pdf> <31> <M:/presentations/sfei_pres/fig/wtex.pdf>
+<32> <M:/presentations/sfei_pres/fig/wtex.pdf> <33> <M:/presentations/sfei_pres
+/fig/wtex.pdf> <34> <M:/presentations/sfei_pres/fig/wtex.pdf> <35> <M:/presenta
+tions/sfei_pres/fig/wtex.pdf> <36> <M:/presentations/sfei_pres/fig/wtex.pdf>
+<37> <M:/presentations/sfei_pres/fig/wtex.pdf> <38> <M:/presentations/sfei_pres
+/fig/wtex.pdf> <39> <M:/presentations/sfei_pres/fig/wtex.pdf> <40> <M:/presenta
+tions/sfei_pres/fig/wtex.pdf> <41> <M:/presentations/sfei_pres/fig/wtex.pdf>
+<42> <M:/presentations/sfei_pres/fig/wtex.pdf> <43> <M:/presentations/sfei_pres
+/fig/wtex.pdf> <44> <M:/presentations/sfei_pres/fig/wtex.pdf> <45> <M:/presenta
+tions/sfei_pres/fig/wtex.pdf> <46> <M:/presentations/sfei_pres/fig/wtex.pdf>
+<47> <M:/presentations/sfei_pres/fig/wtex.pdf> <48> <M:/presentations/sfei_pres
+/fig/wtex.pdf> <49> <M:/presentations/sfei_pres/fig/wtex.pdf> <50> <M:/presenta
+tions/sfei_pres/fig/wtex.pdf> <51> <M:/presentations/sfei_pres/fig/wtex.pdf>
+<52> <M:/presentations/sfei_pres/fig/wtex.pdf> <53> <M:/presentations/sfei_pres
+/fig/wtex.pdf> <54> <M:/presentations/sfei_pres/fig/wtex.pdf> <55> <M:/presenta
+tions/sfei_pres/fig/wtex.pdf> <56> <M:/presentations/sfei_pres/fig/wtex.pdf>
+<57> <M:/presentations/sfei_pres/fig/wtex.pdf> <58> <M:/presentations/sfei_pres
+/fig/wtex.pdf> <59> <M:/presentations/sfei_pres/fig/wtex.pdf> <60> <M:/presenta
+tions/sfei_pres/fig/wtex.pdf> <61> <M:/presentations/sfei_pres/fig/wtex.pdf>
+<62> <M:/presentations/sfei_pres/fig/wtex.pdf> <63> <M:/presentations/sfei_pres
+/fig/wtex.pdf> <64> <M:/presentations/sfei_pres/fig/wtex.pdf> <65> <M:/presenta
+tions/sfei_pres/fig/wtex.pdf> <66> <M:/presentations/sfei_pres/fig/wtex.pdf>
+<67> <M:/presentations/sfei_pres/fig/wtex.pdf> <68> <M:/presentations/sfei_pres
+/fig/wtex.pdf> <69> <M:/presentations/sfei_pres/fig/wtex.pdf> <70> <M:/presenta
+tions/sfei_pres/fig/wtex.pdf> <71> <M:/presentations/sfei_pres/fig/wtex.pdf>
+<72> <M:/presentations/sfei_pres/fig/wtex.pdf> <73> <M:/presentations/sfei_pres
+/fig/wtex.pdf> <74> <M:/presentations/sfei_pres/fig/wtex.pdf> <75> <M:/presenta
+tions/sfei_pres/fig/wtex.pdf> <76> <M:/presentations/sfei_pres/fig/wtex.pdf>
+<77> <M:/presentations/sfei_pres/fig/wtex.pdf> <78> <M:/presentations/sfei_pres
+/fig/wtex.pdf> <79> <M:/presentations/sfei_pres/fig/wtex.pdf> <80> <M:/presenta
+tions/sfei_pres/fig/wtex.pdf> <81> <M:/presentations/sfei_pres/fig/wtex.pdf>
+<82> <M:/presentations/sfei_pres/fig/wtex.pdf> <83> <M:/presentations/sfei_pres
+/fig/wtex.pdf> <84> <M:/presentations/sfei_pres/fig/wtex.pdf> <85> <M:/presenta
+tions/sfei_pres/fig/wtex.pdf> <86> <M:/presentations/sfei_pres/fig/wtex.pdf>
+<87> <M:/presentations/sfei_pres/fig/wtex.pdf> <88> <M:/presentations/sfei_pres
+/fig/wtex.pdf> <89> <M:/presentations/sfei_pres/fig/wtex.pdf> <90> <M:/presenta
+tions/sfei_pres/fig/wtex.pdf> <91> <M:/presentations/sfei_pres/fig/wtex.pdf>
+<92> <M:/presentations/sfei_pres/fig/wtex.pdf> <93> <M:/presentations/sfei_pres
+/fig/wtex.pdf> <94> <M:/presentations/sfei_pres/fig/wtex.pdf> <95> <M:/presenta
+tions/sfei_pres/fig/wtex.pdf> <96> <M:/presentations/sfei_pres/fig/wtex.pdf>
+<97> <M:/presentations/sfei_pres/fig/wtex.pdf> <98> <M:/presentations/sfei_pres
+/fig/wtex.pdf> <99> <M:/presentations/sfei_pres/fig/wtex.pdf> <100> <M:/present
+ations/sfei_pres/fig/wtex.pdf> <101> <M:/presentations/sfei_pres/fig/wtex.pdf>
+<102> <M:/presentations/sfei_pres/fig/wtex.pdf> <103> <M:/presentations/sfei_pr
+es/fig/wtex.pdf> <104> <M:/presentations/sfei_pres/fig/wtex.pdf> <105> <M:/pres
+entations/sfei_pres/fig/wtex.pdf> <106> <M:/presentations/sfei_pres/fig/wtex.pd
+f> <107> <M:/presentations/sfei_pres/fig/wtex.pdf> <108> <M:/presentations/sfei
+_pres/fig/wtex.pdf> <109> <M:/presentations/sfei_pres/fig/wtex.pdf> <110> <M:/p
+resentations/sfei_pres/fig/wtex.pdf> <111> <M:/presentations/sfei_pres/fig/wtex
+.pdf> <112> <M:/presentations/sfei_pres/fig/wtex.pdf> <113> <M:/presentations/s
+fei_pres/fig/wtex.pdf> <114> <M:/presentations/sfei_pres/fig/wtex.pdf> <115> <M
+:/presentations/sfei_pres/fig/wtex.pdf> <116> <M:/presentations/sfei_pres/fig/w
+tex.pdf> <117> <M:/presentations/sfei_pres/fig/wtex.pdf> <118> <M:/presentation
+s/sfei_pres/fig/wtex.pdf> <119> <M:/presentations/sfei_pres/fig/wtex.pdf>
+<120> <M:/presentations/sfei_pres/fig/wtex.pdf> <121> <M:/presentations/sfei_pr
+es/fig/wtex.pdf> <122> <M:/presentations/sfei_pres/fig/wtex.pdf> <123> <M:/pres
+entations/sfei_pres/fig/wtex.pdf> <124> <M:/presentations/sfei_pres/fig/wtex.pd
+f> <125> <M:/presentations/sfei_pres/fig/wtex.pdf> <126> <M:/presentations/sfei
+_pres/fig/wtex.pdf> <127> <M:/presentations/sfei_pres/fig/wtex.pdf> <128> <M:/p
+resentations/sfei_pres/fig/wtex.pdf> <129> <M:/presentations/sfei_pres/fig/wtex
+.pdf> <130> <M:/presentations/sfei_pres/fig/wtex.pdf> <131> <M:/presentations/s
+fei_pres/fig/wtex.pdf> <132>
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 275.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 232.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [18
 
-]
-<fig/trndsperdin.pdf, id=1589, page=2, 650.43pt x 433.62pt>
-File: fig/trndsperdin.pdf Graphic file (type pdf)
+] <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <1> <M:/presentations/sfei
+_pres/fig/wrtds_pieces2.pdf> <2> <M:/presentations/sfei_pres/fig/wrtds_pieces2.
+pdf> <3> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <4> <M:/presentatio
+ns/sfei_pres/fig/wrtds_pieces2.pdf> <5> <M:/presentations/sfei_pres/fig/wrtds_p
+ieces2.pdf> <6> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <7> <M:/pres
+entations/sfei_pres/fig/wrtds_pieces2.pdf> <8> <M:/presentations/sfei_pres/fig/
+wrtds_pieces2.pdf> <9> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <10> 
+<M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <11> <M:/presentations/sfei_
+pres/fig/wrtds_pieces2.pdf> <12> <M:/presentations/sfei_pres/fig/wrtds_pieces2.
+pdf> <13> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <14> <M:/presentat
+ions/sfei_pres/fig/wrtds_pieces2.pdf> <15> <M:/presentations/sfei_pres/fig/wrtd
+s_pieces2.pdf> <16> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <17> <M:
+/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <18> <M:/presentations/sfei_pre
+s/fig/wrtds_pieces2.pdf> <19> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf
+> <20> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <21> <M:/presentation
+s/sfei_pres/fig/wrtds_pieces2.pdf> <22> <M:/presentations/sfei_pres/fig/wrtds_p
+ieces2.pdf> <23> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <24> <M:/pr
+esentations/sfei_pres/fig/wrtds_pieces2.pdf> <25> <M:/presentations/sfei_pres/f
+ig/wrtds_pieces2.pdf>
+<26> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <27> <M:/presentations/
+sfei_pres/fig/wrtds_pieces2.pdf> <28> <M:/presentations/sfei_pres/fig/wrtds_pie
+ces2.pdf> <29> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <30> <M:/pres
+entations/sfei_pres/fig/wrtds_pieces2.pdf> <31> <M:/presentations/sfei_pres/fig
+/wrtds_pieces2.pdf> <32> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf>
+<33> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <34> <M:/presentations/
+sfei_pres/fig/wrtds_pieces2.pdf> <35> <M:/presentations/sfei_pres/fig/wrtds_pie
+ces2.pdf> <36> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <37> <M:/pres
+entations/sfei_pres/fig/wrtds_pieces2.pdf> <38> <M:/presentations/sfei_pres/fig
+/wrtds_pieces2.pdf> <39> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf>
+<40> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <41> <M:/presentations/
+sfei_pres/fig/wrtds_pieces2.pdf> <42> <M:/presentations/sfei_pres/fig/wrtds_pie
+ces2.pdf> <43> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <44> <M:/pres
+entations/sfei_pres/fig/wrtds_pieces2.pdf> <45> <M:/presentations/sfei_pres/fig
+/wrtds_pieces2.pdf> <46> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf>
+<47> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <48> <M:/presentations/
+sfei_pres/fig/wrtds_pieces2.pdf> <49> <M:/presentations/sfei_pres/fig/wrtds_pie
+ces2.pdf> <50> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <51> <M:/pres
+entations/sfei_pres/fig/wrtds_pieces2.pdf> <52> <M:/presentations/sfei_pres/fig
+/wrtds_pieces2.pdf> <53> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf>
+<54> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <55> <M:/presentations/
+sfei_pres/fig/wrtds_pieces2.pdf> <56> <M:/presentations/sfei_pres/fig/wrtds_pie
+ces2.pdf> <57> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <58> <M:/pres
+entations/sfei_pres/fig/wrtds_pieces2.pdf> <59> <M:/presentations/sfei_pres/fig
+/wrtds_pieces2.pdf> <60> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf>
+<61> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <62> <M:/presentations/
+sfei_pres/fig/wrtds_pieces2.pdf> <63> <M:/presentations/sfei_pres/fig/wrtds_pie
+ces2.pdf> <64> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <65> <M:/pres
+entations/sfei_pres/fig/wrtds_pieces2.pdf> <66> <M:/presentations/sfei_pres/fig
+/wrtds_pieces2.pdf> <67> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf>
+<68> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <69> <M:/presentations/
+sfei_pres/fig/wrtds_pieces2.pdf> <70> <M:/presentations/sfei_pres/fig/wrtds_pie
+ces2.pdf> <71> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <72> <M:/pres
+entations/sfei_pres/fig/wrtds_pieces2.pdf> <73> <M:/presentations/sfei_pres/fig
+/wrtds_pieces2.pdf> <74> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf>
+<75> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <76> <M:/presentations/
+sfei_pres/fig/wrtds_pieces2.pdf> <77> <M:/presentations/sfei_pres/fig/wrtds_pie
+ces2.pdf> <78> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <79> <M:/pres
+entations/sfei_pres/fig/wrtds_pieces2.pdf> <80> <M:/presentations/sfei_pres/fig
+/wrtds_pieces2.pdf> <81> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf>
+<82> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <83> <M:/presentations/
+sfei_pres/fig/wrtds_pieces2.pdf> <84> <M:/presentations/sfei_pres/fig/wrtds_pie
+ces2.pdf> <85> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <86> <M:/pres
+entations/sfei_pres/fig/wrtds_pieces2.pdf> <87> <M:/presentations/sfei_pres/fig
+/wrtds_pieces2.pdf> <88> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf>
+<89> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <90> <M:/presentations/
+sfei_pres/fig/wrtds_pieces2.pdf> <91> <M:/presentations/sfei_pres/fig/wrtds_pie
+ces2.pdf> <92> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <93> <M:/pres
+entations/sfei_pres/fig/wrtds_pieces2.pdf> <94> <M:/presentations/sfei_pres/fig
+/wrtds_pieces2.pdf> <95> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf>
+<96> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <97> <M:/presentations/
+sfei_pres/fig/wrtds_pieces2.pdf> <98> <M:/presentations/sfei_pres/fig/wrtds_pie
+ces2.pdf> <99> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <100> <M:/pre
+sentations/sfei_pres/fig/wrtds_pieces2.pdf> <101> <M:/presentations/sfei_pres/f
+ig/wrtds_pieces2.pdf> <102> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf>
+<103> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <104> <M:/presentation
+s/sfei_pres/fig/wrtds_pieces2.pdf> <105> <M:/presentations/sfei_pres/fig/wrtds_
+pieces2.pdf> <106> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <107> <M:
+/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <108> <M:/presentations/sfei_pr
+es/fig/wrtds_pieces2.pdf> <109> <M:/presentations/sfei_pres/fig/wrtds_pieces2.p
+df> <110> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <111> <M:/presenta
+tions/sfei_pres/fig/wrtds_pieces2.pdf> <112> <M:/presentations/sfei_pres/fig/wr
+tds_pieces2.pdf> <113> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf>
+<114> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <115> <M:/presentation
+s/sfei_pres/fig/wrtds_pieces2.pdf> <116> <M:/presentations/sfei_pres/fig/wrtds_
+pieces2.pdf> <117> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <118> <M:
+/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <119> <M:/presentations/sfei_pr
+es/fig/wrtds_pieces2.pdf> <120> <M:/presentations/sfei_pres/fig/wrtds_pieces2.p
+df> <121> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <122> <M:/presenta
+tions/sfei_pres/fig/wrtds_pieces2.pdf> <123> <M:/presentations/sfei_pres/fig/wr
+tds_pieces2.pdf> <124> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf>
+<125> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <126> <M:/presentation
+s/sfei_pres/fig/wrtds_pieces2.pdf> <127> <M:/presentations/sfei_pres/fig/wrtds_
+pieces2.pdf> <128> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <129> <M:
+/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <130> <M:/presentations/sfei_pr
+es/fig/wrtds_pieces2.pdf> <131> <M:/presentations/sfei_pres/fig/wrtds_pieces2.p
+df> <132> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <133> <M:/presenta
+tions/sfei_pres/fig/wrtds_pieces2.pdf> <134> <M:/presentations/sfei_pres/fig/wr
+tds_pieces2.pdf> <135> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf>
+<136> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <137> <M:/presentation
+s/sfei_pres/fig/wrtds_pieces2.pdf> <138> <M:/presentations/sfei_pres/fig/wrtds_
+pieces2.pdf> <139> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <140> <M:
+/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <141> <M:/presentations/sfei_pr
+es/fig/wrtds_pieces2.pdf> <142> <M:/presentations/sfei_pres/fig/wrtds_pieces2.p
+df> <143> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <144> <M:/presenta
+tions/sfei_pres/fig/wrtds_pieces2.pdf> <145> <M:/presentations/sfei_pres/fig/wr
+tds_pieces2.pdf> <146> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf>
+<147> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <148> <M:/presentation
+s/sfei_pres/fig/wrtds_pieces2.pdf> <149> <M:/presentations/sfei_pres/fig/wrtds_
+pieces2.pdf> <150> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <151> <M:
+/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <152> <M:/presentations/sfei_pr
+es/fig/wrtds_pieces2.pdf> <153> <M:/presentations/sfei_pres/fig/wrtds_pieces2.p
+df> <154> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <155> <M:/presenta
+tions/sfei_pres/fig/wrtds_pieces2.pdf> <156> <M:/presentations/sfei_pres/fig/wr
+tds_pieces2.pdf> <157> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf>
+<158> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <159> <M:/presentation
+s/sfei_pres/fig/wrtds_pieces2.pdf> <160> <M:/presentations/sfei_pres/fig/wrtds_
+pieces2.pdf> <161> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <162> <M:
+/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <163> <M:/presentations/sfei_pr
+es/fig/wrtds_pieces2.pdf> <164> <M:/presentations/sfei_pres/fig/wrtds_pieces2.p
+df> <165> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <166> <M:/presenta
+tions/sfei_pres/fig/wrtds_pieces2.pdf> <167> <M:/presentations/sfei_pres/fig/wr
+tds_pieces2.pdf> <168> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf>
+<169> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <170> <M:/presentation
+s/sfei_pres/fig/wrtds_pieces2.pdf> <171> <M:/presentations/sfei_pres/fig/wrtds_
+pieces2.pdf> <172> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <173> <M:
+/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <174> <M:/presentations/sfei_pr
+es/fig/wrtds_pieces2.pdf> <175> <M:/presentations/sfei_pres/fig/wrtds_pieces2.p
+df> <176> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <177> <M:/presenta
+tions/sfei_pres/fig/wrtds_pieces2.pdf> <178> <M:/presentations/sfei_pres/fig/wr
+tds_pieces2.pdf> <179> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf>
+<180> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <181> <M:/presentation
+s/sfei_pres/fig/wrtds_pieces2.pdf> <182> <M:/presentations/sfei_pres/fig/wrtds_
+pieces2.pdf> <183> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <184> <M:
+/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <185> <M:/presentations/sfei_pr
+es/fig/wrtds_pieces2.pdf> <186> <M:/presentations/sfei_pres/fig/wrtds_pieces2.p
+df> <187> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <188> <M:/presenta
+tions/sfei_pres/fig/wrtds_pieces2.pdf> <189> <M:/presentations/sfei_pres/fig/wr
+tds_pieces2.pdf> <190> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf>
+<191> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <192> <M:/presentation
+s/sfei_pres/fig/wrtds_pieces2.pdf> <193> <M:/presentations/sfei_pres/fig/wrtds_
+pieces2.pdf> <194> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <195> <M:
+/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <196> <M:/presentations/sfei_pr
+es/fig/wrtds_pieces2.pdf> <197> <M:/presentations/sfei_pres/fig/wrtds_pieces2.p
+df> <198> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <199> <M:/presenta
+tions/sfei_pres/fig/wrtds_pieces2.pdf> <200> <M:/presentations/sfei_pres/fig/wr
+tds_pieces2.pdf> <201> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf>
+<202> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <203> <M:/presentation
+s/sfei_pres/fig/wrtds_pieces2.pdf> <204> <M:/presentations/sfei_pres/fig/wrtds_
+pieces2.pdf> <205> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <206> <M:
+/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <207> <M:/presentations/sfei_pr
+es/fig/wrtds_pieces2.pdf> <208> <M:/presentations/sfei_pres/fig/wrtds_pieces2.p
+df> <209> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <210> <M:/presenta
+tions/sfei_pres/fig/wrtds_pieces2.pdf> <211> <M:/presentations/sfei_pres/fig/wr
+tds_pieces2.pdf> <212> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf>
+<213> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <214> <M:/presentation
+s/sfei_pres/fig/wrtds_pieces2.pdf> <215> <M:/presentations/sfei_pres/fig/wrtds_
+pieces2.pdf> <216> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <217> <M:
+/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <218> <M:/presentations/sfei_pr
+es/fig/wrtds_pieces2.pdf> <219> <M:/presentations/sfei_pres/fig/wrtds_pieces2.p
+df> <220> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <221> <M:/presenta
+tions/sfei_pres/fig/wrtds_pieces2.pdf> <222> <M:/presentations/sfei_pres/fig/wr
+tds_pieces2.pdf> <223> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf>
+<224> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <225> <M:/presentation
+s/sfei_pres/fig/wrtds_pieces2.pdf> <226> <M:/presentations/sfei_pres/fig/wrtds_
+pieces2.pdf> <227> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <228> <M:
+/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <229> <M:/presentations/sfei_pr
+es/fig/wrtds_pieces2.pdf> <230> <M:/presentations/sfei_pres/fig/wrtds_pieces2.p
+df> <231> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <232> <M:/presenta
+tions/sfei_pres/fig/wrtds_pieces2.pdf> <233> <M:/presentations/sfei_pres/fig/wr
+tds_pieces2.pdf> <234> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf>
+<235> <M:/presentations/sfei_pres/fig/wrtds_pieces2.pdf> <236> <M:/presentation
+s/sfei_pres/fig/wrtds_pieces2.pdf> <237> <M:/presentations/sfei_pres/fig/wrtds_
+pieces2.pdf> <238>
+File: fig/back_tmp.pdf Graphic file (type pdf)
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 245.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [19
 
-<use fig/trndsperdin.pdf, page 2>
-Package pdftex.def Info: fig/trndsperdin.pdf, page2 used on input line 282.
-(pdftex.def)             Requested size: 318.33212pt x 212.22423pt.
+]
+<fig/stations.pdf, id=2216, 325.215pt x 252.945pt>
+File: fig/stations.pdf Graphic file (type pdf)
+ <use fig/stations.pdf>
+Package pdftex.def Info: fig/stations.pdf used on input line 269.
+(pdftex.def)             Requested size: 171.14764pt x 133.11845pt.
+File: fig/back_tmp.pdf Graphic file (type pdf)
+
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 269.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [20
+
+ <M:/presentations/sfei_pres/fig/stations.pdf>] <M:/presentations/sfei_pres/fig
+/trnds.pdf> <1> <M:/presentations/sfei_pres/fig/trnds.pdf> <2> <M:/presentation
+s/sfei_pres/fig/trnds.pdf> <3> <M:/presentations/sfei_pres/fig/trnds.pdf> <4> <
+M:/presentations/sfei_pres/fig/trnds.pdf> <5> <M:/presentations/sfei_pres/fig/t
+rnds.pdf> <6> <M:/presentations/sfei_pres/fig/trnds.pdf> <7> <M:/presentations/
+sfei_pres/fig/trnds.pdf> <8> <M:/presentations/sfei_pres/fig/trnds.pdf> <9> <M:
+/presentations/sfei_pres/fig/trnds.pdf> <10> <M:/presentations/sfei_pres/fig/tr
+nds.pdf> <11> <M:/presentations/sfei_pres/fig/trnds.pdf> <12> <M:/presentations
+/sfei_pres/fig/trnds.pdf> <13> <M:/presentations/sfei_pres/fig/trnds.pdf> <14> 
+<M:/presentations/sfei_pres/fig/trnds.pdf> <15> <M:/presentations/sfei_pres/fig
+/trnds.pdf> <16> <M:/presentations/sfei_pres/fig/trnds.pdf> <17> <M:/presentati
+ons/sfei_pres/fig/trnds.pdf> <18> <M:/presentations/sfei_pres/fig/trnds.pdf> <1
+9> <M:/presentations/sfei_pres/fig/trnds.pdf> <20> <M:/presentations/sfei_pres/
+fig/trnds.pdf> <21> <M:/presentations/sfei_pres/fig/trnds.pdf> <22> <M:/present
+ations/sfei_pres/fig/trnds.pdf> <23> <M:/presentations/sfei_pres/fig/trnds.pdf>
+ <24> <M:/presentations/sfei_pres/fig/trnds.pdf>
+<25> <M:/presentations/sfei_pres/fig/trnds.pdf> <26> <M:/presentations/sfei_pre
+s/fig/trnds.pdf> <27> <M:/presentations/sfei_pres/fig/trnds.pdf> <28> <M:/prese
+ntations/sfei_pres/fig/trnds.pdf> <29> <M:/presentations/sfei_pres/fig/trnds.pd
+f> <30> <M:/presentations/sfei_pres/fig/trnds.pdf> <31> <M:/presentations/sfei_
+pres/fig/trnds.pdf> <32> <M:/presentations/sfei_pres/fig/trnds.pdf> <33> <M:/pr
+esentations/sfei_pres/fig/trnds.pdf> <34> <M:/presentations/sfei_pres/fig/trnds
+.pdf> <35> <M:/presentations/sfei_pres/fig/trnds.pdf> <36> <M:/presentations/sf
+ei_pres/fig/trnds.pdf> <37> <M:/presentations/sfei_pres/fig/trnds.pdf> <38> <M:
+/presentations/sfei_pres/fig/trnds.pdf> <39> <M:/presentations/sfei_pres/fig/tr
+nds.pdf> <40> <M:/presentations/sfei_pres/fig/trnds.pdf> <41> <M:/presentations
+/sfei_pres/fig/trnds.pdf> <42> <M:/presentations/sfei_pres/fig/trnds.pdf> <43> 
+<M:/presentations/sfei_pres/fig/trnds.pdf> <44> <M:/presentations/sfei_pres/fig
+/trnds.pdf> <45> <M:/presentations/sfei_pres/fig/trnds.pdf> <46> <M:/presentati
+ons/sfei_pres/fig/trnds.pdf> <47> <M:/presentations/sfei_pres/fig/trnds.pdf>
+<48> <M:/presentations/sfei_pres/fig/trnds.pdf> <49> <M:/presentations/sfei_pre
+s/fig/trnds.pdf> <50> <M:/presentations/sfei_pres/fig/trnds.pdf> <51> <M:/prese
+ntations/sfei_pres/fig/trnds.pdf> <52> <M:/presentations/sfei_pres/fig/trnds.pd
+f> <53> <M:/presentations/sfei_pres/fig/trnds.pdf> <54> <M:/presentations/sfei_
+pres/fig/trnds.pdf> <55> <M:/presentations/sfei_pres/fig/trnds.pdf> <56> <M:/pr
+esentations/sfei_pres/fig/trnds.pdf> <57> <M:/presentations/sfei_pres/fig/trnds
+.pdf> <58> <M:/presentations/sfei_pres/fig/trnds.pdf> <59> <M:/presentations/sf
+ei_pres/fig/trnds.pdf> <60> <M:/presentations/sfei_pres/fig/trnds.pdf> <61> <M:
+/presentations/sfei_pres/fig/trnds.pdf> <62> <M:/presentations/sfei_pres/fig/tr
+nds.pdf> <63> <M:/presentations/sfei_pres/fig/trnds.pdf> <64> <M:/presentations
+/sfei_pres/fig/trnds.pdf> <65> <M:/presentations/sfei_pres/fig/trnds.pdf> <66> 
+<M:/presentations/sfei_pres/fig/trnds.pdf> <67> <M:/presentations/sfei_pres/fig
+/trnds.pdf> <68> <M:/presentations/sfei_pres/fig/trnds.pdf> <69> <M:/presentati
+ons/sfei_pres/fig/trnds.pdf> <70> <M:/presentations/sfei_pres/fig/trnds.pdf>
+<71> <M:/presentations/sfei_pres/fig/trnds.pdf> <72> <M:/presentations/sfei_pre
+s/fig/trnds.pdf> <73> <M:/presentations/sfei_pres/fig/trnds.pdf> <74> <M:/prese
+ntations/sfei_pres/fig/trnds.pdf> <75> <M:/presentations/sfei_pres/fig/trnds.pd
+f> <76> <M:/presentations/sfei_pres/fig/trnds.pdf> <77> <M:/presentations/sfei_
+pres/fig/trnds.pdf> <78> <M:/presentations/sfei_pres/fig/trnds.pdf> <79> <M:/pr
+esentations/sfei_pres/fig/trnds.pdf> <80> <M:/presentations/sfei_pres/fig/trnds
+.pdf> <81> <M:/presentations/sfei_pres/fig/trnds.pdf> <82> <M:/presentations/sf
+ei_pres/fig/trnds.pdf> <83> <M:/presentations/sfei_pres/fig/trnds.pdf> <84> <M:
+/presentations/sfei_pres/fig/trnds.pdf> <85> <M:/presentations/sfei_pres/fig/tr
+nds.pdf> <86> <M:/presentations/sfei_pres/fig/trnds.pdf> <87> <M:/presentations
+/sfei_pres/fig/trnds.pdf> <88> <M:/presentations/sfei_pres/fig/trnds.pdf> <89> 
+<M:/presentations/sfei_pres/fig/trnds.pdf> <90> <M:/presentations/sfei_pres/fig
+/trnds.pdf> <91> <M:/presentations/sfei_pres/fig/trnds.pdf> <92> <M:/presentati
+ons/sfei_pres/fig/trnds.pdf> <93> <M:/presentations/sfei_pres/fig/trnds.pdf>
+<94> <M:/presentations/sfei_pres/fig/trnds.pdf> <95> <M:/presentations/sfei_pre
+s/fig/trnds.pdf> <96> <M:/presentations/sfei_pres/fig/trnds.pdf> <97> <M:/prese
+ntations/sfei_pres/fig/trnds.pdf> <98> <M:/presentations/sfei_pres/fig/trnds.pd
+f> <99> <M:/presentations/sfei_pres/fig/trnds.pdf> <100> <M:/presentations/sfei
+_pres/fig/trnds.pdf> <101> <M:/presentations/sfei_pres/fig/trnds.pdf> <102> <M:
+/presentations/sfei_pres/fig/trnds.pdf> <103> <M:/presentations/sfei_pres/fig/t
+rnds.pdf> <104> <M:/presentations/sfei_pres/fig/trnds.pdf> <105> <M:/presentati
+ons/sfei_pres/fig/trnds.pdf> <106> <M:/presentations/sfei_pres/fig/trnds.pdf>
+<107> <M:/presentations/sfei_pres/fig/trnds.pdf> <108> <M:/presentations/sfei_p
+res/fig/trnds.pdf> <109> <M:/presentations/sfei_pres/fig/trnds.pdf> <110> <M:/p
+resentations/sfei_pres/fig/trnds.pdf> <111> <M:/presentations/sfei_pres/fig/trn
+ds.pdf> <112> <M:/presentations/sfei_pres/fig/trnds.pdf> <113> <M:/presentation
+s/sfei_pres/fig/trnds.pdf> <114> <M:/presentations/sfei_pres/fig/trnds.pdf>
+<115> <M:/presentations/sfei_pres/fig/trnds.pdf> <116> <M:/presentations/sfei_p
+res/fig/trnds.pdf> <117> <M:/presentations/sfei_pres/fig/trnds.pdf> <118> <M:/p
+resentations/sfei_pres/fig/trnds.pdf> <119> <M:/presentations/sfei_pres/fig/trn
+ds.pdf> <120>
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
 Package pdftex.def Info: fig/back_tmp.pdf used on input line 282.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [19
+ [21
+
+]
+<fig/trndsperdin.pdf, id=2864, page=2, 650.43pt x 433.62pt>
+File: fig/trndsperdin.pdf Graphic file (type pdf)
+
+<use fig/trndsperdin.pdf, page 2>
+Package pdftex.def Info: fig/trndsperdin.pdf, page2 used on input line 289.
+(pdftex.def)             Requested size: 318.33212pt x 212.22423pt.
+File: fig/back_tmp.pdf Graphic file (type pdf)
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 289.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [22
 
  <M:/presentations/sfei_pres/fig/trndsperdin.pdf>]
-<fig/trndspernh.pdf, id=1608, page=2, 650.43pt x 433.62pt>
+<fig/trndspernh.pdf, id=2882, page=2, 650.43pt x 433.62pt>
 File: fig/trndspernh.pdf Graphic file (type pdf)
 
 <use fig/trndspernh.pdf, page 2>
-Package pdftex.def Info: fig/trndspernh.pdf, page2 used on input line 287.
+Package pdftex.def Info: fig/trndspernh.pdf, page2 used on input line 294.
 (pdftex.def)             Requested size: 318.33212pt x 212.22423pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 287.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 294.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [20
+ [23
 
  <M:/presentations/sfei_pres/fig/trndspernh.pdf>]
-<fig/trndsperno23.pdf, id=1626, page=2, 650.43pt x 433.62pt>
+<fig/trndsperno23.pdf, id=2900, page=2, 650.43pt x 433.62pt>
 File: fig/trndsperno23.pdf Graphic file (type pdf)
 
 <use fig/trndsperno23.pdf, page 2>
-Package pdftex.def Info: fig/trndsperno23.pdf, page2 used on input line 292.
+Package pdftex.def Info: fig/trndsperno23.pdf, page2 used on input line 299.
 (pdftex.def)             Requested size: 318.33212pt x 212.22423pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 292.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 299.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [21
+ [24
 
  <M:/presentations/sfei_pres/fig/trndsperno23.pdf>]
-<fig/ts_ex2.pdf, id=1644, 867.24pt x 252.945pt>
+<fig/trndcomp1.pdf, id=2918, 650.43pt x 361.35pt>
+File: fig/trndcomp1.pdf Graphic file (type pdf)
+ <use fig/trndcomp1.pdf>
+Package pdftex.def Info: fig/trndcomp1.pdf used on input line 305.
+(pdftex.def)             Requested size: 342.2953pt x 190.16924pt.
+File: fig/back_tmp.pdf Graphic file (type pdf)
+
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 305.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [25
+
+ <M:/presentations/sfei_pres/fig/trndcomp1.pdf>]
+<fig/ts_ex2.pdf, id=2939, 867.24pt x 252.945pt>
 File: fig/ts_ex2.pdf Graphic file (type pdf)
  <use fig/ts_ex2.pdf>
-Package pdftex.def Info: fig/ts_ex2.pdf used on input line 301.
+Package pdftex.def Info: fig/ts_ex2.pdf used on input line 314.
 (pdftex.def)             Requested size: 342.2953pt x 99.83691pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
 
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 301.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 314.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [22
+ [26
 
  <M:/presentations/sfei_pres/fig/ts_ex2.pdf>]
 File: fig/back_tmp.pdf Graphic file (type pdf)
 
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 316.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 329.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [23
+ [27
 
 ]
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 316.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 329.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [24
+ [28
 
 ]
-<fig/tracy.pdf, id=1668, 650.43pt x 361.35pt>
-File: fig/tracy.pdf Graphic file (type pdf)
- <use fig/tracy.pdf>
-Package pdftex.def Info: fig/tracy.pdf used on input line 328.
-(pdftex.def)             Requested size: 273.83728pt x 152.13538pt.
+<fig/stock.pdf, id=2971, 578.16pt x 216.81pt>
+File: fig/stock.pdf Graphic file (type pdf)
+ <use fig/stock.pdf>
+Package pdftex.def Info: fig/stock.pdf used on input line 341.
+(pdftex.def)             Requested size: 342.2953pt x 128.36009pt.
 
-Overfull \vbox (11.81133pt too high) detected at line 328
+Overfull \vbox (7.03604pt too high) detected at line 341
  []
 
 File: fig/back_tmp.pdf Graphic file (type pdf)
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 328.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 341.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [25
+ [29
 
- <M:/presentations/sfei_pres/fig/tracy.pdf>]
+ <M:/presentations/sfei_pres/fig/stock.pdf>]
 File: fig/back_tmp.pdf Graphic file (type pdf)
 
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 338.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 351.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [26
+ [30
 
-] <fig/p8obs.pdf, id=1689, 650.43pt x 144.54pt>
+] <fig/p8obs.pdf, id=2994, 650.43pt x 144.54pt>
 File: fig/p8obs.pdf Graphic file (type pdf)
 
 <use fig/p8obs.pdf>
-Package pdftex.def Info: fig/p8obs.pdf used on input line 355.
+Package pdftex.def Info: fig/p8obs.pdf used on input line 368.
 (pdftex.def)             Requested size: 342.2953pt x 76.06767pt.
- <fig/p8prdnrm.pdf, id=1690, 650.43pt x 172.645pt>
+ <fig/p8prdnrm.pdf, id=2995, 650.43pt x 172.645pt>
 File: fig/p8prdnrm.pdf Graphic file (type pdf)
 
 <use fig/p8prdnrm.pdf>
-Package pdftex.def Info: fig/p8prdnrm.pdf used on input line 355.
+Package pdftex.def Info: fig/p8prdnrm.pdf used on input line 368.
 (pdftex.def)             Requested size: 342.2953pt x 90.85861pt.
 
-Overfull \vbox (18.1898pt too high) detected at line 355
+Overfull \vbox (18.1898pt too high) detected at line 368
  []
 
 File: fig/back_tmp.pdf Graphic file (type pdf)
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 355.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 368.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [27
+ [31
 
  <M:/presentations/sfei_pres/fig/p8obs.pdf> <M:/presentations/sfei_pres/fig/p8p
 rdnrm.pdf>]
 File: fig/p8obs.pdf Graphic file (type pdf)
  <use fig/p8obs.pdf>
-Package pdftex.def Info: fig/p8obs.pdf used on input line 355.
+Package pdftex.def Info: fig/p8obs.pdf used on input line 368.
 (pdftex.def)             Requested size: 342.2953pt x 76.06767pt.
 File: fig/p8prdnrm.pdf Graphic file (type pdf)
 
 <use fig/p8prdnrm.pdf>
-Package pdftex.def Info: fig/p8prdnrm.pdf used on input line 355.
+Package pdftex.def Info: fig/p8prdnrm.pdf used on input line 368.
 (pdftex.def)             Requested size: 342.2953pt x 90.85861pt.
 
-Overfull \vbox (18.1898pt too high) detected at line 355
+Overfull \vbox (18.1898pt too high) detected at line 368
  []
 
 File: fig/back_tmp.pdf Graphic file (type pdf)
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 355.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 368.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [28
+ [32
 
-] <fig/p8dyna.pdf, id=1716, 650.43pt x 325.215pt>
+] <fig/p8dyna.pdf, id=3022, 650.43pt x 325.215pt>
 File: fig/p8dyna.pdf Graphic file (type pdf)
 
 <use fig/p8dyna.pdf>
-Package pdftex.def Info: fig/p8dyna.pdf used on input line 364.
+Package pdftex.def Info: fig/p8dyna.pdf used on input line 377.
 (pdftex.def)             Requested size: 342.2953pt x 171.1523pt.
 
-Overfull \vbox (7.68822pt too high) detected at line 364
+Overfull \vbox (7.68822pt too high) detected at line 377
  []
 
 File: fig/back_tmp.pdf Graphic file (type pdf)
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 364.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 377.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [29
+ [33
 
  <M:/presentations/sfei_pres/fig/p8dyna.pdf>]
-<fig/p8dyna_thumb.pdf, id=1730, 325.215pt x 325.215pt>
+<fig/p8dyna_thumb.pdf, id=3036, 325.215pt x 325.215pt>
 File: fig/p8dyna_thumb.pdf Graphic file (type pdf)
 
 <use fig/p8dyna_thumb.pdf>
-Package pdftex.def Info: fig/p8dyna_thumb.pdf used on input line 382.
+Package pdftex.def Info: fig/p8dyna_thumb.pdf used on input line 395.
 (pdftex.def)             Requested size: 136.91603pt x 136.91689pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 382.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 395.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [30
+ [34
 
  <M:/presentations/sfei_pres/fig/p8dyna_thumb.pdf>]
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 392.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 405.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [31
+ [35
 
 ]
-<fig/d7clam.pdf, id=1751, 614.295pt x 180.675pt>
+<fig/d7clam.pdf, id=3056, 614.295pt x 180.675pt>
 File: fig/d7clam.pdf Graphic file (type pdf)
  <use fig/d7clam.pdf>
-Package pdftex.def Info: fig/d7clam.pdf used on input line 427.
+Package pdftex.def Info: fig/d7clam.pdf used on input line 440.
 (pdftex.def)             Requested size: 342.2953pt x 100.67555pt.
 
-<fig/d7prdnrm.pdf, id=1754, page=2, 289.08pt x 144.54pt>
+<fig/d7prdnrm.pdf, id=3059, page=2, 289.08pt x 144.54pt>
 File: fig/d7prdnrm.pdf Graphic file (type pdf)
 
 <use fig/d7prdnrm.pdf, page 2>
-Package pdftex.def Info: fig/d7prdnrm.pdf, page2 used on input line 427.
+Package pdftex.def Info: fig/d7prdnrm.pdf, page2 used on input line 440.
 (pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
 
-<fig/d7prdnrm.pdf, id=1755, page=1, 289.08pt x 144.54pt>
+<fig/d7prdnrm.pdf, id=3060, page=1, 289.08pt x 144.54pt>
 File: fig/d7prdnrm.pdf Graphic file (type pdf)
 
 <use fig/d7prdnrm.pdf, page 1>
-Package pdftex.def Info: fig/d7prdnrm.pdf, page1 used on input line 427.
+Package pdftex.def Info: fig/d7prdnrm.pdf, page1 used on input line 440.
 (pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
 
-<fig/d7prdnrm.pdf, id=1756, page=3, 289.08pt x 144.54pt>
+<fig/d7prdnrm.pdf, id=3061, page=3, 289.08pt x 144.54pt>
 File: fig/d7prdnrm.pdf Graphic file (type pdf)
 
 <use fig/d7prdnrm.pdf, page 3>
-Package pdftex.def Info: fig/d7prdnrm.pdf, page3 used on input line 427.
+Package pdftex.def Info: fig/d7prdnrm.pdf, page3 used on input line 440.
 (pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
 
-Overfull \vbox (20.0668pt too high) detected at line 427
+Overfull \vbox (20.0668pt too high) detected at line 440
  []
 
 File: fig/back_tmp.pdf Graphic file (type pdf)
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 427.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 440.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [32
+ [36
 
  <M:/presentations/sfei_pres/fig/d7clam.pdf> <M:/presentations/sfei_pres/fig/d7
 prdnrm.pdf> <M:/presentations/sfei_pres/fig/d7prdnrm.pdf> <M:/presentations/sfe
 i_pres/fig/d7prdnrm.pdf>]
 File: fig/d7clam.pdf Graphic file (type pdf)
  <use fig/d7clam.pdf>
-Package pdftex.def Info: fig/d7clam.pdf used on input line 427.
+Package pdftex.def Info: fig/d7clam.pdf used on input line 440.
 (pdftex.def)             Requested size: 342.2953pt x 100.67555pt.
 File: fig/d7prdnrm.pdf Graphic file (type pdf)
 
 <use fig/d7prdnrm.pdf, page 2>
-Package pdftex.def Info: fig/d7prdnrm.pdf, page2 used on input line 427.
+Package pdftex.def Info: fig/d7prdnrm.pdf, page2 used on input line 440.
 (pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
 File: fig/d7prdnrm.pdf Graphic file (type pdf)
  <use fig/d7prdnrm.pdf, page 1>
-Package pdftex.def Info: fig/d7prdnrm.pdf, page1 used on input line 427.
+Package pdftex.def Info: fig/d7prdnrm.pdf, page1 used on input line 440.
 (pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
 File: fig/d7prdnrm.pdf Graphic file (type pdf)
 
 <use fig/d7prdnrm.pdf, page 3>
-Package pdftex.def Info: fig/d7prdnrm.pdf, page3 used on input line 427.
+Package pdftex.def Info: fig/d7prdnrm.pdf, page3 used on input line 440.
 (pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
 
-Overfull \vbox (20.0668pt too high) detected at line 427
+Overfull \vbox (20.0668pt too high) detected at line 440
  []
 
 File: fig/back_tmp.pdf Graphic file (type pdf)
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 427.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 440.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [33
+ [37
 
 ]
 File: fig/d7clam.pdf Graphic file (type pdf)
  <use fig/d7clam.pdf>
-Package pdftex.def Info: fig/d7clam.pdf used on input line 427.
+Package pdftex.def Info: fig/d7clam.pdf used on input line 440.
 (pdftex.def)             Requested size: 342.2953pt x 100.67555pt.
 File: fig/d7prdnrm.pdf Graphic file (type pdf)
 
 <use fig/d7prdnrm.pdf, page 2>
-Package pdftex.def Info: fig/d7prdnrm.pdf, page2 used on input line 427.
+Package pdftex.def Info: fig/d7prdnrm.pdf, page2 used on input line 440.
 (pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
 File: fig/d7prdnrm.pdf Graphic file (type pdf)
  <use fig/d7prdnrm.pdf, page 1>
-Package pdftex.def Info: fig/d7prdnrm.pdf, page1 used on input line 427.
+Package pdftex.def Info: fig/d7prdnrm.pdf, page1 used on input line 440.
 (pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
 File: fig/d7prdnrm.pdf Graphic file (type pdf)
 
 <use fig/d7prdnrm.pdf, page 3>
-Package pdftex.def Info: fig/d7prdnrm.pdf, page3 used on input line 427.
+Package pdftex.def Info: fig/d7prdnrm.pdf, page3 used on input line 440.
 (pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
 
-Overfull \vbox (20.0668pt too high) detected at line 427
+Overfull \vbox (20.0668pt too high) detected at line 440
  []
 
 File: fig/back_tmp.pdf Graphic file (type pdf)
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 427.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 440.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [34
+ [38
 
 ]
 File: fig/d7clam.pdf Graphic file (type pdf)
  <use fig/d7clam.pdf>
-Package pdftex.def Info: fig/d7clam.pdf used on input line 427.
+Package pdftex.def Info: fig/d7clam.pdf used on input line 440.
 (pdftex.def)             Requested size: 342.2953pt x 100.67555pt.
 File: fig/d7prdnrm.pdf Graphic file (type pdf)
 
 <use fig/d7prdnrm.pdf, page 2>
-Package pdftex.def Info: fig/d7prdnrm.pdf, page2 used on input line 427.
+Package pdftex.def Info: fig/d7prdnrm.pdf, page2 used on input line 440.
 (pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
 File: fig/d7prdnrm.pdf Graphic file (type pdf)
  <use fig/d7prdnrm.pdf, page 1>
-Package pdftex.def Info: fig/d7prdnrm.pdf, page1 used on input line 427.
+Package pdftex.def Info: fig/d7prdnrm.pdf, page1 used on input line 440.
 (pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
 File: fig/d7prdnrm.pdf Graphic file (type pdf)
 
 <use fig/d7prdnrm.pdf, page 3>
-Package pdftex.def Info: fig/d7prdnrm.pdf, page3 used on input line 427.
+Package pdftex.def Info: fig/d7prdnrm.pdf, page3 used on input line 440.
 (pdftex.def)             Requested size: 119.80544pt x 59.90137pt.
 
-Overfull \vbox (20.0668pt too high) detected at line 427
+Overfull \vbox (20.0668pt too high) detected at line 440
  []
 
 File: fig/back_tmp.pdf Graphic file (type pdf)
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 427.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 440.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [35
+ [39
 
 ]
-<fig/d7flos.pdf, id=1802, page=3, 307.1475pt x 198.7425pt>
+<fig/d7flos.pdf, id=3108, page=3, 307.1475pt x 198.7425pt>
 File: fig/d7flos.pdf Graphic file (type pdf)
 
 <use fig/d7flos.pdf, page 3>
-Package pdftex.def Info: fig/d7flos.pdf, page3 used on input line 457.
+Package pdftex.def Info: fig/d7flos.pdf, page3 used on input line 470.
 (pdftex.def)             Requested size: 162.58974pt x 105.20564pt.
 
-<fig/d7flos.pdf, id=1803, page=2, 307.1475pt x 198.7425pt>
+<fig/d7flos.pdf, id=3109, page=2, 307.1475pt x 198.7425pt>
 File: fig/d7flos.pdf Graphic file (type pdf)
 
 <use fig/d7flos.pdf, page 2>
-Package pdftex.def Info: fig/d7flos.pdf, page2 used on input line 457.
+Package pdftex.def Info: fig/d7flos.pdf, page2 used on input line 470.
 (pdftex.def)             Requested size: 162.58974pt x 105.20564pt.
 
-<fig/d7flos.pdf, id=1804, page=1, 307.1475pt x 198.7425pt>
+<fig/d7flos.pdf, id=3110, page=1, 307.1475pt x 198.7425pt>
 File: fig/d7flos.pdf Graphic file (type pdf)
 
 <use fig/d7flos.pdf, page 1>
-Package pdftex.def Info: fig/d7flos.pdf, page1 used on input line 457.
+Package pdftex.def Info: fig/d7flos.pdf, page1 used on input line 470.
 (pdftex.def)             Requested size: 162.58974pt x 105.20564pt.
 
-Overfull \vbox (9.06981pt too high) detected at line 457
+Overfull \vbox (9.06981pt too high) detected at line 470
  []
 
 File: fig/back_tmp.pdf Graphic file (type pdf)
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 457.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 470.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [36
+ [40
 
  <M:/presentations/sfei_pres/fig/d7flos.pdf> <M:/presentations/sfei_pres/fig/d7
 flos.pdf> <M:/presentations/sfei_pres/fig/d7flos.pdf>]
 File: fig/d7flos.pdf Graphic file (type pdf)
  <use fig/d7flos.pdf, page 3>
-Package pdftex.def Info: fig/d7flos.pdf, page3 used on input line 457.
+Package pdftex.def Info: fig/d7flos.pdf, page3 used on input line 470.
 (pdftex.def)             Requested size: 162.58974pt x 105.20564pt.
 File: fig/d7flos.pdf Graphic file (type pdf)
  <use fig/d7flos.pdf, page 2>
-Package pdftex.def Info: fig/d7flos.pdf, page2 used on input line 457.
+Package pdftex.def Info: fig/d7flos.pdf, page2 used on input line 470.
 (pdftex.def)             Requested size: 162.58974pt x 105.20564pt.
 File: fig/d7flos.pdf Graphic file (type pdf)
 
 <use fig/d7flos.pdf, page 1>
-Package pdftex.def Info: fig/d7flos.pdf, page1 used on input line 457.
+Package pdftex.def Info: fig/d7flos.pdf, page1 used on input line 470.
 (pdftex.def)             Requested size: 162.58974pt x 105.20564pt.
 
-Overfull \vbox (9.06981pt too high) detected at line 457
+Overfull \vbox (9.06981pt too high) detected at line 470
  []
 
 File: fig/back_tmp.pdf Graphic file (type pdf)
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 457.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 470.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [37
+ [41
 
 ]
 File: fig/d7flos.pdf Graphic file (type pdf)
  <use fig/d7flos.pdf, page 3>
-Package pdftex.def Info: fig/d7flos.pdf, page3 used on input line 457.
+Package pdftex.def Info: fig/d7flos.pdf, page3 used on input line 470.
 (pdftex.def)             Requested size: 162.58974pt x 105.20564pt.
 File: fig/d7flos.pdf Graphic file (type pdf)
 
 <use fig/d7flos.pdf, page 2>
-Package pdftex.def Info: fig/d7flos.pdf, page2 used on input line 457.
+Package pdftex.def Info: fig/d7flos.pdf, page2 used on input line 470.
 (pdftex.def)             Requested size: 162.58974pt x 105.20564pt.
 File: fig/d7flos.pdf Graphic file (type pdf)
  <use fig/d7flos.pdf, page 1>
-Package pdftex.def Info: fig/d7flos.pdf, page1 used on input line 457.
+Package pdftex.def Info: fig/d7flos.pdf, page1 used on input line 470.
 (pdftex.def)             Requested size: 162.58974pt x 105.20564pt.
 
-Overfull \vbox (9.06981pt too high) detected at line 457
+Overfull \vbox (9.06981pt too high) detected at line 470
  []
 
 File: fig/back_tmp.pdf Graphic file (type pdf)
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 457.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 470.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [38
+ [42
 
 ]
-<fig/d7links.pdf, id=1836, page=1, 542.025pt x 108.405pt>
+<fig/d7links.pdf, id=3141, page=1, 542.025pt x 108.405pt>
 File: fig/d7links.pdf Graphic file (type pdf)
 
 <use fig/d7links.pdf, page 1>
-Package pdftex.def Info: fig/d7links.pdf, page1 used on input line 469.
+Package pdftex.def Info: fig/d7links.pdf, page1 used on input line 482.
 (pdftex.def)             Requested size: 332.02686pt x 66.40814pt.
 
-<fig/d7links.pdf, id=1837, page=2, 542.025pt x 108.405pt>
+<fig/d7links.pdf, id=3142, page=2, 542.025pt x 108.405pt>
 File: fig/d7links.pdf Graphic file (type pdf)
 
 <use fig/d7links.pdf, page 2>
-Package pdftex.def Info: fig/d7links.pdf, page2 used on input line 469.
+Package pdftex.def Info: fig/d7links.pdf, page2 used on input line 482.
 (pdftex.def)             Requested size: 332.02686pt x 66.40814pt.
 
-<fig/d7links.pdf, id=1838, page=3, 542.025pt x 108.405pt>
+<fig/d7links.pdf, id=3143, page=3, 542.025pt x 108.405pt>
 File: fig/d7links.pdf Graphic file (type pdf)
 
 <use fig/d7links.pdf, page 3>
-Package pdftex.def Info: fig/d7links.pdf, page3 used on input line 469.
+Package pdftex.def Info: fig/d7links.pdf, page3 used on input line 482.
 (pdftex.def)             Requested size: 332.02686pt x 66.40814pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
  <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 469.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 482.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [39
+ [43
 
  <M:/presentations/sfei_pres/fig/d7links.pdf> <M:/presentations/sfei_pres/fig/d
 7links.pdf> <M:/presentations/sfei_pres/fig/d7links.pdf>]
 File: fig/d7links.pdf Graphic file (type pdf)
  <use fig/d7links.pdf, page 1>
-Package pdftex.def Info: fig/d7links.pdf, page1 used on input line 469.
+Package pdftex.def Info: fig/d7links.pdf, page1 used on input line 482.
 (pdftex.def)             Requested size: 332.02686pt x 66.40814pt.
 File: fig/d7links.pdf Graphic file (type pdf)
 
 <use fig/d7links.pdf, page 2>
-Package pdftex.def Info: fig/d7links.pdf, page2 used on input line 469.
+Package pdftex.def Info: fig/d7links.pdf, page2 used on input line 482.
 (pdftex.def)             Requested size: 332.02686pt x 66.40814pt.
 File: fig/d7links.pdf Graphic file (type pdf)
  <use fig/d7links.pdf, page 3>
-Package pdftex.def Info: fig/d7links.pdf, page3 used on input line 469.
+Package pdftex.def Info: fig/d7links.pdf, page3 used on input line 482.
 (pdftex.def)             Requested size: 332.02686pt x 66.40814pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
 
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 469.
-(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [40
-
-]
-File: fig/d7links.pdf Graphic file (type pdf)
- <use fig/d7links.pdf, page 1>
-Package pdftex.def Info: fig/d7links.pdf, page1 used on input line 469.
-(pdftex.def)             Requested size: 332.02686pt x 66.40814pt.
-File: fig/d7links.pdf Graphic file (type pdf)
-
-<use fig/d7links.pdf, page 2>
-Package pdftex.def Info: fig/d7links.pdf, page2 used on input line 469.
-(pdftex.def)             Requested size: 332.02686pt x 66.40814pt.
-File: fig/d7links.pdf Graphic file (type pdf)
- <use fig/d7links.pdf, page 3>
-Package pdftex.def Info: fig/d7links.pdf, page3 used on input line 469.
-(pdftex.def)             Requested size: 332.02686pt x 66.40814pt.
-File: fig/back_tmp.pdf Graphic file (type pdf)
-
-<use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 469.
-(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [41
-
-]
-File: fig/d7prdnrm.pdf Graphic file (type pdf)
- <use fig/d7prdnrm.pdf, page 2>
-Package pdftex.def Info: fig/d7prdnrm.pdf, page2 used on input line 503.
-(pdftex.def)             Requested size: 85.57382pt x 51.20926pt.
-File: fig/d7prdnrm.pdf Graphic file (type pdf)
-
-<use fig/d7prdnrm.pdf, page 1>
-Package pdftex.def Info: fig/d7prdnrm.pdf, page1 used on input line 503.
-(pdftex.def)             Requested size: 85.57382pt x 51.20926pt.
-File: fig/d7prdnrm.pdf Graphic file (type pdf)
- <use fig/d7prdnrm.pdf, page 3>
-Package pdftex.def Info: fig/d7prdnrm.pdf, page3 used on input line 503.
-(pdftex.def)             Requested size: 85.57382pt x 51.20926pt.
-File: fig/back_tmp.pdf Graphic file (type pdf)
-
-<use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 503.
-(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [42
-
-]
-File: fig/d7flos.pdf Graphic file (type pdf)
- <use fig/d7flos.pdf, page 3>
-Package pdftex.def Info: fig/d7flos.pdf, page3 used on input line 503.
-(pdftex.def)             Requested size: 85.57382pt x 55.37155pt.
-File: fig/d7flos.pdf Graphic file (type pdf)
-
-<use fig/d7flos.pdf, page 2>
-Package pdftex.def Info: fig/d7flos.pdf, page2 used on input line 503.
-(pdftex.def)             Requested size: 85.57382pt x 55.37155pt.
-File: fig/d7flos.pdf Graphic file (type pdf)
- <use fig/d7flos.pdf, page 1>
-Package pdftex.def Info: fig/d7flos.pdf, page1 used on input line 503.
-(pdftex.def)             Requested size: 85.57382pt x 55.37155pt.
-File: fig/back_tmp.pdf Graphic file (type pdf)
-
-<use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 503.
-(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [43
-
-]
-File: fig/back_tmp.pdf Graphic file (type pdf)
- <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 524.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 482.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [44
 
 ]
-File: fig/back_tmp.pdf Graphic file (type pdf)
- <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 524.
-(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+File: fig/d7links.pdf Graphic file (type pdf)
+ <use fig/d7links.pdf, page 1>
+Package pdftex.def Info: fig/d7links.pdf, page1 used on input line 482.
+(pdftex.def)             Requested size: 332.02686pt x 66.40814pt.
+File: fig/d7links.pdf Graphic file (type pdf)
 
-[45
+<use fig/d7links.pdf, page 2>
+Package pdftex.def Info: fig/d7links.pdf, page2 used on input line 482.
+(pdftex.def)             Requested size: 332.02686pt x 66.40814pt.
+File: fig/d7links.pdf Graphic file (type pdf)
+ <use fig/d7links.pdf, page 3>
+Package pdftex.def Info: fig/d7links.pdf, page3 used on input line 482.
+(pdftex.def)             Requested size: 332.02686pt x 66.40814pt.
+File: fig/back_tmp.pdf Graphic file (type pdf)
+
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 482.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [45
 
 ]
+File: fig/d7prdnrm.pdf Graphic file (type pdf)
+ <use fig/d7prdnrm.pdf, page 2>
+Package pdftex.def Info: fig/d7prdnrm.pdf, page2 used on input line 516.
+(pdftex.def)             Requested size: 85.57382pt x 51.20926pt.
+File: fig/d7prdnrm.pdf Graphic file (type pdf)
+
+<use fig/d7prdnrm.pdf, page 1>
+Package pdftex.def Info: fig/d7prdnrm.pdf, page1 used on input line 516.
+(pdftex.def)             Requested size: 85.57382pt x 51.20926pt.
+File: fig/d7prdnrm.pdf Graphic file (type pdf)
+ <use fig/d7prdnrm.pdf, page 3>
+Package pdftex.def Info: fig/d7prdnrm.pdf, page3 used on input line 516.
+(pdftex.def)             Requested size: 85.57382pt x 51.20926pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
- <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 524.
+
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 516.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [46
 
 ]
+File: fig/d7flos.pdf Graphic file (type pdf)
+ <use fig/d7flos.pdf, page 3>
+Package pdftex.def Info: fig/d7flos.pdf, page3 used on input line 516.
+(pdftex.def)             Requested size: 85.57382pt x 55.37155pt.
+File: fig/d7flos.pdf Graphic file (type pdf)
+
+<use fig/d7flos.pdf, page 2>
+Package pdftex.def Info: fig/d7flos.pdf, page2 used on input line 516.
+(pdftex.def)             Requested size: 85.57382pt x 55.37155pt.
+File: fig/d7flos.pdf Graphic file (type pdf)
+ <use fig/d7flos.pdf, page 1>
+Package pdftex.def Info: fig/d7flos.pdf, page1 used on input line 516.
+(pdftex.def)             Requested size: 85.57382pt x 55.37155pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
- <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 524.
+
+<use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 516.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [47
 
 ]
-<fig/patux_map.pdf, id=1917, 361.35pt x 505.89pt>
-File: fig/patux_map.pdf Graphic file (type pdf)
- <use fig/patux_map.pdf>
-Package pdftex.def Info: fig/patux_map.pdf used on input line 543.
-(pdftex.def)             Requested size: 130.07388pt x 182.10481pt.
-
-<fig/predann.pdf, id=1918, 505.89pt x 433.62pt>
-File: fig/predann.pdf Graphic file (type pdf)
- <use fig/predann.pdf>
-Package pdftex.def Info: fig/predann.pdf used on input line 543.
-(pdftex.def)             Requested size: 222.48985pt x 190.70737pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
-
-<use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 543.
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 537.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
  [48
 
- <M:/presentations/sfei_pres/fig/patux_map.pdf> <M:/presentations/sfei_pres/fig
-/predann.pdf>]
-<fig/metex.pdf, id=1944, 650.43pt x 361.35pt>
-File: fig/metex.pdf Graphic file (type pdf)
- <use fig/metex.pdf>
-Package pdftex.def Info: fig/metex.pdf used on input line 551.
-(pdftex.def)             Requested size: 342.2953pt x 190.16924pt.
+]
 File: fig/back_tmp.pdf Graphic file (type pdf)
-
-<use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 551.
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 537.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [49
 
- <M:/presentations/sfei_pres/fig/metex.pdf>]
-<fig/shinyex.png, id=1960, 817.55438pt x 446.41782pt>
+[49
+
+]
+File: fig/back_tmp.pdf Graphic file (type pdf)
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 537.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [50
+
+]
+File: fig/back_tmp.pdf Graphic file (type pdf)
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 537.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+ [51
+
+]
+<fig/shinyex.png, id=3224, 817.55438pt x 446.41782pt>
 File: fig/shinyex.png Graphic file (type png)
  <use fig/shinyex.png>
-Package pdftex.def Info: fig/shinyex.png used on input line 559.
+Package pdftex.def Info: fig/shinyex.png used on input line 545.
 (pdftex.def)             Requested size: 308.06367pt x 168.21686pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
 
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 559.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 545.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [50
+ [52
 
  <M:/presentations/sfei_pres/fig/shinyex.png>]
-<fig/titlegraphic.png, id=1969, 372.9132pt x 181.6386pt>
-File: fig/titlegraphic.png Graphic file (type png)
+<fig/epa_logo.png, id=3233, 195.6108pt x 196.0926pt>
+File: fig/epa_logo.png Graphic file (type png)
+ <use fig/epa_logo.png>
+Package pdftex.def Info: fig/epa_logo.png used on input line 593.
+(pdftex.def)             Requested size: 71.88243pt x 72.05942pt.
 
-<use fig/titlegraphic.png>
-Package pdftex.def Info: fig/titlegraphic.png used on input line 600.
-(pdftex.def)             Requested size: 119.80283pt x 58.3528pt.
-File: fig/back_tmp.pdf Graphic file (type pdf)
- <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 600.
-(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
- [51
+<fig/sfei1.png, id=3234, 677.53125pt x 677.53125pt>
+File: fig/sfei1.png Graphic file (type png)
+ <use fig/sfei1.png>
+Package pdftex.def Info: fig/sfei1.png used on input line 593.
+(pdftex.def)             Requested size: 71.88243pt x 71.88206pt.
 
- <M:/presentations/sfei_pres/fig/titlegraphic.png>] (M:\presentations\sfei_pres
-\sfei_pres.bbl)
+<fig/sfei2.png, id=3235, 752.8125pt x 752.8125pt>
+File: fig/sfei2.png Graphic file (type png)
+ <use fig/sfei2.png>
+Package pdftex.def Info: fig/sfei2.png used on input line 593.
+(pdftex.def)             Requested size: 71.88243pt x 71.87402pt.
 File: fig/back_tmp.pdf Graphic file (type pdf)
 
 <use fig/back_tmp.pdf>
-Package pdftex.def Info: fig/back_tmp.pdf used on input line 609.
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 593.
 (pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
-Package atenddvi Info: Last page = 52.
- [52
+ [53
+
+ <M:/presentations/sfei_pres/fig/epa_logo.png> <M:/presentations/sfei_pres/fig/
+sfei1.png> <M:/presentations/sfei_pres/fig/sfei2.png>] (M:\presentations\sfei_p
+res\sfei_pres.bbl)
+File: fig/back_tmp.pdf Graphic file (type pdf)
+ <use fig/back_tmp.pdf>
+Package pdftex.def Info: fig/back_tmp.pdf used on input line 602.
+(pdftex.def)             Requested size: 364.20192pt x 273.15337pt.
+Package atenddvi Info: Last page = 54.
+ [54
 
 ]
 \tf@nav=\write6
 \tf@toc=\write7
 \tf@snm=\write8
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 611.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 611.
- (M:\presentations\sfei_pres\sfei_pres.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 611.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 611.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 604.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 604.
+
+(M:\presentations\sfei_pres\sfei_pres.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 604.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 604.
 Package rerunfilecheck Info: File `sfei_pres.out' has not changed.
 (rerunfilecheck)             Checksum: 5B3CFB5746F0D669DBB9ED8BA3C25EB8;317.
 
@@ -2460,30 +2695,31 @@ Package rerunfilecheck Info: File `sfei_pres.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 611.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 604.
  ) 
 Here is how much of TeX's memory you used:
- 33518 strings out of 493921
- 686553 string characters out of 3147282
- 727350 words of memory out of 3000000
- 36075 multiletter control sequences out of 15000+200000
- 11494 words of font info for 44 fonts, out of 3000000 for 9000
+ 34611 strings out of 493921
+ 706161 string characters out of 3147282
+ 742507 words of memory out of 3000000
+ 37163 multiletter control sequences out of 15000+200000
+ 11815 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 48i,16n,82p,10379b,910s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,16n,82p,10379b,825s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on sfei_pres.pdf (52 pages, 6787233 bytes).
+fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on sfei_pres.pdf (54 pages, 11007313 bytes).
 PDF statistics:
- 2060 PDF objects out of 2073 (max. 8388607)
- 117 named destinations out of 1000 (max. 500000)
- 4743 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3333 PDF objects out of 3580 (max. 8388607)
+ 120 named destinations out of 1000 (max. 500000)
+ 8811 words of extra memory for PDF output out of 10000 (max. 10000000)
 

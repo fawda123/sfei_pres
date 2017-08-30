@@ -21,6 +21,7 @@
 \newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
 \newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
 \newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
 
 \usepackage{framed}
 \makeatletter
@@ -101,12 +102,12 @@
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
 
-\title[Understanding nitrogen pollution]{\textbf{Quantitative approaches to understanding nitrogen pollution: Examples from the upper San Francisco Estuary}}
+\title[Evaluation of Delta RMP data]{\textbf{Evaluation of Delta RMP nutrient data using weighted regression for trend analysis}}
 \author[M. Beck]{Marcus W. Beck, PhD}
 
 \institute[USEPA]{USEPA National Health and Environmental Effects Research Laboratory, Gulf Ecology Division, \href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov}, Phone: 8509342480}
 
-\date{Aug. 26, 2016}
+\date{August 30, 2017}
 
 \titlegraphic{\includegraphics[width=\linewidth]{fig/titlegraphic.pdf}}
 
@@ -119,39 +120,15 @@
 \section{Background}
 
 %%%%%%
-\begin{frame}{\textbf{Evaluating estuarine condition}}{\textbf{How do we collect and use data?}}
-How can we leverage monitoring data to develop our conceptual model of eutrophication? \\~\\
+\begin{frame}{\textbf{Evaluating Delta RMP data}}{}
 \onslide<+->
-\begin{quote}
-Eutrophication (noun) - an \emtxt{increase} in the rate of supply of \emtxt{organic matter} to an ecosystem\\
-\hfill -- \cite{Nixon95}
-\end{quote}
-\begin{center}
-\scalebox{1}{
-\begin{tikzpicture}[node distance = 4cm, auto, >=stealth]
-  \onslide<+->{
-  \node[block] (a) {Nutrient Loading};}
-  \onslide<+->{
-	\node[decision] (b)  [right of=a] {Responses};
- 	\draw[->] (a) -- (b);}
-  \onslide<+->{
-  \draw[decorate,decoration={brace,amplitude=10pt}] [right of=b] (2,-1.5) -- (2,1.5);
-  \node[draw,align=left,draw=none] [right of=b] {\textbf{Changes in:}\\ Chlorophyll\\ Primary Production\\ System Metabolism\\ Dissolved Oxygen};}
-\end{tikzpicture}}
-\end{center}
-\vspace{-0.5cm}\hspace*{15pt}\scalebox{0.7}{\hbox{\tiny Adapted from \cite{Cloern01}}}\\~\\
-\end{frame}
-
-%%%%%%
-\begin{frame}{\textbf{Evaluating estuarine condition}}{\textbf{How do we collect and use data?}}
-\onslide<+->
-\emtxt{Today's talk}: My experience evaluating monitoring data to inform our understanding of the eutrophication paradigm\\~\\
+\emtxt{Today's talk}: Evaluation of forty years of Delta RMP nutrient data with weighted regression \\~\\
 \onslide<+->
 Water quality trends in the Delta: \\~\\
 \begin{itemize}
-\item \emtxt{Example 1}: Model theory and application \\~\\
-\item \emtxt{Example 2}: Trends over time \\~\\
-\item \emtxt{Example 3}: Selected case studies \\~\\
+\item \emtxt{Part 1}: Model theory and application \\~\\
+\item \emtxt{Part 2}: Trends over time \\~\\
+\item \emtxt{Part 3}: Selected case studies \\~\\
 \end{itemize}
 \onslide<+->
 Can we \emtxt{develop} and \emtxt{apply} methods that \emtxt{link trends} with \emtxt{causal events}?
@@ -224,7 +201,24 @@ flow changes
 \onslide<+->
 The \emtxt{weighted regression (WRTDS)} approach models pollutants in rivers as a function of \emtxt{time}, \emtxt{discharge}, and \emtxt{season} \cite{Hirsch10}\\~\\
 \onslide<+->
-\emtxt{Adaptation:} Applied to Tampa Bay \cite{Beck15}, further validated/compared in Patuxent Estuary [Beck and Murphy, In review]
+\emtxt{Adaptation:} Applied to Tampa Bay \cite{Beck15}, further validated/compared in Patuxent Estuary \cite{Beck17}
+\end{frame}
+
+%%%%%%
+\begin{frame}[t]{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
+\onslide<1->
+How does weighted regression work?  
+\begin{center}
+$\ln\left(N\right) = \beta_0 + \beta_1 t + \beta_2 Sal + \beta_3 \sin\left(2\pi t\right) + \beta_4 \cos\left(2\pi t\right)$\\~\\
+$N$: nitrogen (or other response endpoint)\\
+$t$: time\\
+$Sal$: Salinity (or other flow-related variable)
+\end{center}
+\includegraphics<2>[width = \textwidth, page = 1]{fig/wrtds_pieces.pdf}
+\includegraphics<3>[width = \textwidth, page = 2]{fig/wrtds_pieces.pdf}
+\includegraphics<4>[width = \textwidth, page = 3]{fig/wrtds_pieces.pdf}
+\includegraphics<5>[width = \textwidth, page = 4]{fig/wrtds_pieces.pdf}
+\includegraphics<6>[width = \textwidth, page = 5]{fig/wrtds_pieces.pdf}
 \end{frame}
 
 
@@ -236,6 +230,19 @@ How does weighted regression work?
 \animategraphics[controls,width=\linewidth]{10}{fig/wtex}{}{} %frame rate is 12 per/sec
 \end{center}
 \end{frame}
+ 
+%%%%%%
+\begin{frame}[t]{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
+{\small
+\emtxt{Points}: observed time series (black are weighted, grey is zero weight)\\
+\emtxt{Green point}: observation at the center of the regression\\
+\emtxt{Blue line}: Global model with weights specific to the window\\
+\emtxt{Red line}: Accumulated WRTDS model
+}
+\begin{center}
+\animategraphics[controls,width=\linewidth]{10}{fig/wrtds_pieces2}{}{} %frame rate is 12 per/sec
+\end{center}
+\end{frame} 
  
 
  
@@ -291,6 +298,12 @@ How does weighted regression work?
 \centerline{\includegraphics[width = 0.93\textwidth, page = 2]{fig/trndsperno23.pdf}}
 \end{frame}
 
+%%%%%%
+\begin{frame}{The ORISE experience}{Additional WRTDS applications}
+Better description of nutrient endpoints can change conclusions
+\centerline{\includegraphics[width = \textwidth]{fig/trndcomp1.pdf}}
+\end{frame}
+
 
 
 %%%%%%
@@ -305,14 +318,14 @@ Predicted trends follow observed... how can we leverage the results to better un
 %%%%%%
 \begin{frame}{\textbf{Selected case studies}}{\textbf{}}
 \onslide<+->
-Two examples demonstrate the utility of WRTDS adaptation to tidal waters: \\~\\
+Two examples demonstrate the utility of WRTDS adaptation to Delta RMP data: \\~\\
 \begin{itemize}
 \item Effects of wastewater treatment at P8 \\~\\
 \item Effects of biological invasion in Suisun Bay\\~\\
 \end{itemize}
 \onslide<+->
 Each shows how \emtxt{model components} describe \emtxt{processes} \\~\\
-Uses \emtxt{WRTDStidal} package for R
+Uses \emtxt{WRTDStidal} package for R \cite{Beck17b}: \href{https://cran.rstudio.com/web/packages/WRTDStidal/index.html}{\url{https://cran.rstudio.com/web/packages/WRTDStidal}}
 \end{frame}
 
 
@@ -322,8 +335,8 @@ Uses \emtxt{WRTDStidal} package for R
 How can model information be linked to causation?
 \vspace{0.1in}
 \begin{figure}
-\centerline{\includegraphics[width = 0.8\textwidth]{fig/tracy.pdf}}
-\caption{Nitrogen load measurements (kg d$^{-1}$) at the Tracy Wastewater Treatment Plant.  Wastewater discharge requirements were implemented in May, 2007.}
+\centerline{\includegraphics[width = \textwidth]{fig/stock.pdf}}
+\caption{Nitrogen concentration measurements (mg L$^{-1}$) from the City of Stockton Wastewater Treatment Plant, San Joaquin County.  Wastewater discharge requirements were implemented in 2006 for nitrification/denitrification and tertiary filtration to convert ammonium to nitrate.}
 \end{figure}
 \end{frame}
 
@@ -479,7 +492,7 @@ Results at D7 show complex response of chlorophyll:
 \begin{itemize}
 \onslide<1->{
 \item Increase in clam abundance, decrease in chlorophyll \\~\\
-\item Increase in DIN... but also decrease in SiO$_2$ \\~\\
+\item Increase in DIN... but also increase in SiO$_2$ \\~\\
 }
 \onslide<2->{
 \item Relationship with flow changed depending on physical or biological forcing
@@ -523,36 +536,9 @@ Chosen method depends on the question: WRTDS because water quality varies with t
 \href{https://github.com/fawda123/WRTDStidal}{\url{https://github.com/fawda123/WRTDStidal}}
 \end{frame}
 
-% patux map
-
-
-% patux trends
-
-
 %%%%%%
 \begin{frame}{\textbf{Conclusions}}{\textbf{Lessons for monitoring and future work}}
-Comparing WRTDS and GAMs for trend evaluation
-\begin{columns}
-\begin{column}{0.38\textwidth}
-\includegraphics[width = \textwidth]{fig/patux_map.pdf}
-\end{column}
-\begin{column}{0.65\textwidth}
-\includegraphics[width = \textwidth]{fig/predann.pdf}
-\end{column}
-\end{columns}
-\end{frame}
-
-
-
-%%%%%%
-\begin{frame}{\textbf{Conclusions}}{\textbf{Lessons for monitoring and future work}}
-DO time series and ecosystem metabolism \cite{Beck15b}
-\includegraphics[width = \textwidth]{fig/metex.pdf}
-\end{frame}
-
-%%%%%%
-\begin{frame}{\textbf{Conclusions}}{\textbf{Lessons for monitoring and future work}}
-Data management and analysis tools
+Shiny app: \href{https://beckmw.shinyapps.io/sf_trends/}{\url{https://beckmw.shinyapps.io/sf_trends/}}
 \begin{center}
 \fbox{\includegraphics[width = 0.9\textwidth]{fig/shinyex.png}}
 \end{center}
@@ -565,23 +551,28 @@ Acknowledgments and contact info:\\~\\
 \begin{column}{0.9\textwidth}
 {\footnotesize
 Research staff and employees at USEPA Gulf Ecology Division, San Francisco Estuary Institute \\~\\
-David Senn, Phil Bresnahan, Emily Novick, James D. Hagy III, Thomas Jabusch
+David Senn, Jabusch, Phil Bresnahan, Emily Novick
 }
 \end{column}
 \end{columns}
 \vfill
 \begin{columns}
-\begin{column}{0.5\textwidth}
+\begin{column}{0.7\textwidth}
 \begin{center}
-\includegraphics[width=0.7\linewidth]{fig/titlegraphic.png}
+\includegraphics[width=0.3\linewidth]{fig/epa_logo.png}
+\hfill
+\includegraphics[width=0.3\linewidth]{fig/sfei1.png}
+\hfill
+\includegraphics[width=0.3\linewidth]{fig/sfei2.png}
 \end{center}
 \end{column}
-\begin{column}{0.5\textwidth}
+\begin{column}{0.3\textwidth}
 \scriptsize
 \begin{center}
 \href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov} \\~\\
-Github @fawda123 \\~\\
-Phone: 8509342480
+\href{mailto:marcusb@sccwrp.org}{marcusb@sccwrp.org} \\~\\
+Phone (EPA): 8509342480 \\~\\
+Phone (SCCWRP): 7147553217
 \end{center}
 \end{column}
 \end{columns}
@@ -595,6 +586,8 @@ This presentation: \href{https://github.com/fawda123/sfei_pres}{\url{https://git
 Shiny app: \href{https://beckmw.shinyapps.io/sf_trends/}{\url{https://beckmw.shinyapps.io/sf_trends/}}
 
 Detailed results: \href{http://fawda123.github.io/sf_trends/README}{\url{http://fawda123.github.io/sf\_trends/README}}
+
+Draft manuscript: \href{http://fawda123.github.io/sftrends_manu}{\url{http://fawda123.github.io/sftrends\_manu}}
 \end{column}
 \end{columns}
 \end{frame}
