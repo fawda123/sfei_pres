@@ -1,32 +1,23 @@
  \newcommand{\noop}[1]{}
 \begin{thebibliography}{}
 
-\bibitem[Beck, 2017]{Beck17b}
-Beck MW. 2017.
-\newblock {WRTDStidal: Weighted Regression for Water Quality Evaluation in
-  Tidal Waters}.
-\newblock R package version 1.1.0.
-
 \bibitem[Beck and {Hagy III}, 2015]{Beck15}
 Beck MW, {Hagy III} JD. 2015.
 \newblock Adaptation of a weighted regression approach to evaluate water
   quality trends in an estuary.
 \newblock Environmental Modelling and Assessment, 20(6):637--655.
 
+\bibitem[Beck et~al., 2018]{Beck18b}
+Beck MW, Jabusch TW, Trowbridge PR, Senn DB. 2018.
+\newblock Four decades of water quality change in the upper {S}an {F}rancisco
+  {E}stuary.
+\newblock Estuarine, Coastal and Shelf Science, 212:11--22.
+
 \bibitem[Beck and Murphy, 2017]{Beck17}
 Beck MW, Murphy RR. 2017.
 \newblock Numerical and qualitative contrasts of two statistical models for
   water quality change in tidal waters.
 \newblock Journal of the American Water Resources Association, 53(1):197--219.
-
-\bibitem[Crauder et~al., 2016]{Crauder16}
-Crauder JS, Thompson JK, Parchaso F, Anduaga RI, Pearson SA, Gehrts K, Fuller
-  H, Wells E. 2016.
-\newblock Bivalve effects on the food web supporting delta smelt - a long-term
-  study of bivalve recruitment, biomass, and grazing rate patterns with varying
-  freshwater outflow.
-\newblock Technical Report Open-File Report 2016-1005, US Geological Survey,
-  Reston, Virginia.
 
 \bibitem[Hirsch et~al., 2010]{Hirsch10}
 Hirsch RM, Moyer DL, Archfield SA. 2010.

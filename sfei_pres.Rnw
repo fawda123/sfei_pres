@@ -196,9 +196,9 @@ writeLines(refs, con = file('refs.bib'))
 \title[Evaluation of Delta RMP data]{\textbf{Evaluation of Delta RMP nutrient data using weighted regression for trend analysis}}
 \author[M. Beck]{Marcus W. Beck, PhD}
 
-\institute[USEPA]{USEPA National Health and Environmental Effects Research Laboratory, Gulf Ecology Division, \href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov}, Phone: 8509342480}
+\institute[SCCWRP]{Southern California Coastal Water Research Project, \href{mailto:marcusb@sccwrp.org}{marcusb@sccwrp.org}, Phone: 7147553217}
 
-\date{August 30, 2017}
+\date{April 9, 2019}
 
 \titlegraphic{\includegraphics[width=\linewidth]{fig/titlegraphic.pdf}}
 
@@ -213,16 +213,14 @@ writeLines(refs, con = file('refs.bib'))
 %%%%%%
 \begin{frame}{\textbf{Evaluating Delta RMP data}}{}
 \onslide<+->
-\emtxt{Today's talk}: Evaluation of forty years of Delta RMP nutrient data with weighted regression \\~\\
+\emtxt{Today's talk}: Evaluation of forty years of Delta water quality data from the Routing Monitoring Program (RMP) \\~\\
 \onslide<+->
 Water quality trends in the Delta: \\~\\
 \begin{itemize}
 \item \emtxt{Part 1}: Model theory and application \\~\\
-\item \emtxt{Part 2}: Trends over time \\~\\
-\item \emtxt{Part 3}: Selected case studies \\~\\
+\item \emtxt{Part 2}: Trends over time and selected case study \\~\\
+\item \emtxt{Part 3}: Use of data science tools to reach environmental managers \\~\\
 \end{itemize}
-\onslide<+->
-Can we \emtxt{develop} and \emtxt{apply} methods that \emtxt{link trends} with \emtxt{causal events}?
 \end{frame}
 
 \section{Model theory and background}
@@ -403,7 +401,7 @@ flow changes
 \begin{frame}[t]{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
 \onslide<+->
 \emtxt{Problem:} Response endpoints of eutrophication vary naturally over time and with discharge or tidal patterns\\~\\
-\emtxt{Solution:} Develop a model that accounts for changes in relationships between drivers of pollution over time\\~\\
+\emtxt{Solution:} Apply a model that accounts for changes in relationships between drivers of pollution over time \cite{Beck18b} \\~\\
 \onslide<+->
 The \emtxt{weighted regression (WRTDS)} approach models pollutants in rivers as a function of \emtxt{time}, \emtxt{discharge}, and \emtxt{season} \cite{Hirsch10}\\~\\
 \onslide<+->
@@ -916,24 +914,11 @@ dev.off()
 %%%%%%
 \begin{frame}{\textbf{Trends over time}}{\textbf{Nitrogen dynamics in the Delta - nitrite/nitate}} 
 The \emtxt{WRTDS} approach lets us model historical trends in relation to \emtxt{time}, \emtxt{discharge}, and \emtxt{season}\\~\\
-Predicted trends follow observed... how can we leverage the results to better understand important processes? \\~\\
+Predicted trends follow observed... how can we leverage the results to understand drivers of environmental change? \\~\\
 \centerline{\includegraphics[width = \textwidth]{fig/ts_ex2.pdf}}
 \end{frame}
 
-\section{Selected case studies}
-
-%%%%%%
-\begin{frame}{\textbf{Selected case studies}}{\textbf{}}
-\onslide<+->
-Two examples demonstrate the utility of WRTDS adaptation to Delta RMP data: \\~\\
-\begin{itemize}
-\item Effects of wastewater treatment at P8 \\~\\
-\item Effects of biological invasion in Suisun Bay\\~\\
-\end{itemize}
-\onslide<+->
-Each shows how \emtxt{model components} describe \emtxt{processes} \\~\\
-Uses \emtxt{WRTDStidal} package for R \cite{Beck17b}: \href{https://cran.rstudio.com/web/packages/WRTDStidal/index.html}{\url{https://cran.rstudio.com/web/packages/WRTDStidal}}
-\end{frame}
+\section{Selected case study}
 
 <<echo = F, cache = TRUE, eval = T, message = F, results = 'hide'>>=
 data(stock_conc)
@@ -991,7 +976,7 @@ dev.off()
 @
 
 %%%%%%
-\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of wastewater treatment upgrades}}
+\begin{frame}{\textbf{Selected case study}}{\textbf{Effects of wastewater treatment upgrades}}
 How can model information be linked to causation?
 \vspace{0.1in}
 \begin{figure}
@@ -1002,7 +987,7 @@ How can model information be linked to causation?
 
 %%%%%%
 \begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of wastewater treatment upgrades}}
-\emtxt{Hypothesis}: Response of nutrient concentrations at P8 is linked to upstream WWTP upgrades \\~\\
+\emtxt{Hypothesis}: Response of nutrient concentrations at station P8 is linked to upstream WWTP upgrades \\~\\
 We should be able to \emtxt{predict}: \\~\\
 \begin{itemize}
 \item A flow-normalized annual trend concurrent with WWTP upgrades \\~\\
@@ -1207,522 +1192,7 @@ Results at P8 were linked to WWTP upgrades:
 \end{columns}
 \end{frame}
 
-%%%%%%
-\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
-\emtxt{Hypothesis}: Biological invasions by benthic filter feeders have shifted abundance and composition of phytoplankton in Suisun Bay \\~\\
-We should be able to \emtxt{predict}: \\~\\
-\begin{itemize}
-\item A decline in annual, flow-normalized chlorophyll following increase in invaders\\~\\
-\item Varying effects of flow given complex relationships between chlorophyll and invaders
-\end{itemize}
-\end{frame}
-
-<<echo = F, cache = TRUE, eval = F, message = F, results = 'hide'>>=
-
-# clam and model data at D7
-data(clams)
-data(h3dat)
-data(flow_dat)
-chld7 <- filter(h3dat, Site_Code %in% 'D7' & resvar %in% 'chl')$mod[[1]]
-
-clmdat <- group_by(clams, yr, species) %>% 
-  dplyr::summarize(
-    clams_smp = mean(clams_smp, na.rm = TRUE),
-    biomass = mean(biomass, na.rm = TRUE)
-    ) %>% 
-  ungroup %>% 
-  mutate(yr = as.Date(paste0(yr, '-10-01')))
-
-# make sure date range is same on both
-xlims <- as.Date(c('1976-10-01', '2014-10-01'))
-
-mytheme <- theme_minimal() + 
-  theme(
-    plot.background = element_rect(fill='transparent', 
-      colour = NA),
-    panel.background = element_rect(fill='transparent', 
-      colour = NA),
-    legend.background = element_rect(fill='transparent', 
-      colour = NA),
-    legend.key = element_rect(fill = 'transparent', 
-      colour = NA),
-    axis.line.x = element_line(), 
-    axis.line.y = element_line(), 
-    axis.ticks.x = element_line(),
-    axis.ticks.y = element_line(),
-    axis.ticks.length = unit(.1, "cm"), 
-    panel.grid.major = element_line(colour = "#7BCCC4"),
-    panel.grid.minor = element_blank(), 
-    plot.margin = unit(c(3, 3, 3, 3), 'pt')
-  )   
-
-##
-# annual clam time series
-p1 <- ggplot(clmdat, aes(x = yr, y = clams_smp, fill = species)) + 
-  geom_bar(stat = 'identity') + 
-  mytheme + 
-  theme(
-    legend.position = 'top', 
-    legend.title = element_blank(),
-    axis.title.x = element_blank()
-    ) + 
-  scale_fill_brewer(
-    palette = 'Set2',
-    labels = parse(text = c('italic(Corbicula)', 'italic(Potamocorbula)'))
-    ) + 
-  scale_x_date('Year', limits = xlims) +
-  scale_y_continuous('Clams per sample') +
-  guides(fill = guide_legend(keywidth = 0.5, keyheight = 0.5))
-
-pdf('fig/d7clam.pdf', height = 2.5, width = 8.5, family = 'serif')
-p1
-dev.off()
-
-data(h3dat)
-
-# separate each site
-toplo1 <- filter(h3dat, Site_Code %in% 'D7')
-
-# y axis labels
-ylab1 <- expression(paste("DIN (mg ", L^-1, ")"))
-ylab2 <- expression(paste("Chl-", italic(a), " (", italic(mu), "g ", L^-1, ")"))
-ylab3 <- expression(paste("Si", O[2], " (mg ", L^-1, ")"))
-
-# colors
-cols <- RColorBrewer::brewer.pal(9, 'Set1')[1:3]
-col_vec <- RColorBrewer::brewer.pal(9, 'Blues')[c(9, 8, 7)]
-
-## first set of plots
-pdin1 <- prdnrmplot(toplo1$mod[[2]], col_vec = col_vec, logspace = F, min_mo = 10) +
-  mytheme + 
-  scale_y_continuous(ylab1) +
-  theme(
-    legend.position = 'none', 
-    axis.title.x = element_blank()
-    )
-
-pchl1 <- prdnrmplot(toplo1$mod[[1]], col_vec = col_vec, logspace = F, min_mo = 10) +
-  mytheme + 
-  theme(
-    legend.position = 'none', 
-    axis.title.x = element_blank()
-    ) + 
-  scale_y_continuous(ylab2)
-
-psio1 <- prdnrmplot(toplo1$mod[[3]], col_vec = col_vec, logspace = F, min_mo = 10) +
-  mytheme + 
-  theme(
-    legend.position = 'none', 
-    axis.title.x = element_blank()
-    ) +
-  scale_y_continuous(ylab3)
-
-# Set the widths
-pA1 <- ggplot_gtable(ggplot_build(pdin1))
-pB1 <- ggplot_gtable(ggplot_build(pchl1))
-pC1 <- ggplot_gtable(ggplot_build(psio1))
-maxWidth = unit.pmax(pA1$widths[2:3], pB1$widths[2:3], pC1$widths[2:3])
-pA1$widths[2:3] <- maxWidth
-pB1$widths[2:3] <- maxWidth
-pC1$widths[2:3] <- maxWidth
-
-pdf('fig/d7prdnrm.pdf', height = 2, width = 4, family = 'serif')
-grid.arrange(pA1)
-grid.arrange(pB1)
-grid.arrange(pC1)
-dev.off()
-@
-
-%%%%%%
-\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
-\vspace{-0.1in}
-\onslide<1->
-\begin{figure}
-\centerline{\includegraphics[width = \textwidth]{fig/d7clam.pdf}}
-\caption{Clam density by year at D7, Suisun Bay \cite{Crauder16}.}
-\end{figure}
-\vspace{-0.1in}
-\begin{columns}
-\begin{column}{0.35\textwidth}
-\onslide<2->{
-\includegraphics[width = \textwidth, page = 2]{fig/d7prdnrm.pdf}
-}
-\end{column}
-\begin{column}{0.35\textwidth}
-\onslide<3->{
-\includegraphics[width = \textwidth, page = 1]{fig/d7prdnrm.pdf}
-}
-\end{column}
-\begin{column}{0.35\textwidth}
-\onslide<4->{
-\includegraphics[width = \textwidth, page = 3]{fig/d7prdnrm.pdf}
-}
-\end{column}
-\end{columns}
-\vspace{-0.05in}
-\onslide<2->
-\begin{figure}
-\caption{Annual predicted (points) and flow-normalized (lines) water quality data at D7.}
-\end{figure}
-\end{frame}
-
-<<echo = F, cache = TRUE, eval = F, message = F, results = 'hide'>>=
-
-# clam and model data at D7
-data(clams)
-data(h3dat)
-data(flow_dat)
-chld7 <- filter(h3dat, Site_Code %in% 'D7' & resvar %in% 'chl')$mod[[1]]
-
-clmdat <- group_by(clams, yr, species) %>% 
-  dplyr::summarize(
-    clams_smp = mean(clams_smp, na.rm = TRUE),
-    biomass = mean(biomass, na.rm = TRUE)
-    ) %>% 
-  ungroup %>% 
-  mutate(yr = as.Date(paste0(yr, '-10-01')))
-
-# make sure date range is same on both
-xlims <- as.Date(c('1976-10-01', '2014-10-01'))
-
-mytheme <- theme_minimal() + 
-  theme(
-    plot.background = element_rect(fill='transparent', 
-      colour = NA),
-    panel.background = element_rect(fill='transparent', 
-      colour = NA),
-    legend.background = element_rect(fill='transparent', 
-      colour = NA),
-    legend.key = element_rect(fill = 'transparent', 
-      colour = NA),
-    axis.line.x = element_line(), 
-    axis.line.y = element_line(), 
-    axis.ticks.x = element_line(),
-    axis.ticks.y = element_line(),
-    axis.ticks.length = unit(.1, "cm"), 
-    panel.grid.major = element_line(colour = "#7BCCC4"),
-    panel.grid.minor = element_blank(), 
-    plot.margin = unit(c(3, 3, 3, 3), 'pt')
-  )   
-
-##
-# clam biomass related to daily sacramento flow
-clmdat <- group_by(clams, yr, species) %>% 
-  dplyr::summarize(
-    clams_smp = mean(clams_smp, na.rm = TRUE),
-    biomass = mean(biomass, na.rm = TRUE)
-    ) %>% 
-  ungroup %>% 
-  mutate(yr = as.Date(paste0(yr, '-10-01')))
-
-flodat <- filter(flow_dat, station %in% 'sac')
-clmflo <- select(clams, biomass, clams_smp, species, date) %>% 
-  rename(Date = date) %>% 
-  left_join(., flodat, by = 'Date') %>% 
-  filter(species %in% 'Potamocorbula')
-
-# linear model of concentration x biomass
-mod <- lm(log(1 + biomass) ~ log(1 + q), data = clmflo) %>% 
-  coefficients
-xvals <- range(clmflo$q, na.rm = TRUE)
-xvals <- seq(xvals[1], xvals[2], length = 100)
-yvals <- (exp(mod[1] + mod[2] * log(1 + xvals))) - 1
-
-ylab <- expression(paste(italic(Potamocorbula), " biomass (g ", m^-2, ")"))
-xlab <- expression(paste("Sacramento daily flow (", m^3, ' ', s^-1, ")"))
-
-# scatter plot of concentration x biomass with model 
-p1 <- ggplot(clmflo, aes(x = q, y = biomass)) + 
-  geom_point(size = 3, alpha = 0.8, colour = 'darkgrey') + 
-  geom_line(data = data.frame(x = xvals, y = yvals), aes(x, y, colour = 'black'), lwd = 1) +
-  mytheme +
-  theme(
-    legend.position = 'top', 
-    legend.title = element_blank(), 
-    legend.box = 'horizontal'
-    ) +
-  scale_colour_manual(label = 'log(1 + biomass) = 5.2 - 0.6log(1 + flow)', values = 'black') +
-  scale_x_continuous(xlab) + 
-  scale_y_continuous(ylab, limits = c(0,15))
-
-##
-# chlorophyll by month
-chldat <- filter(h3dat, resvar %in% 'chl' & Site_Code %in% 'D7') %>% 
-  .$mod %>% 
-  .[[1]] %>% 
-  select(year, month, res, bt_norm) %>% 
-  mutate(res = exp(res)) %>% 
-  rename(yr = year, mo = month, bt_res = res) %>% 
-  group_by(yr, mo) %>% 
-  dplyr::summarize(res = mean(bt_res, na.rm = TRUE), bt_norm = mean(bt_norm, na.rm = TRUE)) %>% 
-  ungroup
-
-# clam by month
-clmdat <- mutate(clams, mo = lubridate::month(date)) %>% 
-  group_by(yr, mo, species) %>% 
-  dplyr::summarize(
-    clams_smp = mean(clams_smp, na.rm = TRUE),
-    biomass = mean(biomass, na.rm = TRUE)
-    ) %>% 
-  ungroup %>% 
-  filter(species %in% 'Potamocorbula')
-
-# combine chlorophyll and clam by year, month
-toplo <- left_join(clmdat, chldat, by = c('yr', 'mo')) %>% 
-  mutate(date = as.Date(paste0(yr, '-', mo, '-01')))
-
-# linear model of concentration x biomass
-mod <- lm(log(1 + bt_norm) ~ log(1 + biomass), data = toplo) %>% 
-  coefficients
-xvals <- range(toplo$biomass, na.rm = TRUE)
-xvals <- seq(xvals[1], xvals[2], length = 100)
-yvals <- (exp(mod[1] + mod[2] * log(1 + xvals))) - 1
-
-xlab <- expression(paste(italic(Potamocorbula), " biomass (g ", m^-2, ")"))
-ylab <- expression(paste("Flow-normalized chlorophyll (", italic(mu), "g ", L^-1, ")"))
-
-# scatter plot of concetration x biomass with model 
-p2 <- ggplot(toplo, aes(x = biomass, y = bt_norm)) + 
-  geom_point(size = 3, alpha = 0.8, colour = 'darkgrey') + 
-  geom_line(data = data.frame(x = xvals, y = yvals), aes(x, y, colour = 'black'), lwd = 1) +
-  mytheme + 
-  theme(
-    legend.position = 'top', 
-    legend.title = element_blank(), 
-    legend.box = 'horizontal'
-    ) +
-  scale_colour_manual(label = 'log(1 + chl) = 1.35 - 0.1log(1 + biomass)', values = 'black') +
-  scale_x_continuous(xlab) + 
-  scale_y_continuous(ylab, limits = c(0.8, 4))
-
-##
-# dynaplot for chl, june
-cols <- RColorBrewer::brewer.pal(10, 'Set2')[1:2]
-ylab <- attr(chld7, 'reslab')
-
-p3 <- dynaplot(chld7, mo = 6, col_vec = cols, floscl = F) +
-  mytheme +
-  theme(
-    legend.position = 'top', 
-    legend.title = element_blank(), 
-    legend.box = 'horizontal',
-    strip.background = element_blank(),
-    strip.text.x = element_blank()
-    ) + 
-  scale_x_continuous('ln-Salinity (psu)') + 
-  scale_y_continuous(ylab, limits = c(0.4, 3.3)) +
-  guides(colour = guide_colourbar(barheight = 0.5, barwidth = 10))
-
-# align widths of plots in first column, first two
-pA <- ggplot_gtable(ggplot_build(p1))
-pB <- ggplot_gtable(ggplot_build(p2))
-pC <- ggplot_gtable(ggplot_build(p3))
-maxWidth = unit.pmax(pA$widths[2:3], pB$widths[2:3], pC$widths[2:3])
-
-# Set the widths
-pA$widths[2:3] <- maxWidth
-pB$widths[2:3] <- maxWidth
-pC$widths[2:3] <- maxWidth
-
-pdf('fig/d7flos.pdf', height = 2.75, width = 4.25, family = 'serif')
-grid.arrange(pA)
-grid.arrange(pB)
-grid.arrange(pC)
-dev.off()
-@
-
-%%%%%%
-\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
-\onslide<1->
-\begin{columns}
-\begin{column}{0.5\textwidth}
-\centerline{\includegraphics[width = 0.95\textwidth, page = 3]{fig/d7flos.pdf}}
-\end{column}
-\begin{column}{0.5\textwidth}
-\begin{itemize}
-\item Early: Flushing \\~\\
-\item Later: Flow-stimulation
-\end{itemize}
-\end{column}
-\end{columns}
-\begin{columns}
-\begin{column}{0.5\textwidth}
-\onslide<2->{
-\centerline{\includegraphics[width = 0.95\textwidth, page = 2]{fig/d7flos.pdf}}
-}
-\end{column}
-\begin{column}{0.5\textwidth}
-\onslide<3->{
-\centerline{\includegraphics[width = 0.95\textwidth, page = 1]{fig/d7flos.pdf}}
-}
-\end{column}
-\end{columns}
-\end{frame}
-
-<<echo = F, cache = TRUE, eval = F, message = F, results = 'hide'>>=
-
-# clam and model data at D7
-data(clams)
-data(h3dat)
-data(flow_dat)
-chld7 <- filter(h3dat, Site_Code %in% 'D7' & resvar %in% 'chl')$mod[[1]]
-
-clmdat <- group_by(clams, yr, species) %>% 
-  dplyr::summarize(
-    clams_smp = mean(clams_smp, na.rm = TRUE),
-    biomass = mean(biomass, na.rm = TRUE)
-    ) %>% 
-  ungroup %>% 
-  mutate(yr = as.Date(paste0(yr, '-10-01')))
-
-# make sure date range is same on both
-xlims <- as.Date(c('1976-10-01', '2014-10-01'))
-
-mytheme <- theme_minimal() + 
-  theme(
-    plot.background = element_rect(fill='transparent', 
-      colour = NA),
-    panel.background = element_rect(fill='transparent', 
-      colour = NA),
-    legend.background = element_rect(fill='transparent', 
-      colour = NA),
-    legend.key = element_rect(fill = 'transparent', 
-      colour = NA),
-    axis.line.x = element_line(), 
-    axis.line.y = element_line(), 
-    axis.ticks.x = element_line(),
-    axis.ticks.y = element_line(),
-    axis.ticks.length = unit(.1, "cm"), 
-    panel.grid.major = element_line(colour = "#7BCCC4"),
-    panel.grid.minor = element_blank(), 
-    plot.margin = unit(c(3, 3, 3, 3), 'pt'), 
-    axis.title.x = element_blank()
-  )   
-
-##
-# annual clam time series
-p1 <- ggplot(clmdat, aes(x = yr, y = clams_smp, fill = species)) + 
-  geom_bar(stat = 'identity') + 
-  mytheme + 
-  theme(
-    legend.position = c(0.22, 0.82), 
-    legend.title = element_blank(),
-    axis.title.x = element_blank(),
-    legend.background = element_rect(fill='transparent', 
-      colour = NA),
-    legend.direction = 'horizontal'
-    ) + 
-  scale_fill_brewer(
-    palette = 'Set2',
-    labels = parse(text = c('italic(Corbicula)', 'italic(Potamocorbula)'))
-    ) + 
-  scale_x_date('Year', limits = xlims) +
-  scale_y_continuous('Clams per sample') +
-  guides(fill = guide_legend(keywidth = 0.5, keyheight = 0.5))
-
-# separate each site
-toplo1 <- filter(h3dat, Site_Code %in% 'D7')
-
-# y axis labels
-ylab <- expression(paste("Chl-", italic(a), " (", italic(mu), "g ", L^-1, ")"))
-
-# colors
-cols <- RColorBrewer::brewer.pal(9, 'Set1')[1:3]
-col_vec <- RColorBrewer::brewer.pal(9, 'Blues')[c(9, 8, 7)]
-
-##
-# chlorophyll prdnrmplot
-p2 <- prdnrmplot(toplo1$mod[[1]], col_vec = col_vec, logspace = F, min_mo = 10) +
-  mytheme + 
-  theme(
-    legend.position = 'none'
-    ) + 
-  scale_y_continuous(ylab) + 
-  scale_x_date(limits = xlims)
-
-## flo with loess
-flow_dat <- mutate(flow_dat, 
-    year = year(Date), 
-    month = month(Date)
-  ) %>% 
-  group_by(year, month) %>% 
-  summarise(q = mean(q, na.rm = T)) %>% 
-  unite('Date', year:month, sep = '-') %>% 
-  mutate(
-    Date = paste0(Date, '-01'), 
-    Date = as.Date(Date, format = '%Y-%m-%d')
-  ) %>% 
-  arrange(Date)
-  
-ylab <- expression(paste('ln-Flow (', m^3, ' ', s^-1, ')'))
-p3 <- ggplot(flow_dat, aes(x = Date, y = log(q))) + 
-  geom_line() +
-  stat_smooth(se = F, span = 0.25) + 
-  mytheme + 
-  scale_y_continuous(ylab) +
-  scale_x_date(limits = xlims)
-
-# Set the widths
-pA <- ggplot_gtable(ggplot_build(p1))
-pB <- ggplot_gtable(ggplot_build(p2))
-pC <- ggplot_gtable(ggplot_build(p3))
-maxWidth = unit.pmax(pA$widths[2:3], pB$widths[2:3], pC$widths[2:3])
-pA$widths[2:3] <- maxWidth
-pB$widths[2:3] <- maxWidth
-pC$widths[2:3] <- maxWidth
-
-pdf('fig/d7links.pdf', height = 1.5, width = 7.5, family = 'serif')
-grid.arrange(pA)
-grid.arrange(pB)
-grid.arrange(pC)
-dev.off()
-@
-
-%%%%%%
-\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
-\onslide<1->
-\centerline{\includegraphics[width = 0.97\textwidth, page = 1]{fig/d7links.pdf}}
-\onslide<2->
-\centerline{\includegraphics[width = 0.97\textwidth, page = 2]{fig/d7links.pdf}}
-\onslide<3->
-\centerline{\includegraphics[width = 0.97\textwidth, page = 3]{fig/d7links.pdf}}
-\end{frame}
-
-%%%%%%
-\begin{frame}[t]{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
-\onslide<1->
-Results at D7 show complex response of chlorophyll:
-\vspace{0.05in}
-\begin{columns}[t]
-\begin{column}{0.5\textwidth}
-\vspace{0.2in}
-\begin{itemize}
-\onslide<1->{
-\item Increase in clam abundance, decrease in chlorophyll \\~\\
-\item Increase in DIN... but also increase in SiO$_2$ \\~\\
-}
-\onslide<2->{
-\item Relationship with flow changed depending on physical or biological forcing
-}
-\end{itemize}
-\end{column}
-\begin{column}{0.25\textwidth}
-
-\includegraphics<1>[width = \textwidth, trim = 0mm -10mm 0mm 0mm, clip, page = 2]{fig/d7prdnrm.pdf}
-
-\includegraphics<1>[width = \textwidth, trim = 0mm -10mm 0mm 0mm, clip, page = 1]{fig/d7prdnrm.pdf}
-
-\includegraphics<1>[width = \textwidth, trim = 0mm -10mm 0mm 0mm, clip, page = 3]{fig/d7prdnrm.pdf}
-\includegraphics<2>[width = \textwidth, page = 3]{fig/d7flos.pdf}
-
-\includegraphics<2>[width = \textwidth, page = 2]{fig/d7flos.pdf}
-
-\includegraphics<2>[width = \textwidth, page = 1]{fig/d7flos.pdf}
-\end{column}
-\end{columns}
-\end{frame}
-
-\section{Conclusions and future work}
+\section{Reaching the management community}
 
 %%%%%%
 \begin{frame}{\textbf{Conclusions}}{\textbf{Lessons for monitoring and future work}}
@@ -1730,22 +1200,74 @@ Results at D7 show complex response of chlorophyll:
 Monitoring data are not particularly telling... \\
 ...so we use models or other methods to \emtxt{decompose} the observations \\~\\
 \onslide<+->
-Chosen method depends on the question: WRTDS because water quality varies with time, season, and flow \\~\\
+But we need to communicate these results to the management community and other decision makers\\~\\
 \onslide<+->
-\begin{itemize}
-\item More complete description of trends
-\item Better link to causal events
-\item More comprehensive evaluation of site-specific issues
-\item Deconstruct the past to predict the future
-\end{itemize}
+\begin{exampleblock}{}
+  {\large ``Don't give me another 500-page report, I won't read t.''}
+  \vskip5mm
+  \hspace*\fill{\small--- Overheard at recent meeting}
+\end{exampleblock}
 \end{frame}
 
 %%%%%%
-\begin{frame}{\textbf{Conclusions}}{\textbf{Lessons for monitoring and future work}}
-Shiny app: \href{https://beckmw.shinyapps.io/sf_trends/}{\url{https://beckmw.shinyapps.io/sf_trends/}}
+\begin{frame}{\textbf{An Open Science paradigm}}{\textbf{Bridge the research-management divide}}
+\begin{center}
+\includegraphics[width = \textwidth]{fig/opensci.png}
+\end{center}
+\end{frame}
+
+%%%%%%
+\begin{frame}{\textbf{An Open Science paradigm}}{\textbf{Bridge the research-management divide}}
+\centerline{Make your methods accessible!}
+\centerline{{\small \url{https://cran.r-project.org/web/packages/WRTDStidal/index.html}}}
+\begin{center}
+\fbox{\includegraphics[width = 0.9\textwidth]{fig/wrtdstidal.png}}
+\end{center}
+\end{frame}
+
+%%%%%%
+\begin{frame}{\textbf{An Open Science paradigm}}{\textbf{Bridge the research-management divide}}
+\centerline{Make your methods transparent!}
+\centerline{{\small \url{https://github.com/fawda123/WRTDStidal}}}
+\begin{center}
+\fbox{\includegraphics[width = 0.9\textwidth]{fig/wrtdstidalgit.png}}
+\end{center}
+\end{frame}
+
+%%%%%%
+\begin{frame}{\textbf{An Open Science paradigm}}{\textbf{Bridge the research-management divide}}
+\centerline{Communicate your results!}
+\centerline{{\small \url{https://beckmw.shinyapps.io/sf_trends/}}}
 \begin{center}
 \fbox{\includegraphics[width = 0.9\textwidth]{fig/shinyex.png}}
 \end{center}
+\end{frame}
+
+%%%%%%
+\begin{frame}{\textbf{An Open Science paradigm}}{\textbf{Bridge the research-management divide}}
+\centerline{Communicate your results!}
+\centerline{{\small \url{https://sccwrp.shinyapps.io/sfbaytrends/}}}
+\begin{center}
+\fbox{\includegraphics[width = 0.8\textwidth]{fig/sfbaytrends.png}}
+\end{center}
+\end{frame}
+
+\section{Conclusions}
+
+%%%%%%
+\begin{frame}{\textbf{Conclusions}}{\textbf{Lessons for data scientists}}
+\onslide<+->
+Science (and data science) is a tool that is a means to an end... \\
+...it is not an end in itself \\~\\
+\onslide<+->
+How do you use your products to reach those that need it? \\~\\
+\onslide<+->
+\begin{itemize}
+\item Use relevant methods within the scope of your question
+\item Strive for transparency, reproducibility, and accessibility
+\item Use open source tools with vibrant user communities
+\item Be a champion within your institution to promote open science
+\end{itemize}
 \end{frame}
 
 %%%%%%
@@ -1754,8 +1276,8 @@ Acknowledgments and contact info:\\~\\
 \begin{columns}
 \begin{column}{0.9\textwidth}
 {\footnotesize
-Research staff and employees at USEPA Gulf Ecology Division, San Francisco Estuary Institute \\~\\
-David Senn, Jabusch, Phil Bresnahan, Emily Novick
+Research staff and employees at USEPA Gulf Ecology Division, San Francisco Estuary Institute, Southern California Coastal Water Research Project \\~\\
+David Senn, Thomas Jabusch, Phil Bresnahan, Emily Novick
 }
 \end{column}
 \end{columns}
@@ -1773,9 +1295,7 @@ David Senn, Jabusch, Phil Bresnahan, Emily Novick
 \begin{column}{0.3\textwidth}
 \scriptsize
 \begin{center}
-\href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov} \\~\\
 \href{mailto:marcusb@sccwrp.org}{marcusb@sccwrp.org} \\~\\
-Phone (EPA): 8509342480 \\~\\
 Phone (SCCWRP): 7147553217
 \end{center}
 \end{column}
@@ -1791,7 +1311,7 @@ Shiny app: \href{https://beckmw.shinyapps.io/sf_trends/}{\url{https://beckmw.shi
 
 Detailed results: \href{http://fawda123.github.io/sf_trends/README}{\url{http://fawda123.github.io/sf\_trends/README}}
 
-Draft manuscript: \href{http://fawda123.github.io/sftrends_manu}{\url{http://fawda123.github.io/sftrends\_manu}}
+Manuscript: \href{http://fawda123.github.io/sftrends_manu}{\url{http://fawda123.github.io/sftrends\_manu}}
 \end{column}
 \end{columns}
 \end{frame}

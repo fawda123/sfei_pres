@@ -105,9 +105,9 @@
 \title[Evaluation of Delta RMP data]{\textbf{Evaluation of Delta RMP nutrient data using weighted regression for trend analysis}}
 \author[M. Beck]{Marcus W. Beck, PhD}
 
-\institute[USEPA]{USEPA National Health and Environmental Effects Research Laboratory, Gulf Ecology Division, \href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov}, Phone: 8509342480}
+\institute[SCCWRP]{Southern California Coastal Water Research Project, \href{mailto:marcusb@sccwrp.org}{marcusb@sccwrp.org}, Phone: 7147553217}
 
-\date{August 30, 2017}
+\date{April 9, 2019}
 
 \titlegraphic{\includegraphics[width=\linewidth]{fig/titlegraphic.pdf}}
 
@@ -122,16 +122,14 @@
 %%%%%%
 \begin{frame}{\textbf{Evaluating Delta RMP data}}{}
 \onslide<+->
-\emtxt{Today's talk}: Evaluation of forty years of Delta RMP nutrient data with weighted regression \\~\\
+\emtxt{Today's talk}: Evaluation of forty years of Delta water quality data from the Routing Monitoring Program (RMP) \\~\\
 \onslide<+->
 Water quality trends in the Delta: \\~\\
 \begin{itemize}
 \item \emtxt{Part 1}: Model theory and application \\~\\
-\item \emtxt{Part 2}: Trends over time \\~\\
-\item \emtxt{Part 3}: Selected case studies \\~\\
+\item \emtxt{Part 2}: Trends over time and selected case study \\~\\
+\item \emtxt{Part 3}: Use of data science tools to reach environmental managers \\~\\
 \end{itemize}
-\onslide<+->
-Can we \emtxt{develop} and \emtxt{apply} methods that \emtxt{link trends} with \emtxt{causal events}?
 \end{frame}
 
 \section{Model theory and background}
@@ -197,7 +195,7 @@ flow changes
 \begin{frame}[t]{\textbf{Model theory and background}}{\textbf{WRTDS adaptation for tidal waters}}
 \onslide<+->
 \emtxt{Problem:} Response endpoints of eutrophication vary naturally over time and with discharge or tidal patterns\\~\\
-\emtxt{Solution:} Develop a model that accounts for changes in relationships between drivers of pollution over time\\~\\
+\emtxt{Solution:} Apply a model that accounts for changes in relationships between drivers of pollution over time \cite{Beck18b} \\~\\
 \onslide<+->
 The \emtxt{weighted regression (WRTDS)} approach models pollutants in rivers as a function of \emtxt{time}, \emtxt{discharge}, and \emtxt{season} \cite{Hirsch10}\\~\\
 \onslide<+->
@@ -309,29 +307,16 @@ Better description of nutrient endpoints can change conclusions
 %%%%%%
 \begin{frame}{\textbf{Trends over time}}{\textbf{Nitrogen dynamics in the Delta - nitrite/nitate}} 
 The \emtxt{WRTDS} approach lets us model historical trends in relation to \emtxt{time}, \emtxt{discharge}, and \emtxt{season}\\~\\
-Predicted trends follow observed... how can we leverage the results to better understand important processes? \\~\\
+Predicted trends follow observed... how can we leverage the results to understand drivers of environmental change? \\~\\
 \centerline{\includegraphics[width = \textwidth]{fig/ts_ex2.pdf}}
 \end{frame}
 
-\section{Selected case studies}
-
-%%%%%%
-\begin{frame}{\textbf{Selected case studies}}{\textbf{}}
-\onslide<+->
-Two examples demonstrate the utility of WRTDS adaptation to Delta RMP data: \\~\\
-\begin{itemize}
-\item Effects of wastewater treatment at P8 \\~\\
-\item Effects of biological invasion in Suisun Bay\\~\\
-\end{itemize}
-\onslide<+->
-Each shows how \emtxt{model components} describe \emtxt{processes} \\~\\
-Uses \emtxt{WRTDStidal} package for R \cite{Beck17b}: \href{https://cran.rstudio.com/web/packages/WRTDStidal/index.html}{\url{https://cran.rstudio.com/web/packages/WRTDStidal}}
-\end{frame}
+\section{Selected case study}
 
 
 
 %%%%%%
-\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of wastewater treatment upgrades}}
+\begin{frame}{\textbf{Selected case study}}{\textbf{Effects of wastewater treatment upgrades}}
 How can model information be linked to causation?
 \vspace{0.1in}
 \begin{figure}
@@ -342,7 +327,7 @@ How can model information be linked to causation?
 
 %%%%%%
 \begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of wastewater treatment upgrades}}
-\emtxt{Hypothesis}: Response of nutrient concentrations at P8 is linked to upstream WWTP upgrades \\~\\
+\emtxt{Hypothesis}: Response of nutrient concentrations at station P8 is linked to upstream WWTP upgrades \\~\\
 We should be able to \emtxt{predict}: \\~\\
 \begin{itemize}
 \item A flow-normalized annual trend concurrent with WWTP upgrades \\~\\
@@ -394,128 +379,7 @@ Results at P8 were linked to WWTP upgrades:
 \end{columns}
 \end{frame}
 
-%%%%%%
-\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
-\emtxt{Hypothesis}: Biological invasions by benthic filter feeders have shifted abundance and composition of phytoplankton in Suisun Bay \\~\\
-We should be able to \emtxt{predict}: \\~\\
-\begin{itemize}
-\item A decline in annual, flow-normalized chlorophyll following increase in invaders\\~\\
-\item Varying effects of flow given complex relationships between chlorophyll and invaders
-\end{itemize}
-\end{frame}
-
-
-
-%%%%%%
-\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
-\vspace{-0.1in}
-\onslide<1->
-\begin{figure}
-\centerline{\includegraphics[width = \textwidth]{fig/d7clam.pdf}}
-\caption{Clam density by year at D7, Suisun Bay \cite{Crauder16}.}
-\end{figure}
-\vspace{-0.1in}
-\begin{columns}
-\begin{column}{0.35\textwidth}
-\onslide<2->{
-\includegraphics[width = \textwidth, page = 2]{fig/d7prdnrm.pdf}
-}
-\end{column}
-\begin{column}{0.35\textwidth}
-\onslide<3->{
-\includegraphics[width = \textwidth, page = 1]{fig/d7prdnrm.pdf}
-}
-\end{column}
-\begin{column}{0.35\textwidth}
-\onslide<4->{
-\includegraphics[width = \textwidth, page = 3]{fig/d7prdnrm.pdf}
-}
-\end{column}
-\end{columns}
-\vspace{-0.05in}
-\onslide<2->
-\begin{figure}
-\caption{Annual predicted (points) and flow-normalized (lines) water quality data at D7.}
-\end{figure}
-\end{frame}
-
-
-
-%%%%%%
-\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
-\onslide<1->
-\begin{columns}
-\begin{column}{0.5\textwidth}
-\centerline{\includegraphics[width = 0.95\textwidth, page = 3]{fig/d7flos.pdf}}
-\end{column}
-\begin{column}{0.5\textwidth}
-\begin{itemize}
-\item Early: Flushing \\~\\
-\item Later: Flow-stimulation
-\end{itemize}
-\end{column}
-\end{columns}
-\begin{columns}
-\begin{column}{0.5\textwidth}
-\onslide<2->{
-\centerline{\includegraphics[width = 0.95\textwidth, page = 2]{fig/d7flos.pdf}}
-}
-\end{column}
-\begin{column}{0.5\textwidth}
-\onslide<3->{
-\centerline{\includegraphics[width = 0.95\textwidth, page = 1]{fig/d7flos.pdf}}
-}
-\end{column}
-\end{columns}
-\end{frame}
-
-
-
-%%%%%%
-\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
-\onslide<1->
-\centerline{\includegraphics[width = 0.97\textwidth, page = 1]{fig/d7links.pdf}}
-\onslide<2->
-\centerline{\includegraphics[width = 0.97\textwidth, page = 2]{fig/d7links.pdf}}
-\onslide<3->
-\centerline{\includegraphics[width = 0.97\textwidth, page = 3]{fig/d7links.pdf}}
-\end{frame}
-
-%%%%%%
-\begin{frame}[t]{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
-\onslide<1->
-Results at D7 show complex response of chlorophyll:
-\vspace{0.05in}
-\begin{columns}[t]
-\begin{column}{0.5\textwidth}
-\vspace{0.2in}
-\begin{itemize}
-\onslide<1->{
-\item Increase in clam abundance, decrease in chlorophyll \\~\\
-\item Increase in DIN... but also increase in SiO$_2$ \\~\\
-}
-\onslide<2->{
-\item Relationship with flow changed depending on physical or biological forcing
-}
-\end{itemize}
-\end{column}
-\begin{column}{0.25\textwidth}
-
-\includegraphics<1>[width = \textwidth, trim = 0mm -10mm 0mm 0mm, clip, page = 2]{fig/d7prdnrm.pdf}
-
-\includegraphics<1>[width = \textwidth, trim = 0mm -10mm 0mm 0mm, clip, page = 1]{fig/d7prdnrm.pdf}
-
-\includegraphics<1>[width = \textwidth, trim = 0mm -10mm 0mm 0mm, clip, page = 3]{fig/d7prdnrm.pdf}
-\includegraphics<2>[width = \textwidth, page = 3]{fig/d7flos.pdf}
-
-\includegraphics<2>[width = \textwidth, page = 2]{fig/d7flos.pdf}
-
-\includegraphics<2>[width = \textwidth, page = 1]{fig/d7flos.pdf}
-\end{column}
-\end{columns}
-\end{frame}
-
-\section{Conclusions and future work}
+\section{Reaching the management community}
 
 %%%%%%
 \begin{frame}{\textbf{Conclusions}}{\textbf{Lessons for monitoring and future work}}
@@ -523,22 +387,74 @@ Results at D7 show complex response of chlorophyll:
 Monitoring data are not particularly telling... \\
 ...so we use models or other methods to \emtxt{decompose} the observations \\~\\
 \onslide<+->
-Chosen method depends on the question: WRTDS because water quality varies with time, season, and flow \\~\\
+But we need to communicate these results to the management community and other decision makers\\~\\
 \onslide<+->
-\begin{itemize}
-\item More complete description of trends
-\item Better link to causal events
-\item More comprehensive evaluation of site-specific issues
-\item Deconstruct the past to predict the future
-\end{itemize}
+\begin{exampleblock}{}
+  {\large ``Don't give me another 500-page report, I won't read t.''}
+  \vskip5mm
+  \hspace*\fill{\small--- Overheard at recent meeting}
+\end{exampleblock}
 \end{frame}
 
 %%%%%%
-\begin{frame}{\textbf{Conclusions}}{\textbf{Lessons for monitoring and future work}}
-Shiny app: \href{https://beckmw.shinyapps.io/sf_trends/}{\url{https://beckmw.shinyapps.io/sf_trends/}}
+\begin{frame}{\textbf{An Open Science paradigm}}{\textbf{Bridge the research-management divide}}
+\begin{center}
+\includegraphics[width = \textwidth]{fig/opensci.png}
+\end{center}
+\end{frame}
+
+%%%%%%
+\begin{frame}{\textbf{An Open Science paradigm}}{\textbf{Bridge the research-management divide}}
+\centerline{Make your methods accessible!}
+\centerline{{\small \url{https://cran.r-project.org/web/packages/WRTDStidal/index.html}}}
+\begin{center}
+\fbox{\includegraphics[width = 0.9\textwidth]{fig/wrtdstidal.png}}
+\end{center}
+\end{frame}
+
+%%%%%%
+\begin{frame}{\textbf{An Open Science paradigm}}{\textbf{Bridge the research-management divide}}
+\centerline{Make your methods transparent!}
+\centerline{{\small \url{https://github.com/fawda123/WRTDStidal}}}
+\begin{center}
+\fbox{\includegraphics[width = 0.9\textwidth]{fig/wrtdstidalgit.png}}
+\end{center}
+\end{frame}
+
+%%%%%%
+\begin{frame}{\textbf{An Open Science paradigm}}{\textbf{Bridge the research-management divide}}
+\centerline{Communicate your results!}
+\centerline{{\small \url{https://beckmw.shinyapps.io/sf_trends/}}}
 \begin{center}
 \fbox{\includegraphics[width = 0.9\textwidth]{fig/shinyex.png}}
 \end{center}
+\end{frame}
+
+%%%%%%
+\begin{frame}{\textbf{An Open Science paradigm}}{\textbf{Bridge the research-management divide}}
+\centerline{Communicate your results!}
+\centerline{{\small \url{https://sccwrp.shinyapps.io/sfbaytrends/}}}
+\begin{center}
+\fbox{\includegraphics[width = 0.8\textwidth]{fig/sfbaytrends.png}}
+\end{center}
+\end{frame}
+
+\section{Conclusions}
+
+%%%%%%
+\begin{frame}{\textbf{Conclusions}}{\textbf{Lessons for data scientists}}
+\onslide<+->
+Science (and data science) is a tool that is a means to an end... \\
+...it is not an end in itself \\~\\
+\onslide<+->
+How do you use your products to reach those that need it? \\~\\
+\onslide<+->
+\begin{itemize}
+\item Use relevant methods within the scope of your question
+\item Strive for transparency, reproducibility, and accessibility
+\item Use open source tools with vibrant user communities
+\item Be a champion within your institution to promote open science
+\end{itemize}
 \end{frame}
 
 %%%%%%
@@ -547,8 +463,8 @@ Acknowledgments and contact info:\\~\\
 \begin{columns}
 \begin{column}{0.9\textwidth}
 {\footnotesize
-Research staff and employees at USEPA Gulf Ecology Division, San Francisco Estuary Institute \\~\\
-David Senn, Jabusch, Phil Bresnahan, Emily Novick
+Research staff and employees at USEPA Gulf Ecology Division, San Francisco Estuary Institute, Southern California Coastal Water Research Project \\~\\
+David Senn, Thomas Jabusch, Phil Bresnahan, Emily Novick
 }
 \end{column}
 \end{columns}
@@ -566,9 +482,7 @@ David Senn, Jabusch, Phil Bresnahan, Emily Novick
 \begin{column}{0.3\textwidth}
 \scriptsize
 \begin{center}
-\href{mailto:beck.marcus@epa.gov}{beck.marcus@epa.gov} \\~\\
 \href{mailto:marcusb@sccwrp.org}{marcusb@sccwrp.org} \\~\\
-Phone (EPA): 8509342480 \\~\\
 Phone (SCCWRP): 7147553217
 \end{center}
 \end{column}
@@ -584,7 +498,7 @@ Shiny app: \href{https://beckmw.shinyapps.io/sf_trends/}{\url{https://beckmw.shi
 
 Detailed results: \href{http://fawda123.github.io/sf_trends/README}{\url{http://fawda123.github.io/sf\_trends/README}}
 
-Draft manuscript: \href{http://fawda123.github.io/sftrends_manu}{\url{http://fawda123.github.io/sftrends\_manu}}
+Manuscript: \href{http://fawda123.github.io/sftrends_manu}{\url{http://fawda123.github.io/sftrends\_manu}}
 \end{column}
 \end{columns}
 \end{frame}
