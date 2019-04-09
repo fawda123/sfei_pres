@@ -2,6 +2,6 @@
 \beamer@sectionintoc {2}{Model theory and background}{4}{0}{2}
 \beamer@sectionintoc {3}{Trends}{20}{0}{3}
 \beamer@sectionintoc {4}{Selected case study}{26}{0}{4}
-\beamer@sectionintoc {5}{Reaching the management community}{32}{0}{5}
-\beamer@sectionintoc {6}{Conclusions}{40}{0}{6}
-\beamer@sectionintoc {7}{References}{44}{0}{7}
+\beamer@sectionintoc {5}{Reaching the management community}{39}{0}{5}
+\beamer@sectionintoc {6}{Conclusions}{47}{0}{6}
+\beamer@sectionintoc {7}{References}{51}{0}{7}

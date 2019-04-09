@@ -292,12 +292,12 @@ How does weighted regression work?
 \end{frame}
 
 %%%%%%
-\begin{frame}{\textbf{Trends over time}}{\textbf{Nitrogen dynamics in the Delta - nitrite/nitate}} 
+\begin{frame}{\textbf{Trends over time}}{\textbf{Nitrogen dynamics in the Delta - nitrite/nitrate}} 
 \centerline{\includegraphics[width = 0.93\textwidth, page = 2]{fig/trndsperno23.pdf}}
 \end{frame}
 
 %%%%%%
-\begin{frame}{The ORISE experience}{Additional WRTDS applications}
+\begin{frame}{\textbf{Trends over time}}{Nitrogen dynamics in the Delta}
 Better description of nutrient endpoints can change conclusions
 \centerline{\includegraphics[width = \textwidth]{fig/trndcomp1.pdf}}
 \end{frame}
@@ -305,7 +305,7 @@ Better description of nutrient endpoints can change conclusions
 
 
 %%%%%%
-\begin{frame}{\textbf{Trends over time}}{\textbf{Nitrogen dynamics in the Delta - nitrite/nitate}} 
+\begin{frame}{\textbf{Trends over time}}{\textbf{Nitrogen dynamics in the Delta - nitrite/nitrate}} 
 The \emtxt{WRTDS} approach lets us model historical trends in relation to \emtxt{time}, \emtxt{discharge}, and \emtxt{season}\\~\\
 Predicted trends follow observed... how can we leverage the results to understand drivers of environmental change? \\~\\
 \centerline{\includegraphics[width = \textwidth]{fig/ts_ex2.pdf}}
@@ -313,68 +313,123 @@ Predicted trends follow observed... how can we leverage the results to understan
 
 \section{Selected case study}
 
-
-
 %%%%%%
-\begin{frame}{\textbf{Selected case study}}{\textbf{Effects of wastewater treatment upgrades}}
-How can model information be linked to causation?
-\vspace{0.1in}
-\begin{figure}
-\centerline{\includegraphics[width = \textwidth]{fig/stock.pdf}}
-\caption{Nitrogen concentration measurements (mg L$^{-1}$) from the City of Stockton Wastewater Treatment Plant, San Joaquin County.  Wastewater discharge requirements were implemented in 2006 for nitrification/denitrification and tertiary filtration to convert ammonium to nitrate.}
-\end{figure}
-\end{frame}
-
-%%%%%%
-\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of wastewater treatment upgrades}}
-\emtxt{Hypothesis}: Response of nutrient concentrations at station P8 is linked to upstream WWTP upgrades \\~\\
+\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
+\emtxt{Hypothesis}: Biological invasions by benthic filter feeders have shifted abundance and composition of phytoplankton in Suisun Bay \\~\\
 We should be able to \emtxt{predict}: \\~\\
 \begin{itemize}
-\item A flow-normalized annual trend concurrent with WWTP upgrades \\~\\
-\item Variation in nitrogen species response depending on change in load outputs
+\item A decline in annual, flow-normalized chlorophyll following increase in invaders\\~\\
+\item Varying effects of flow given complex relationships between chlorophyll and invaders
 \end{itemize}
 \end{frame}
 
 
 
 %%%%%%
-\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of wastewater treatment upgrades}}
-\onslide<+->
+\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
+\vspace{-0.1in}
+\onslide<1->
 \begin{figure}
-\centerline{\includegraphics[width = \textwidth]{fig/p8obs.pdf}}
-\caption{Observed nitrogen time series at P8}
+\centerline{\includegraphics[width = \textwidth]{fig/d7clam.pdf}}
+\caption{Clam density by year at D7, Suisun Bay \cite{Crauder16}.}
 \end{figure}
-\onslide<+->
-\vspace{-0.35in}
-\begin{figure}
-\centerline{\includegraphics[width = \textwidth]{fig/p8prdnrm.pdf}}
-\caption{Annual predicted and flow-normalized nitrogen from WRTDS.}
-\end{figure}
-\end{frame}
-
-%%%%%%
-\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of wastewater treatment upgrades}}
-\vspace{0.1in}
-\begin{figure}
-\centerline{\includegraphics[width = \textwidth]{fig/p8dyna.pdf}}
-\caption{Nitrogen relationships with flow over time at P8.}
-\end{figure}
-\end{frame}
-
-%%%%%%
-\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of wastewater treatment upgrades}}
-Results at P8 were linked to WWTP upgrades:
+\vspace{-0.1in}
 \begin{columns}
-\begin{column}{0.45\textwidth}
+\begin{column}{0.35\textwidth}
+\onslide<2->{
+\includegraphics[width = \textwidth, page = 2]{fig/d7prdnrm.pdf}
+}
+\end{column}
+\begin{column}{0.35\textwidth}
+\onslide<3->{
+\includegraphics[width = \textwidth, page = 1]{fig/d7prdnrm.pdf}
+}
+\end{column}
+\begin{column}{0.35\textwidth}
+\onslide<4->{
+\includegraphics[width = \textwidth, page = 3]{fig/d7prdnrm.pdf}
+}
+\end{column}
+\end{columns}
+\vspace{-0.2in}
+\onslide<2->
+\begin{figure}
+\caption{Annual predicted (points) and flow-normalized (lines) water quality data at D7.}
+\end{figure}
+\end{frame}
+
+
+
+%%%%%%
+\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
+\onslide<1->
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\centerline{\includegraphics[width = 0.95\textwidth, page = 3]{fig/d7flos.pdf}}
+\end{column}
+\begin{column}{0.5\textwidth}
 \begin{itemize}
-\item Flow-normalized changes in ammonium, also nitrite/nitrate \\~\\
-\item Ammonium reductions occurred in winter \\~\\
-\item Largest response of ammonium at low flow... but not in summer
+\item Early: Flushing \\~\\
+\item Later: Flow-stimulation
 \end{itemize}
 \end{column}
-\begin{column}{0.4\textwidth}
-\vspace{0.3in}
-\centerline{\includegraphics[width = \textwidth]{fig/p8dyna_thumb.pdf}}
+\end{columns}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\onslide<2->{
+\centerline{\includegraphics[width = 0.95\textwidth, page = 2]{fig/d7flos.pdf}}
+}
+\end{column}
+\begin{column}{0.5\textwidth}
+\onslide<3->{
+\centerline{\includegraphics[width = 0.95\textwidth, page = 1]{fig/d7flos.pdf}}
+}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+
+%%%%%%
+\begin{frame}{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
+\onslide<1->
+\centerline{\includegraphics[width = 0.97\textwidth, page = 1]{fig/d7links.pdf}}
+\onslide<2->
+\centerline{\includegraphics[width = 0.97\textwidth, page = 2]{fig/d7links.pdf}}
+\onslide<3->
+\centerline{\includegraphics[width = 0.97\textwidth, page = 3]{fig/d7links.pdf}}
+\end{frame}
+
+%%%%%%
+\begin{frame}[t]{\textbf{Selected case studies}}{\textbf{Effects of biological invasion in Suisun Bay}}
+\onslide<1->
+Results at D7 show complex response of chlorophyll:
+\vspace{0.05in}
+\begin{columns}[t]
+\begin{column}{0.5\textwidth}
+\vspace{0.2in}
+\begin{itemize}
+\onslide<1->{
+\item Increase in clam abundance, decrease in chlorophyll \\~\\
+\item Increase in DIN... but also increase in SiO$_2$ \\~\\
+}
+\onslide<2->{
+\item Relationship with flow changed depending on physical or biological forcing
+}
+\end{itemize}
+\end{column}
+\begin{column}{0.25\textwidth}
+
+\includegraphics<1>[width = \textwidth, trim = 0mm -10mm 0mm 0mm, clip, page = 2]{fig/d7prdnrm.pdf}
+
+\includegraphics<1>[width = \textwidth, trim = 0mm -10mm 0mm 0mm, clip, page = 1]{fig/d7prdnrm.pdf}
+
+\includegraphics<1>[width = \textwidth, trim = 0mm -10mm 0mm 0mm, clip, page = 3]{fig/d7prdnrm.pdf}
+\includegraphics<2>[width = \textwidth, page = 3]{fig/d7flos.pdf}
+
+\includegraphics<2>[width = \textwidth, page = 2]{fig/d7flos.pdf}
+
+\includegraphics<2>[width = \textwidth, page = 1]{fig/d7flos.pdf}
 \end{column}
 \end{columns}
 \end{frame}
